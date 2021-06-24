@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>MD's Briyani</title>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="navBar">
+            <li><a href="QuriyPage.html">Qurries</a></li>
+        </ul>
+    </div>
+    <div class="flashMsg" id="flashMsg">
+        <span id="errorMsg"></span><span class="closeMsg" id="closeMsg">X</span>
+    </div>
+    <div class="formContainer">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+                <button type="button" class="toggle-btn" onclick="regi()">
+            Register
+          </button>
+            </div>
+            <div class="social-icons">
+                <img src="/static/images/Icons/fb.png" alt="facebook" />
+                <img src="/static/images/Icons/tw.png" alt="Twitter" />
+                <img src="/static/images/Icons/gp.png" alt="Gmail" />
+            </div>
+            <form id="loginForm" class="inputs" action="/login" method="POST">
+                <input type="text" id="userId" class="input-field" name="emailID" placeholder="Email ID" required />
+                <input type="password" id="loginpassword" class="input-field" name="password" placeholder="Password" required />
+                <button type="submit" class="sbtn">Log in</button>
+            </form>
+            <form id="registerForm" class="inputs" action="/registration" method="POST">
+                <input type="text" id="emailID" class="input-field" name="emailID" placeholder="Email ID" required />
+                <input type="password" id="registerpwd" class="input-field" name="password" placeholder="Password" required />
+                <input type="password" id="reregisterpwd" class="input-field" name="repassword" placeholder="Password" required />
+
+                <select name="district" class="input-field" id="distId">
+            <option value="tn">Trichy</option>
+            <option value="nk">Namakkal</option>
+            <option value="kr">Karur</option>
+          </select>
+                <button type="submit" class="sbtn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

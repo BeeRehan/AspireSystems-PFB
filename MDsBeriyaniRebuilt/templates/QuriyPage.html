@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <!--
+    <div class="header">
+        <div>
+            <ul class="navBar">
+                <li><a href="base.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="Register.html">LogOUt</a></li>
+            </ul>
+        </div>
+    </div>-->
+    <div class="contactBox QuryBox">
+        <form action="/quries" method="POST">
+            <h1>Fill your quries here!!!</h1>
+            <div class="formField">
+                <label for="firstName"> FirstName: </label>
+                <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="formField">
+                <label for="lastName"> LastName: </label>
+                <input type="text" id="astName" name="lasttName" required />
+            </div>
+            <div class="formField">
+                <label for="EmailID"> EmailID:</label>
+                <input type="email" id="EmailID" name="EmailID" required />
+            </div>
+            <div class="formField">
+                <label for="message"> Message </label>
+                <textarea id="message" name="message" cols="3" rows="5" required></textarea>
+            </div>
+            <a href="Register.html">Return Login</a>
+            <button type="submit" class="sbtn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
