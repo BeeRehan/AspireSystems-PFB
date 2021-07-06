@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Geolocation</title>
+
+    <script>
+        const p = document.getElementById("para");
+
+        function print(position) {
+            console.log(position);
+        }
+        const findme = function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(print);
+            } else {
+                alert("Error");
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <button onclick="findme()">findME</button>
+    <p id="para"></p>
+</body>
+
+</html>
