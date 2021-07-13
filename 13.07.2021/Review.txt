@@ -1,0 +1,13 @@
+is still use manifest?
+form vaidate---purpose between client and server side.
+Regular expression.
+device width considered while writting media query.
+
+form validation with more than 10 fields.
+cutom events
+
+usage fn parameter with default values
+
+
+
+
