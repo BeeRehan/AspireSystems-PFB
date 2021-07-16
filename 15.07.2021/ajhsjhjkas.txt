@@ -1,0 +1,8 @@
+clone and deep clone python
+lexical scoping
+
+hierarchy of exception class
+pep 8
+function annotation
+Date and time 
+deafult encoding and types
