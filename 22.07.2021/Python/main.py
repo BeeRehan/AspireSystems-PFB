@@ -56,6 +56,8 @@ obj = Products([{
 }])
 
 cpj = carts([])
+wal = Wallets()
+pay = payments()
 
 obj.display()
 
@@ -86,11 +88,31 @@ def admin():
         elif(ch=='2'):
             deleteProduct()
 
+def payment():   
+    print('1.Credit/Debit card\n2.Netbanking\n 3.Wallet\n 4.COD\n 5.Go back')
+    ch=input()
+    if(ch=='1'):
+        pay.cardChecking() 
+        customer()
+    elif(ch=='2'):
+        pay.netBanking()
+        customer()
+    elif(ch=='3'):
+        pay.Wallet()
+        customer()
+    elif(ch=='4'):
+        pay.goCod()
+        customer()
+    elif(ch=='5'):
+        customer()
+        
+
+
 def viewItems(name):
-    print(obj.products)
     filterd = (list(filter(lambda x:x['category']==name,obj.products)))
+    pprint(filterd)
     while True:
-        print("1. To add item\n 2.To view Cart\n 3.To delete items from cart\n 4.Go back")
+        print("1. To add item\n 2.To view Cart\n 3.To delete items from cart\n 4.Payment\n 5.Go Back")
         ch = input()
         if (ch=='1'):
             name = input("Enter the name: ") 
@@ -105,8 +127,11 @@ def viewItems(name):
             ch = input()
             pprint(cpj.deleteItem(ch))
         elif(ch=='4'):
-            customer()
-
+            if(len(cpj.cartItems)>=1):
+                payment()
+            else:
+                print("Cart is Empty")
+                
 def customer():
      obj.display()
      while True:
