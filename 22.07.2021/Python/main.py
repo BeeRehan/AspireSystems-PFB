@@ -92,17 +92,16 @@ def payment():
     print('1.Credit/Debit card\n2.Netbanking\n 3.Wallet\n 4.COD\n 5.Go back')
     ch=input()
     if(ch=='1'):
-        pay.cardChecking() 
+        pay.cardChecking()
         customer()
     elif(ch=='2'):
         pay.netBanking()
         customer()
     elif(ch=='3'):
-        pay.Wallet()
+        pay.selectWallet()
         customer()
     elif(ch=='4'):
         pay.goCod()
-        customer()
     elif(ch=='5'):
         customer()
         
@@ -129,6 +128,7 @@ def viewItems(name):
         elif(ch=='4'):
             if(len(cpj.cartItems)>=1):
                 payment()
+
             else:
                 print("Cart is Empty")
                 
@@ -150,6 +150,9 @@ while True:
     print("1. Admin \n2. Customer")
     ch = input()
     if(ch=='1'):
-        admin()
+        if(input("Enter the passcode: ")=="admin"):
+            admin()
+        else:
+            raise Exception("Authentication Failed!!!")
     elif(ch=='2'):
         customer()

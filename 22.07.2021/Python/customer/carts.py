@@ -1,5 +1,10 @@
-from product.Items import *
 import datetime
+import configparser
+import re
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+print(config.sections())
 
 class carts:    
     def __init__(self,cartItems):
@@ -51,18 +56,56 @@ class payments:
 
   def netBanking(self):
       print("Are you sure want to Redirect?")
-      ch = input("Yes/No").lower()
+      ch = input("Yes/No: ").lower()
       if(ch=='yes'):
-          userName = input("Enter the Username")
-          password = input("Enter the Password")
-          if(userName=='' and password==''):
+          userName = input("Enter the Username: ")
+          password = input("Enter the Password: ")
+          if(userName==config['NET BANKING']['username'] and password==config['NET BANKING']['password']):
               print("Transaction Success!!!")
 
-      else:
-          print("Transcaction Failed!!!")
+          else:
+              raise Exception("Authentication Failed!!!")
 
-  def Wallet(self):
-      print("Wallet transaction not available!!!")
+  def selectWallet(self):
+        print("1.Gpay\n 2.Phonepay\n 3.Paytm")
+        ch = input()
+        if(ch=='1'):
+            g = Gpay()
+            g.setID(input('Enter the UPI ID: '))
+            g.setPwd(input("Enter your password: "))
+            gID = g.getID()
+            if(g.validate()):
+                raise Exception("Invalid UPI-ID")
+
+            if(gID==config['GPAY']['upi id'] and g.getPwd()==config['GPAY']['pin']):
+                print('Transaction Succeed!!!')
+            else:
+                raise Exception("Authentication Failed!!!")
+        elif(ch=='2'):
+            pp = PhonePay()
+            pp.setID(input('Enter the UPI ID: '))
+            pp.setPwd(input("Enter your password: "))
+            gID = pp.getID()
+            if(pp.validate()):
+                raise Exception("Invalid UPI-ID")
+
+            if(gID==config['PHONEPAY']['upi id'] and pp.getPwd()==config['PHONEPAY']['pin']):
+                print('Transaction Succeed!!!')
+            else:
+                raise Exception("Authentication Failed!!!")
+        elif(ch=='3'):
+            pp = Paytm()
+            pp.setID(input('Enter the UPI ID: '))
+            pp.setPwd(input("Enter your password: "))
+            gID = pp.getID()
+            if(pp.validate()):
+                raise Exception("Invalid UPI-ID")
+
+            if(gID==config['PAYTM']['upi id'] and pp.getPwd()==config['PAYTM']['pin']):
+                print('Transaction Succeed!!!')
+            else:
+                raise Exception("Authentication Failed!!!")
+
 
   def goCod(self):
       if(input("press 1 for place the order: ")=='1'):
@@ -72,10 +115,38 @@ class payments:
 
 class Wallets:
     _upiID = ''
+    _pass=''
     
     def setID(self,ID):
         self._upiID = ID 
     
     def getID(self):
         return(self._upiID)
+
+    def setPwd(self,pwd):
+        self._pass = pwd 
     
+    def getPwd(self):
+        return(self._pass)
+
+class Gpay(Wallets):
+    def validate(self):
+        if(re.search("@+oksi",self.getID())):
+            return False
+        else:
+            return True
+
+class PhonePay(Wallets):
+    def validate(self):
+        if(re.search("@+YPI",self.getID())):
+            return False
+        else:
+            return True
+
+
+class Paytm(Wallets):
+    def validate(self):
+        if(re.search("@+xyz",self.getID())):
+            return False
+        else:
+            return True
