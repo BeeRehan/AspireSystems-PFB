@@ -39,5 +39,10 @@ class Products:
           if(product['id']==id):
             self.products.pop(index)
         self.display()
+
+
+
+
+
     
 

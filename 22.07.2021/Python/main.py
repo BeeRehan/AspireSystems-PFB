@@ -1,5 +1,6 @@
 from pprint import pprint
 from product.Items import *
+from customer.carts import *
 
 obj = Products([{
 "id": "1",
@@ -54,48 +55,8 @@ obj = Products([{
 "colour": "black"
 }])
 
-# def addMobile():
-#     product = dict()
-#     #print(product)
-#     product['id'] = input("Enter the ID: ")
-#     product['name'] = input("Enter the Name: ")
-#     product.update({'product_details':{'ram':input("Enter the Ram: "),'processor':input("Enter the processor: "),'screen_size':input("Enter the screensize: ")}})
-#     product['cost'] = input("Enter the cost: ")
-#     product['currency'] = input("Enter the currency: ")
-#     product['category'] = input("Enter the category: ")
-#     product['colour'] = input("Enter the colour: ")
-    
-#     add(product)
-#     view()
-#     #print(product)
+cpj = carts([])
 
-# def addWashingMachine():
-#     product = dict()
-#     #print(product)
-#     product['id'] = input("Enter the ID: ")
-#     product['name'] = "Washing Machine"
-#     product.update({'product_details':{'machine_capacity:':input("Enter the machine_capacity: "),'machine_rpm':input("Enter the machine_rpm: "),'type':input("Enter the type: ")}})
-#     product['cost'] = input("Enter the cost: ")
-#     product['currency'] = input("Enter the currency: ")
-#     product['category'] = input("Enter the category: ")
-#     product['colour'] = input("Enter the colour: ")
-#     add(product)
-#     view()
-
-# def addTV():
-#     product = dict()
-#     #print(product)
-#     product['id'] = input("Enter the ID: ")
-#     product['name'] = input("Enter the Name: ")
-#     product.update({'product_details':{'isSmart':input("Enter the isSmart: "),'resolution':input("Enter the resolution: "),'    ':input("Enter the screensize: ")}})
-#     product['cost'] = input("Enter the cost: ")
-#     product['currency'] = input("Enter the currency: ")
-#     product['category'] = input("Enter the category: ")
-#     product['colour'] = input("Enter the colour: ")
-#     add(product)
-#     view()
-
-#obj.add('mobiles')
 obj.display()
 
 def addProduct():
@@ -125,8 +86,39 @@ def admin():
         elif(ch=='2'):
             deleteProduct()
 
+def viewItems(name):
+    print(obj.products)
+    filterd = (list(filter(lambda x:x['category']==name,obj.products)))
+    while True:
+        print("1. To add item\n 2.To view Cart\n 3.To delete items from cart\n 4.Go back")
+        ch = input()
+        if (ch=='1'):
+            name = input("Enter the name: ") 
+            for fil in filterd:
+                if(fil['name']==name): 
+                    cpj.toAddItem(fil)
+                    print('Added Successfully')
+        elif(ch=='2'):
+            pprint(cpj.getItem())
+        elif(ch=='3'):
+            print("Enter the name of the product: ")
+            ch = input()
+            pprint(cpj.deleteItem(ch))
+        elif(ch=='4'):
+            customer()
+
 def customer():
-     print("Under Construction!!!")
+     obj.display()
+     while True:
+        print("1. Mobile \n2. Washing Machine\n3. TV ")
+        ch = input()
+        if(ch =='1'):
+            viewItems('mobile')
+        elif(ch =='2'):
+            viewItems('washing-machine')
+        elif(ch=='3'):
+            viewItems('tv')
+
 
 while True:
     print("Who are you?")
