@@ -2,8 +2,15 @@ import configparser
 
 config = configparser.ConfigParser()
 
+
+config['CARD'] = {"Number":"1234 1234 1234 1234",
+                    "Pin":"1111",
+                    "cvv":"123",
+                    "OTP":"12121212"}
+
+
 config['NET BANKING'] = {"username":"testuser",
-                        "password":"tes"}
+                        "password":"test"}
 config['GPAY']  = {"UPI ID":"mohamed@oksi",
                     "PIN":"1234"}
 

@@ -13,7 +13,7 @@ class Products:
     def display(self):
         #return(self.products)
         for product in self.products:
-            print(product)
+            print(f"Name:{product['name']}\nCost:{product['cost']} {product['currency']}\nCategory:{product['category']}\n")
         
     def add(self,ind):
         #print("Arrived")

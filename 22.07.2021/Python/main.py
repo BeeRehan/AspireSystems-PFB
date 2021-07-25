@@ -1,6 +1,7 @@
 from pprint import pprint
 from product.Items import *
 from customer.carts import *
+from customer.payments import *
 
 obj = Products([{
 "id": "1",
@@ -55,11 +56,10 @@ obj = Products([{
 "colour": "black"
 }])
 
-cpj = carts([])
-wal = Wallets()
-pay = payments()
-
+cpj = Carts([])
 obj.display()
+
+
 
 def addProduct():
     print("1. Mobile \n2. Washing Machine\n3. TV ")
@@ -92,24 +92,55 @@ def payment():
     print('1.Credit/Debit card\n2.Netbanking\n 3.Wallet\n 4.COD\n 5.Go back')
     ch=input()
     if(ch=='1'):
-        pay.cardChecking()
+        cd = CardPayement()
+        cd.initiate()
+        cpj.clearCart()
         customer()
     elif(ch=='2'):
-        pay.netBanking()
+        nb = NetBanking()
+        nb.initiate()
+        cpj.clearCart()
         customer()
     elif(ch=='3'):
-        pay.selectWallet()
+        print("Choose your Wallet")
+        ch = input("1.GPAY\n2.PHONEPAY\n3.PAYTM\n")
+        if(ch=='1'):
+            ch = 'GPAY'
+        elif(ch=='2'):
+            ch = 'PHONEPAY'
+        elif(ch=='3'):
+            ch = 'PAYTM'
+
+        wt = Wallets(ch)
+        wt.initiate()
+        cpj.clearCart()
         customer()
     elif(ch=='4'):
-        pay.goCod()
+        cod = Cod()
+        cod.initiate()
+        cpj.clearCart()
+        customer()
     elif(ch=='5'):
         customer()
-        
+
+def formatDisplay(filterd):
+    for filll in filterd:
+        for  k,v in (filll.items()):
+            if(type(v)==dict):
+                for  k,v in (v.items()):
+                    print(f"{k.capitalize() }: {v.capitalize() }")
+            else:
+                if(k=='id'):
+                    continue
+                print(f"{k.capitalize() }: {v.capitalize() }")
+                
+        print()
+
 
 
 def viewItems(name):
     filterd = (list(filter(lambda x:x['category']==name,obj.products)))
-    pprint(filterd)
+    formatDisplay(filterd)
     while True:
         print("1. To add item\n 2.To view Cart\n 3.To delete items from cart\n 4.Payment\n 5.Go Back")
         ch = input()
