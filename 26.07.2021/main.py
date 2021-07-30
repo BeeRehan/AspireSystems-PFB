@@ -68,7 +68,9 @@ def viewItems(name):
         if (ch=='1'):
             name = input("Enter the name: ") 
             for fil in filtered:
-                if(fil[1]==name): 
+                print(print(fil[1])==name)
+                if(fil[1]==name):
+                    print("card") 
                     cpj.toAddItem(fil)
                     print('Added Successfully')
         elif(ch=='2'):

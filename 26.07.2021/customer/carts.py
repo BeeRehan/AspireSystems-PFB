@@ -6,6 +6,7 @@ class Carts:
     # def viewItems(self,name):
     #     return(list(filter(lambda x:x['category']==name,products)))
     def toAddItem(self,fil):
+        print("app")
         self.cartItems.append(fil)  
     
     def clearCart(self):

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+	<style>
+		.formContainer{
+			margin : auto;
+			width : 500px;
+			text-align : center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="formContainer">
+		<form method="POST" class="post-form">
+			{% csrf_token %} 
+			{{ form.as_p }}
+			<button type="submit" class="save btn btn-default">Save</button>
+		</form>
+	</div>
+</body>
+
+</html>
