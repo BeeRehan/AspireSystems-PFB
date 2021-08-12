@@ -1,40 +1,43 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <title>Records</title>  
-	<style>
-		.Container{
-			margin :auto;
-			width : 250px;
-			text-align: center;
-		}
-	</style>
-</head>  
-<body>  
-<div class="Container">
-<table>  
-    <thead>  
-    <tr>  
-        <th>Name</th>  
-        <th>Category</th>  
-        <th>Color</th>  
-        <th>Price</th>    
-    </tr>  
-    </thead>  
-    <tbody>  
-{% for thing in things %}  
-    <tr>  
-        <td>{{ thing.name }}</td>  
-        <td>{{ thing.category }}</td>  
-        <td>{{ thing.color }}</td>  
-        <td>{{ thing.price }}</td>
-    </tr>  
-{% endfor %}  
-    </tbody>  
-</table>
-<a href="/index" class="btn btn-primary">Add New Record</a>
-</div>   
-  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Records</title>
+    <style>
+        .Container {
+            margin: auto;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for thing in things %}
+                <tr>
+                    <td>{{ thing.name }}</td>
+                    <td>{{ thing.category }}</td>
+                    <td>{{ thing.color }}</td>
+                    <td>{{ thing.price }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/index" class="btn btn-primary">Add New Record</a>
+        <a href="/accounts/login" class="btn btn-primary">Logout</a>
+    </div>
+</body>
+
+</html>

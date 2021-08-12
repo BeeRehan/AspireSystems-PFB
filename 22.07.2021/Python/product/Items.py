@@ -40,9 +40,5 @@ class Products:
             self.products.pop(index)
         self.display()
 
-
-
-
-
     
 

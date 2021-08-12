@@ -9,9 +9,8 @@ def index(request):
     if product.is_valid():
         product.save()
         return redirect('/show')  
-  
     return render(request,"index.html",{'form':product})
     
 def show(request):  
     products = Products.objects.all()  
-    return render(request,"show.htm",{'things':products}) 
+    return render(request,"show.htm",{"things":products}) 

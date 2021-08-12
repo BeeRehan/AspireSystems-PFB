@@ -105,8 +105,15 @@ class Cod(Payments):
         if(input("Are you want to place the order?\nYes/No: ")):
             self.validate(self.get_input('COD'),"COD")
 
+# class Sample:
+#     def __init__(MD,name):
+#         MD.name  = name
+    
+#     def dis(MD):
+#         print(MD.name)
 
-
+# S = Sample("yasin")
+# S.dis()
 #
 # class Gpay('Wallets'):
 #     pass

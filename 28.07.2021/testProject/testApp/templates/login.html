@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+    <form action="login" method="post">
+        {% csrf_token %}
+        <pre>
+            <input type="text" name="username" placeholder="username" />
+            <input type="password" name="password" placeholder="password"/>
+            <button type="submit">Submit</button>
+        </pre>
+        <div>
+            {% for message in messages%}
+            <h4>{{message}}</h4>
+            {%endfor%}
+        </div>
+    </form>
+</body>
+
+</html>
