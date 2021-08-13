@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block container %}
+<h1>Login Here</h1>
+<div class="container">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <pre>
+    <label for="{{ form.username.id_for_label }}">{{form.username.label_tag}}</label>{{form.username}}<span>{{form.username.error}}</span>
+  <label for="{{ form.password.id_for_label }}">{{form.password.label_tag}}</label>{{form.password}}<span>{{form.password.error}}</span>
+  <button type="submit">Submit</button>
+    </pre>
+    </form>
+</div>
+<div>
+    {% for message in messages%}
+    <h4>{{message}}</h4>
+    {%endfor%}
+</div>
+{% endblock %}
