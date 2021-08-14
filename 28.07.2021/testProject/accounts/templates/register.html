@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block container %}
 <div class="container">
-    <form method="POST">
+    <form action="/accounts/add_user" method="POST">
+        <h1>Register Here!!!</h1>
         <pre>
         {% csrf_token %} 
         <label for="{{ form.firstName.id_for_label }}">{{form.firstName.label_tag}}</label>{{form.firstName}}<span>{{form.firstName.errors}}</span>

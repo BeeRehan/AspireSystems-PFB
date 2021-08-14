@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <title>Records</title>
     <style>
+        body {
+            background-image: url(../static/images/background.jfif);
+            background-repeat: inherit;
+        }
+        
         .Container {
             margin: auto;
             width: 250px;
@@ -42,7 +47,7 @@
                 {% endfor %}
             </tbody>
         </table>
-        <a href="/index" class="btn btn-primary">Add New Record</a>
+        <a href="/testApp/insert" class="btn btn-primary">Add New Record</a>
         <a href="/accounts/logout" class="btn btn-primary">Logout</a>
     </div>
 </body>

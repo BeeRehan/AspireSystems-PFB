@@ -3,20 +3,20 @@ from django.http import HttpResponse
 from testApp.form import FormProductForm
 from .models import Products
 from django.contrib.auth.decorators import login_required
-from django.contrib import auth
-from rest_framework.views import APIView
+from rest_framework.decorators import MethodMapper, api_view
 from rest_framework.response import Response
-from rest_framework import status
 from .serializers import ProductsSerializer
+from django.core.exceptions import *
+
+from testApp import serializers
+
+def index(request):
+    return render(request,"home.html")
+        
 
 @login_required(login_url='/accounts/login')
-def index(request):
+def insert(request):
     product = FormProductForm()
-    # if product.is_valid():
-    #     product.save()
-    #     return redirect('/show')
-    # else:
-    #     print("Not added!!") 
     return render(request,"index.html",{'form':product})
 
 def add_product(request):
@@ -24,19 +24,30 @@ def add_product(request):
     if request.method == 'POST':
         if product.is_valid():
             product.save()
-            return redirect('/show')
+            return redirect('/testApp/show')
         else:
             print("Not added!!")  
 
 @login_required(login_url='/accounts/login')
-def show(request):  
-    products = Products.objects.all()  
+def show(request): 
+    try: 
+        products = Products.objects.all()  
+    except NameError:
+        return HttpResponse("Object Doesn't Exist")
     return render(request,"show.htm",{"things":products}) 
 
-class ProductList(APIView):
-    def get(self,request):
+@api_view(['GET'])
+def get(request):
+    if request.method == 'GET':
         products = Products.objects.all()
         serializer = ProductsSerializer(products,many=True)
         return Response(serializer.data)
+
+@api_view(['POST'])
+def post(request):
+    if request.method == 'POST':
+        serializers = ProductsSerializer(request.data)
+        if serializers.is_valid():
+            serializers.save()
 
     
