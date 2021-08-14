@@ -1,0 +1,2 @@
+use  internal url(paprticular urls for particular app)
+HTTP codes
