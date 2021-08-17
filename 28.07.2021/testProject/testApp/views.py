@@ -39,16 +39,28 @@ def show(request):
 @api_view(['GET'])
 def get(request):
     if request.method == 'GET':
-        products = Products.objects.all()
-        serializer = ProductsSerializer(products,many=True)
-        return Response(serializer.data)
+        print("Type:",request.content_type)
+        if(request.content_type=="application/json"):
+            products = Products.objects.all()
+            serializer = ProductsSerializer(products,many=True)
+            return Response(serializer.data)
+        elif(request.content_type=="text/plain"):
+            try: 
+                products = Products.objects.all()  
+            except NameError:
+                return HttpResponse("Object Doesn't Exist")
+            return render(request,"show.htm",{"things":products})
+
 
 @api_view(['POST'])
 def post(request):
     if request.method == 'POST':
-        serializers = ProductsSerializer(data=request.data)
-        # pdb.set_trace()
-        if serializers.is_valid():
-            serializers.save()
-        return HttpResponse("Inserted Successfully!!!")
-    
+        if(request.content_type=="application/json"):
+            serializers = ProductsSerializer(data=request.data)
+            # pdb.set_trace()
+            if serializers.is_valid():
+                serializers.save()
+            return HttpResponse("Inserted Successfully!!!")
+        # elif(request.content_type=="text/plain"):
+        #     return redirect('insert')
+

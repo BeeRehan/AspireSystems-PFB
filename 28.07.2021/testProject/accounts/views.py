@@ -62,7 +62,7 @@ def authenticate_user(request):
                 #if request.user.is_authenticated:
                 return redirect("/testApp/show")
             else:
-                messages.info("Invalid Login")
+                messages.info(request,"Invalid Login")
                 return redirect('login')
         else:
             messages.info(request,"Invalid credentials!!!")
