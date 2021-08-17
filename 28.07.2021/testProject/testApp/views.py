@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, response
 from testApp.form import FormProductForm
 from .models import Products
 from django.contrib.auth.decorators import login_required
@@ -7,7 +7,7 @@ from rest_framework.decorators import MethodMapper, api_view
 from rest_framework.response import Response
 from .serializers import ProductsSerializer
 from django.core.exceptions import *
-
+import pdb
 from testApp import serializers
 
 def index(request):
@@ -46,8 +46,9 @@ def get(request):
 @api_view(['POST'])
 def post(request):
     if request.method == 'POST':
-        serializers = ProductsSerializer(request.data)
+        serializers = ProductsSerializer(data=request.data)
+        # pdb.set_trace()
         if serializers.is_valid():
             serializers.save()
-
+        return HttpResponse("Inserted Successfully!!!")
     
