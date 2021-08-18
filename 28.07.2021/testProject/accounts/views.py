@@ -10,6 +10,23 @@ from testApp.views import *
 from .models import UserInfo
 from .form import UserRegistrationForm,UserLoginForm
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter("%(asctime)s:%(name)s: %(levelname)s->%(message)s")
+file_handeler = logging.FileHandler("testApp.log")
+file_handeler.setLevel(logging.INFO)
+file_handeler.setFormatter(formatter)
+err_formatter = logging.Formatter("%(asctime)s:%(name)s:%(message)s")
+err_file_handeler = logging.FileHandler("testApp.log")
+err_file_handeler.setLevel(logging.ERROR)
+err_file_handeler.setFormatter(formatter)
+logger.addHandler(file_handeler)
+logger.addHandler(err_file_handeler)
+
+
+
+
+
 def register(request):
     title = "Register Here"
     users = UserRegistrationForm(request.POST)
@@ -37,7 +54,8 @@ def add_user(request):
                 userInf = UserInfo.objects.create(gender=gender,dob=dob,bio=bio,user_id=user.id)
                 userInf.save()
                 messages.info(request,"User Created!!!")
-                print("Use")
+                logger.info(f"User {user.username} Created!!!")
+                # print("Use")
                 return redirect('login')
             else:
                 messages.info(request,"Passwords doesn't match")
@@ -59,7 +77,7 @@ def authenticate_user(request):
             if user is not None:
                 auth.login(request,user)
                 print('Login')
-                #if request.user.is_authenticated:
+                logger.info(f"User {username} logged in!!!")
                 return redirect("/testApp/show")
             else:
                 messages.info(request,"Invalid Login")
@@ -68,8 +86,9 @@ def authenticate_user(request):
             messages.info(request,"Invalid credentials!!!")
     else:
         messages.info(request,"Not a post request!!!")
-        
+        logger.error("Not a post request!!!")
 
 def logout(request):
     auth.logout(request)
+    logger.info(f"User {username} loggedout!!!")
     return redirect('login')

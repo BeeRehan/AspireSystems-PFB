@@ -1,8 +1,11 @@
-from pathlib import Path
 import configparser
+from pathlib import Path
+from configparser import RawConfigParser,ConfigParser
+# config = RawConfigParser()
+# config.read('config.ini')
 
-config = configparser.ConfigParser()
-config.read('config.ini')
+config = RawConfigParser()
+config.read('config1.ini')
 print(config.sections())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -16,9 +19,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d+l^04h4bf(3#(lnsjx0ad-*qlu3c7^9())a(4!@@^-zu$zvb('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config['DEBUG']['STATUS']
+DEBUG = config.get('debug','STATUS')
 
-ALLOWED_HOSTS = config['ALLOWED_HOSTS']['HOSTS']
+ALLOWED_HOSTS = config.get('allowedhost','host')
 
 
 # Application definition
@@ -78,12 +81,12 @@ WSGI_APPLICATION = 'testProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config['DATABASES']['ENGINE'],
-        'NAME': config['DATABASES']['NAME'],
-        'HOST': config['DATABASES']['HOST'],
-        'PORT': config['DATABASES']['PORT'],
-        'USER': config['DATABASES']['USER'],
-        'PASSWORD': config['DATABASES']['PASSWORD'],
+        'ENGINE': config.get('database','ENGINE'),
+        'NAME': config.get('database','NAME'),
+        'HOST': config.get('database','HOST'),
+        'PORT': config.get('database','PORT'),
+        'USER': config.get('database','USER'),
+        'PASSWORD': config.get('database','PASSWORD'),
     }
 }
 
