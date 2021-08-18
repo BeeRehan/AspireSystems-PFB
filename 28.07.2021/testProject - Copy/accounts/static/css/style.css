@@ -1,0 +1,24 @@
+body {
+    background-image: url(../images/background.jfif);
+    background-repeat: inherit;
+}
+
+.container {
+    width: 400px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #e6ab35;
+}
+
+form {
+    text-align: left;
+}
+
+span {
+    text-decoration: none;
+    color: red;
+    font-size: 10px;
+}
