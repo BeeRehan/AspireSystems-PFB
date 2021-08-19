@@ -90,5 +90,5 @@ def authenticate_user(request):
 
 def logout(request):
     auth.logout(request)
-    logger.info(f"User {username} loggedout!!!")
+    logger.info(f"User loggedout!!!")
     return redirect('login')
