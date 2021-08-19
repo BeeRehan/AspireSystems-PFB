@@ -23,10 +23,6 @@ err_file_handeler.setFormatter(formatter)
 logger.addHandler(file_handeler)
 logger.addHandler(err_file_handeler)
 
-
-
-
-
 def register(request):
     title = "Register Here"
     users = UserRegistrationForm(request.POST)
