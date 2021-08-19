@@ -1,6 +1,5 @@
-from django import forms
 from django.shortcuts import render,redirect
-from .form import UserLoginForm,PatientDetailsForm
+from .form import UserLoginForm
 from django.contrib.auth.models import User
 from django.contrib import messages,auth
 
@@ -8,8 +7,7 @@ from django.contrib import messages,auth
 def index(request):
     title = "Homepage"
     form = UserLoginForm()
-    form1 = PatientDetailsForm()
-    return render(request,"login.html",{'title':title ,'form':form,'form1':form1})
+    return render(request,"login.html",{'title':title ,'form':form})
 
 def authenticate_user(request):
     form = UserLoginForm(request.POST)

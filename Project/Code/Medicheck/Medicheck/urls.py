@@ -25,5 +25,5 @@ urlpatterns = [
     path('base/',include('base.urls'),name="base"),
     path('checkup/',include('checkup.urls'),name="checkup"),
     path('doctor/',include('doctor.urls'),name="doctor"),
-    path('patient',include('patient.urls'),name="patient")
+    path('patient/',include('patient.urls'),name="patient")
 ]
