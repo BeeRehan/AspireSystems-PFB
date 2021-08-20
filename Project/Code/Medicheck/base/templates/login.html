@@ -2,7 +2,7 @@
 
 {% block container %}
 <div class="container">
-    <form action="/authenticate_user" method="POST">
+    <form action="base/authenticate_user" method="POST">
         <h1>Login Here</h1>
         {% csrf_token %}
         <pre>
