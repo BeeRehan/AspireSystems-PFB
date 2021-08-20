@@ -21,7 +21,7 @@ Patient Action:
 
 
 Doctor Action:
-1. Patient can accept or propose for reschedule with the calcellation reason
+1. Doctor can accept or propose for reschedule with the calcellation reason
 2. Doctor can update the below checkup details
     1. Patient temperature
     2. Patient Suger level and BP level
