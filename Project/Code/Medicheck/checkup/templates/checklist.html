@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block container %}
+<h1>Checklist</h1>
+<div class="checkDetails">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for app in apps%}
+                    <td>{{app.id}}</td>
+                    <td>{{app.date}}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="createChecklist">
+    <form action="/checkup/add_checklist" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+    </form>
+</div>
+{% endblock %}

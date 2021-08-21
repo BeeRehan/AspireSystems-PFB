@@ -1,0 +1,47 @@
+Quick CheckUp
+
+Quick checkup app is an medical domain app, which will be used by both patient and doctor. Bascially patient will request an appoinment and patient
+can able to do checkup if docter accepts it and also he is able to see the report of his current and previous doctor appoinment reports
+
+Roles:
+  Admin - Admin will be creating the patient and doctor through django admin portalmys
+  Patient
+  Doctor
+
+Patient Action:
+1. Patient can raise a request by giving the below details:
+  1. Patient name (auto filled)(disabled)
+  2. Age (auto filled)(disabled)
+  3. Appointment Time (Date field)
+  4. Reason for Appoinment (Free text field)
+  5. Doctor (drop down field)
+  6. Scan reports
+  7. Did you take Corono Vaccination - checkbox
+  8. Gender
+
+
+Doctor Action:
+1. Doctor can accept or propose for reschedule with the calcellation reason
+2. Doctor can update the below checkup details
+    1. Patient temperature
+    2. Patient Suger level and BP level
+    3. Adivice to the patient
+    4. Medical prescription
+    5. Major confirmation diseases
+
+Pages:
+  Patient:
+    List of Appoinemnts - Home Page
+    By clicking create appointment link, patient will be able create the appoinment
+    By clicking the particular appoinment , patient can able to go to Detailed Appoinment page
+    By clicking checkup details link in appoinment details page. Patient will be able to see the Checkup details
+
+  Doctor:
+    List of Appointmints - Home Page
+    By clicking the particular appoinment , Doctor can able to go to Detailed Appoinment page
+    By clicking create checkup link in appoinment details page. Doctor will be able to create the Checkup details
+
+Extra points:
+  1. Bootstrap can be used for frontend designed
+  2. First complete the functionality. UI look and feel can be groomed late 
+  3. UI should be equalent to real time applications

@@ -6,21 +6,23 @@
     <table>
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Date</th>
                 <th>Status</th>
             </tr>
-            <tbody>
-                <tr>
-                    <td>{{ appoinment.date }}</td>
-                    <td>{{ appoinment.status }}</td>
-                </tr>
-            </tbody>
         </thead>
+        <tbody>
+            <tr>
+                <td>{{ appoinment.id }}</td>
+                <td>{{ appoinment.date }}</td>
+                <td>{{ appoinment.status }}</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 <!------->
 <div class="formstatus">
-    <form action="/doctor/approval/{{appoinment.id}}">
+    <form action="/doctor/approval/{{appoinment.id}}" method="POST">
         {% csrf_token %}
         {{form.as_p}}
         <button type="submit">Submit</button>
