@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block container %}
+<div class="appoinmentDetails">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Doctor Name</th>
+                <th>Status</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>{{ appoinment.date }}</td>
+                    <td>{{ appoinment.doctor }}</td>
+                    <td>{{ appoinment.status }}</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</div>
+{% endblock %}

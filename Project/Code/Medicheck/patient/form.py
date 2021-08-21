@@ -7,7 +7,7 @@ class PatientDetails(forms.Form):
     age = forms.IntegerField(label="Age")
     date = forms.DateTimeField()
     reason = forms.CharField(label="Reason for appoinment",max_length=100)
-    doctor = forms.ChoiceField(label="Doctor",choices=(("mohamed","Mohamed"),("kamali","kamali")))
+    doctor = forms.ChoiceField(label="Doctor",choices=(("mohamed","Mohamed"),("rakesh","Rakesh")))
     scan_report = forms.FileField()#upload_to ='uploads/% Y/% m/% d/'
     vaccinated = forms.ChoiceField(label="Doctor",choices=[("yes","Yes"),("no","No")],widget=RadioSelect)
     gender = forms.ChoiceField(label="Gender",choices=(("male","Male"),("female","Female")))

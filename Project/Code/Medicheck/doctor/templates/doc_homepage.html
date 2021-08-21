@@ -8,4 +8,11 @@
         </ul>
     </nav>
     <h1>Welcome to Doctor page!!!!</h1>
+    <div>
+        <ul>
+            {% for appoinment in appoinments %}
+            <li><a href="">{{appoinment.date}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
