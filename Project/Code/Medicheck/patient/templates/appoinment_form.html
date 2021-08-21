@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block container %}
-<form action="#" method="POST">
-{{form.as_p}}
+<form action="/patient/apply_appoinment" method="POST"  enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
 <button type="submit">Submit</button>
 </form>
 {% endblock %}
