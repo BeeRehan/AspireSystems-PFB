@@ -3,7 +3,7 @@ from django import forms
 from django.forms.fields import CharField
 
 class checklistForm(forms.Form):
-    id = forms.IntegerField(label="Appoinment id")
+    #id = forms.IntegerField(label="Appoinment id")
     temprature = forms.CharField(label="Temprature",max_length=10)
     sugar_level = forms.CharField(label="Sugar Level",max_length=10)
     bp_level = forms.CharField(label="BP level",max_length=10)

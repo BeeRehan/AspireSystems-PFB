@@ -39,6 +39,13 @@ def apply_appoinment(request):
     else:
         print("Not a POST request")         
 
+def get_details(request,pk):
+    detail = UserProfile.objects.get(user_id=pk)
+    print(detail.user_id)
+    user = User.objects.get(id=detail.user_id)
+    print("Name",user)
+    return render(request,'patient_details.html',{'detail':detail,'user':user})
+
 
 
 @login_required(login_url='/')
