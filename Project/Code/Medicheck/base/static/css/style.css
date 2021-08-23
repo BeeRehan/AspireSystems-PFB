@@ -1,3 +1,7 @@
+body{
+    background-image: url(../image/background.jpg);
+}
+
 nav{
     margin-bottom: 10px;
 }
@@ -27,4 +31,14 @@ nav ul li a:hover{
 table,th,td{
     border: 1px solid black ;
     border-collapse: collapse;
+}
+
+.formContainer{
+    width: 400px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #91f2fd;
 }

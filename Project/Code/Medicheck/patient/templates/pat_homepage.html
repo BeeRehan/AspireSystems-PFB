@@ -10,7 +10,7 @@
         <h1>Welcome to Patient page!!!!</h1>
         <h2>Hi {{user}}!!!</h2>
     </div>
-    <div class="appoinmentClass">
+    <div class="container">
         <ul>
             {% for appoinment in appoinments %}
                 <li><a href="/appointment/pat_appoinnment_details/{{appoinment.id}}">{{appoinment.date}}</a></li>

@@ -1,18 +1,29 @@
 {% extends "base.html" %}
 
 {% block container %}
-<div>
-    <p>Name:<span>{{user}}</span></p>
-    <p>Age:<span>{{detail.age}}</span></p>
-    <p>Gender:<span>{{detail.gender}}</span></p>
-    <p>Reason:<span>{{detail.reason}}</span></p>
-    <p>Vaccinated:<span>{{detail.vaccinated}}</span></p>
-    <p>Scan File:<span><a href="{{detail.file.url}}" download>{{detail.file}}</a></span></p>
-    <p><button onclick="goback()">Go back</button><a href="/checkup/doc_get_checklis/{{user.id}}">Check previuos checkup</a></p>
-    <script>
-        function goback(){
-        window.history.back()
-        }
-    </script>
+<div class="container">
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Reason</td>
+                <td>Vaccinated</td>
+                <td>Scan File</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{user}}</td>
+                <td>{{detail.age}}</td>
+                <td>{{detail.gender}}</td>
+                <td>{{appsdet.reason}}</td>
+                <td>{{appsdet.vaccinated}}</td>
+                <td><a class="btn btn-primary"  href="{{appsdet.file.url}}" download>Click Here</a></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><button class="btn btn-primary" onclick="goback()">Go back</button> <a class="btn btn-primary" href="/checkup/doc_get_checklis/{{user.id}}">Check previuos checkup</a></p>
 </div>
 {% endblock %}

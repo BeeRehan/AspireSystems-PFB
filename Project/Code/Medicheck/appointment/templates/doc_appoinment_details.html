@@ -2,8 +2,9 @@
 
 {% block container %}
 <h1>Doctor Appoinments</h1>
+<div class="container">
 <div class="appoinmentDetails">
-    <table>
+    <table  class="table table-hover">
         <thead>
             <tr>
                 <th>Id</th>
@@ -25,8 +26,9 @@
     <form action="/doctor/approval/{{appoinment.id}}" method="POST">
         {% csrf_token %}
         {{form.as_p}}
-        <button type="submit">Submit</button>
-        <button><a href="/doctor/index"> Goto Homepage</a></button>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a class="btn btn-primary" href="/doctor/index"> Goto Homepage</a>
     </form>
+</div>
 </div>
 {% endblock %}

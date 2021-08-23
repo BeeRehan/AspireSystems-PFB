@@ -1,10 +1,11 @@
+from django.http import response,HttpResponse
 from django.shortcuts import redirect, render
 from appointment.models import AppoinmentDetails
 from .models import CheckupDetails
 from .form import checklistForm
 # Create your views here.
 def createChecklist(request):
-    apps = AppoinmentDetails.objects.filter(status="approved")
+    apps = AppoinmentDetails.objects.filter(status="approved",doctor=request.user)
     #print(apps.id)
     return render(request,"checklist.html",{'apps':apps})
 
@@ -38,5 +39,10 @@ def doc_get_checklis(request,pk):
 
 
 def pat_get_checklis(request,pk):
-    checks = CheckupDetails.objects.get(appointment_id=pk)
-    return render(request,"show_checklist.html",{"checks":checks})
+    try:
+        checks = CheckupDetails.objects.get(appointment_id=pk)
+        return render(request,"show_checklist.html",{"checks":checks})
+    except Exception:
+        return HttpResponse("No checkup details found")
+        
+    

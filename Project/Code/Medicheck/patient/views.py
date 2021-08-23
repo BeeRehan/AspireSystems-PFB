@@ -21,19 +21,16 @@ def apply_appoinment(request):
     form = PatientDetails(request.POST,request.FILES)
     if request.method=='POST':
         if form.is_valid():
-            age = form.cleaned_data['age']
             date = form.cleaned_data['date']
             time = form.cleaned_data['time']
             reason = form.cleaned_data['reason']
-            gender = form.cleaned_data['gender']
             doctor = form.cleaned_data['doctor']
             vaccinated = form.cleaned_data['vaccinated']
             file = form.cleaned_data['scan_report']
             print(str(date)+" "+str(time))
-            user = UserProfile.objects.create(age=age,reason=reason,gender=gender,doctor_name=doctor,vaccinated=vaccinated,file=file,user_id=request.user.id)  
-            app = AppoinmentDetails(date=(str(date)+" "+str(time)),doctor=doctor,status="requested",user_id=request.user.id)
+           # user = UserProfile.objects.create(age=age,gender=gender)  
+            app = AppoinmentDetails(date=(str(date)+" "+str(time)),vaccinated=vaccinated,file=file,doctor=doctor,reason=reason,status="requested",user_id=request.user.id)
             app.save()
-            user.save()
             return redirect('/patient/index')
         else:
             print("Not Valid")
@@ -41,17 +38,19 @@ def apply_appoinment(request):
     else:
         print("Not a POST request")         
 
-def get_details(request,pk,):
+def get_details(request,pk,ak):
     detail = UserProfile.objects.get(user_id=pk)
+    appsdet = AppoinmentDetails.objects.get(id=ak)
     print(detail.user_id)
     user = User.objects.get(id=detail.user_id)
     print("Name",user)
-    return render(request,'patient_details.html',{'detail':detail,'user':user})
+    return render(request,'patient_details.html',{'detail':detail,'user':user,'appsdet':appsdet})
 
 
 
 @login_required(login_url='/')
 def appoinment(request):
     title = 'Appoinment'
-    form = PatientDetails(initial={'name':request.user})
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+    form = PatientDetails(initial={'name':request.user,'age':userdata.age,'gender':userdata.gender})
     return render(request,"appoinment_form.html",{'form':form,'title':title})

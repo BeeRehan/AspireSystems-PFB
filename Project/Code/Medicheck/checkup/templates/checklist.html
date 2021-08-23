@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block container %}
 <h1>Checklist</h1>
-<div class="checkDetails">
-    <table>
+<div class="container">
+    <table class="table table-bordered border-primary">
         <thead>
             <tr>
                 <th>Id</th>
@@ -17,8 +17,8 @@
                 <tr>
                     <td>{{app.id}}</td>
                     <td>{{app.date}}</td>
-                    <td><a href="/patient/get_details/{{app.user_id}}">Click Here</a></td>
-                    <td><a href="/checkup/view_checklist/{{app.id}}">Click Here</a></td>
+                    <td><a class="btn btn-primary" href="/patient/get_details/{{app.user_id}}/{{app.id}}">Click Here</a></td>
+                    <td><a  class="btn btn-primary" href="/checkup/view_checklist/{{app.id}}">Click Here</a></td>
                 </tr>
                 {% endfor %}
             </tr>
