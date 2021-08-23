@@ -8,7 +8,7 @@
     <p>Reason:<span>{{detail.reason}}</span></p>
     <p>Vaccinated:<span>{{detail.vaccinated}}</span></p>
     <p>Scan File:<span>{{detail.file}}</span></p>
-    <p><button onclick="goback()">Go back</button></p>
+    <p><button onclick="goback()">Go back</button><a href="/checkup/doc_get_checklis/{{user.id}}">Check previuos checkup</a></p>
     <script>
         function goback(){
         window.history.back()

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block container %}
+<h1>Previous Checkup Details!!!</h1>
+<div class="appoinmentClass">
+    <ul>
+        {% for app in apps %}
+            <li><a href="/checkup/pat_get_checklis/{{app.id}}">{{app.date}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

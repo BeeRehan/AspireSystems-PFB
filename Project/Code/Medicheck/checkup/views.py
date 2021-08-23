@@ -31,8 +31,12 @@ def add_checklist(request,pk):
     else:
         print("Not a post request") 
 
-def doc_get_checklis(request):
-    checks = CheckupDetails.objects.filter()
+def doc_get_checklis(request,pk):
+    apps = AppoinmentDetails.objects.filter(user_id=pk,status="approved")
+    print("apps",apps)
+    return render(request,"detail_appoinment.html",{'apps':apps})
+
 
 def pat_get_checklis(request,pk):
     checks = CheckupDetails.objects.get(appointment_id=pk)
+    return render(request,"show_checklist.html",{"checks":checks})

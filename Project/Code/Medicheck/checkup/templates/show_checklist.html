@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block container %}
+<div class="showCheckup">
+    <p>Sugar Level:<span>{{checks.temprature}}</span></p>
+    <p>BP level:<span>{{checks.sugar_level}}</span></p>
+    <p>Advice:<span>{{checks.Advice}}</span></p>
+    <p>Prescription:<span>{{checks.prescription}}</span></p>
+    <p>Confirmed Diseases:<span>{{checks.confirmed_diseases}}</span></p>
+</div>
+{% endblock %}
