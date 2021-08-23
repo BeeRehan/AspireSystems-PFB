@@ -4,7 +4,7 @@ from .models import UserProfile
 from django import forms
 
 class PatientDetails(forms.Form):
-    name = forms.CharField(label="Patient Name",max_length=20)
+    name = forms.CharField(label="Patient Name",max_length=20,disabled=True,required=False)
     age = forms.IntegerField(label="Age")
     date = forms.DateField()
     time = forms.TimeField()

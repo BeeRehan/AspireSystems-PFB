@@ -14,10 +14,12 @@
         <tbody>
             <tr>
                 {% for app in apps%}
+                <tr>
                     <td>{{app.id}}</td>
                     <td>{{app.date}}</td>
                     <td><a href="/patient/get_details/{{app.user_id}}">Click Here</a></td>
                     <td><a href="/checkup/view_checklist/{{app.id}}">Click Here</a></td>
+                </tr>
                 {% endfor %}
             </tr>
         </tbody>

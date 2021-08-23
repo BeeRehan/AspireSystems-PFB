@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
+from django.http.response import Http404, HttpResponse
 from django.shortcuts import redirect, render
 from .form import PatientDetails
 from django.contrib.auth.decorators import login_required
@@ -36,10 +37,11 @@ def apply_appoinment(request):
             return redirect('/patient/index')
         else:
             print("Not Valid")
+            return HttpResponse("Not Valid")
     else:
         print("Not a POST request")         
 
-def get_details(request,pk):
+def get_details(request,pk,):
     detail = UserProfile.objects.get(user_id=pk)
     print(detail.user_id)
     user = User.objects.get(id=detail.user_id)
@@ -51,5 +53,5 @@ def get_details(request,pk):
 @login_required(login_url='/')
 def appoinment(request):
     title = 'Appoinment'
-    form = PatientDetails()
+    form = PatientDetails(initial={'name':request.user})
     return render(request,"appoinment_form.html",{'form':form,'title':title})
