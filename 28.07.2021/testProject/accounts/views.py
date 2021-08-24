@@ -55,6 +55,8 @@ def add_user(request):
                 return redirect('login')
             else:
                 messages.info(request,"Passwords doesn't match")
+        else:
+            return render(request,"register.html",{'form':users})
     else:
         messages.info(request,"Invalid inputs")
 
