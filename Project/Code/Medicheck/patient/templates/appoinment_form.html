@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block container %}
 <div class="container">
+    <div class="formContainer">
     <form action="/patient/apply_appoinment" method="POST"  enctype="multipart/form-data">
         {% csrf_token %}
         <div class="form-group">
@@ -30,8 +31,11 @@
         <div class="form-group"> 
             <label class="col-sm-2 col-form-label"for="{{ form.gender.id_for_label }}">{{form.gender.label_tag}}</label>{{form.gender}}<span>{{form.gender.error}}</span>
         </div>
-        <button class="btn btn-primary"type="submit">Submit</button>
-        <button class="btn btn-primary" onclick="goback()" type="submit">Go back</button>
+        <div class="wrapper">
+            <button class="btn btn-primary"type="submit">Submit</button>
+            <button class="btn btn-primary" onclick="goback()" type="submit">Go back</button>
+        </div>
     </form>
+</div>
 </div>
 {% endblock %}

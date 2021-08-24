@@ -14,9 +14,10 @@ def index(request):
     title = 'Patient Page'
     user = request.user
     appoinments = AppoinmentDetails.objects.filter(user_id=request.user).values()
-    print(appoinments)
+   # print(appoinments)
     return render(request,"pat_homepage.html",{'form':form,'title':title,'appoinments':appoinments,'user':user})
 
+@login_required(login_url='/')
 def apply_appoinment(request):
     form = PatientDetails(request.POST,request.FILES)
     if request.method=='POST':
@@ -27,7 +28,7 @@ def apply_appoinment(request):
             doctor = form.cleaned_data['doctor']
             vaccinated = form.cleaned_data['vaccinated']
             file = form.cleaned_data['scan_report']
-            print(str(date)+" "+str(time))
+            # print(str(date)+" "+str(time))
            # user = UserProfile.objects.create(age=age,gender=gender)  
             app = AppoinmentDetails(date=(str(date)+" "+str(time)),vaccinated=vaccinated,file=file,doctor=doctor,reason=reason,status="requested",user_id=request.user.id)
             app.save()
@@ -38,6 +39,7 @@ def apply_appoinment(request):
     else:
         print("Not a POST request")         
 
+@login_required(login_url='/')
 def get_details(request,pk,ak):
     detail = UserProfile.objects.get(user_id=pk)
     appsdet = AppoinmentDetails.objects.get(id=ak)

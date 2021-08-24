@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block container %}
-<div class="container">
+
+    <div class="formContainer">
         <form action="/checkup/add_checklist/{{pk}}" method="POST">
+            <h3>Checkup details</h3>
         {% csrf_token %}
         <div class="form-group"> 
             <label class="col-sm-2 col-form-label"for="{{ form.temprature.id_for_label }}">{{form.temprature.label_tag}}</label>{{form.temprature}}<span>{{form.temprature.error}}</span>
@@ -26,8 +28,11 @@
             </div>
         <span>{{form.prescription.error}}</span>
         </div>   
-        <button class="btn btn-primary" type="submit">Submit</button>
-        <button class="btn btn-primary" onclick="goback()" type="submit">Go back</button>
+        <div class="wrapper">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" onclick="goback()" type="submit">Go back</button>
+        </div>
     </form>
-</div>
+    </div>
+    <div class="container"></div>
 {% endblock %}

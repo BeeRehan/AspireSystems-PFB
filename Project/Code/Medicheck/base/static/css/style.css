@@ -1,5 +1,5 @@
 body{
-    background-image: url(../image/background.jpg);
+    background-image: url(../image/background1.jpg);
 }
 
 nav{
@@ -34,11 +34,25 @@ table,th,td{
 }
 
 .formContainer{
-    width: 400px;
+    width: 600px;
     position: relative;
     margin: 6% auto;
-    background: #fff;
+    background: transparent;
     padding: 5px;
     overflow: hidden;
-    box-shadow: 0 0 20px 0 #91f2fd;
+    box-shadow: 0 0 20px 0 #91f2fd;   
+}
+
+.wrapper {
+    text-align: center;
+}
+
+/* .btn {
+    position: absolute;
+    top: 100%;
+} */
+
+.result{
+    /* display: hidden; */
+    visibility: hidden;    
 }

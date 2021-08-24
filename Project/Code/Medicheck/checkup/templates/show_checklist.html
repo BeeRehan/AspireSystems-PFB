@@ -22,5 +22,8 @@
         </tbody>
     </table>
     <button class="btn btn-primary" onclick="goback()">Go Back</button>
+    {% if checks is None  %}
+    <p>No data found</p>
+    {% endif %}
 </div>
 {% endblock %}

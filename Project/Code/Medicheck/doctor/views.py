@@ -17,6 +17,7 @@ def checklist(request):
     title = "checklist"
     return render(request,"checklist.html",{'title':title})
 
+@login_required(login_url='/')
 def approval(request,pk):
     apps = AppoinmentDetails.objects.get(id=pk)
     form = ApprovalForm(request.POST)
