@@ -19,7 +19,9 @@ def index(request):
 
 @login_required(login_url='/')
 def apply_appoinment(request):
-    form = PatientDetails(request.POST,request.FILES)
+    title = 'Appoinment'
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+    form = PatientDetails(request.POST,request.FILES,initial={'name':request.user,'age':userdata.age,'gender':userdata.gender})
     if request.method=='POST':
         if form.is_valid():
             date = form.cleaned_data['date']
@@ -34,8 +36,8 @@ def apply_appoinment(request):
             app.save()
             return redirect('/patient/index')
         else:
-            print("Not Valid")
-            return HttpResponse("Not Valid")
+            title = 'Appoinment'
+            return render(request,"appoinment_form.html",{'form':form,'title':title})
     else:
         print("Not a POST request")         
 

@@ -47,12 +47,6 @@ table,th,td{
     text-align: center;
 }
 
-/* .btn {
-    position: absolute;
-    top: 100%;
-} */
-
 .result{
-    /* display: hidden; */
     visibility: hidden;    
 }
