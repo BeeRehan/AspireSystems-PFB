@@ -1,0 +1,9 @@
+2021-08-25 15:11:08,698:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 15:11:30,469:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-25 15:11:30,574:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-08-25 15:11:30,576:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 15:11:30,602:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 304 0
+2021-08-25 15:11:30,742:django.request: WARNING->Not Found: /favicon.ico
+2021-08-25 15:11:30,745:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2770
+2021-08-25 15:11:40,047:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-25 15:11:40,161:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
