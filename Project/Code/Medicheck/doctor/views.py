@@ -1,4 +1,3 @@
-from doctor import form
 from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
 from appointment.models import AppoinmentDetails

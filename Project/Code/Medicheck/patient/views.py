@@ -1,6 +1,4 @@
-from django import forms
 from django.contrib.auth.models import User
-from django.http.response import Http404, HttpResponse
 from django.shortcuts import redirect, render
 from .form import PatientDetails
 from django.contrib.auth.decorators import login_required
@@ -15,11 +13,13 @@ def index(request):
     user = request.user
     appoinments = AppoinmentDetails.objects.filter(user_id=request.user).values()
    # print(appoinments)
-    return render(request,"pat_homepage.html",{'form':form,'title':title,'appoinments':appoinments,'user':user})
+    return render(request,"pat_homepage.html",{'form':form,'title': title, 'appoinments': appoinments,'user': user})
 
 @login_required(login_url='/')
 def apply_appoinment(request):
-    form = PatientDetails(request.POST,request.FILES)
+    title = 'Appoinment'
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+    form = PatientDetails(request.POST,request.FILES,initial={'name':request.user,'age':userdata.age,'gender':userdata.gender})
     if request.method=='POST':
         if form.is_valid():
             date = form.cleaned_data['date']
@@ -28,14 +28,13 @@ def apply_appoinment(request):
             doctor = form.cleaned_data['doctor']
             vaccinated = form.cleaned_data['vaccinated']
             file = form.cleaned_data['scan_report']
-            # print(str(date)+" "+str(time))
-           # user = UserProfile.objects.create(age=age,gender=gender)  
-            app = AppoinmentDetails(date=(str(date)+" "+str(time)),vaccinated=vaccinated,file=file,doctor=doctor,reason=reason,status="requested",user_id=request.user.id)
+            app = AppoinmentDetails(date=(str(date)+" "+str(time)),vaccinated=vaccinated,file=file,doctor=doctor,reason=reason,
+                                    status="requested",user_id=request.user.id)
             app.save()
             return redirect('/patient/index')
         else:
-            print("Not Valid")
-            return HttpResponse("Not Valid")
+            title = 'Appoinment'
+            return render(request,"appoinment_form.html",{'form':form,'title':title})
     else:
         print("Not a POST request")         
 

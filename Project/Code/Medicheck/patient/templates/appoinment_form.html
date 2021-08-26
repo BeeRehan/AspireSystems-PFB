@@ -5,31 +5,31 @@
     <form action="/patient/apply_appoinment" method="POST"  enctype="multipart/form-data">
         {% csrf_token %}
         <div class="form-group">
-                <label class="col-sm-2 col-form-label" for="{{ form.name.id_for_label }}">{{form.name.label_tag}}</label>{{form.name}}<span>{{form.name.error}}</span>
+                <label class="col-sm-2 col-form-label" for="{{ form.name.id_for_label }}">{{form.name.label_tag}}</label>{{form.name}}<span>{{form.name.errors}}</span>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 col-form-label" for="{{ form.age.id_for_label }}">{{form.age.label_tag}}</label>{{form.age}}<span>{{form.age.error}}</span>
+            <label class="col-sm-2 col-form-label" for="{{ form.age.id_for_label }}">{{form.age.label_tag}}</label>{{form.age}}<span>{{form.age.errors}}</span>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 col-form-label" for="{{ form.date.id_for_label }}">{{form.date.label_tag}}</label>{{form.date}}<span>{{form.date.error}}</span>
+            <label class="col-sm-2 col-form-label" for="{{ form.date.id_for_label }}">{{form.date.label_tag}}</label>{{form.date}}<span>{{form.date.errors}}</span>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 col-form-label"for="{{ form.time.id_for_label }}">{{form.time.label_tag}}</label>{{form.time}}<span>{{form.time.error}}</span>
+            <label class="col-sm-2 col-form-label"for="{{ form.time.id_for_label }}">{{form.time.label_tag}}</label>{{form.time}}<span>{{form.time.errors}}</span>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 col-form-label" for="{{ form.reason.id_for_label }}">{{form.reason.label_tag}}</label>{{form.reason}}<span>{{form.reason.error}}</span>
+            <label class="col-sm-2 col-form-label" for="{{ form.reason.id_for_label }}">{{form.reason.label_tag}}</label>{{form.reason}}<span>{{form.reason.errors}}</span>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 col-form-label"for="{{ form.doctor.id_for_label }}">{{form.doctor.label_tag}}</label>{{form.doctor}}<span>{{form.doctor.error}}</span>
+            <label class="col-sm-2 col-form-label"for="{{ form.doctor.id_for_label }}">{{form.doctor.label_tag}}</label>{{form.doctor}}<span>{{form.doctor.errors}}</span>
         </div>
         <div class="form-group"> 
-            <label class="col-sm-2 col-form-label" for="{{ form.scan_report.id_for_label }}">{{form.scan_report.label_tag}}</label>{{form.scan_report}}<span>{{form.scan_report.error}}</span>
+            <label class="col-sm-2 col-form-label" for="{{ form.scan_report.id_for_label }}">{{form.scan_report.label_tag}}</label>{{form.scan_report}}<span>{{form.scan_report.errors}}</span>
         </div>
         <div class="form-group"> 
-            <label class="col-sm-2 col-form-label"for="{{ form.vaccinated.id_for_label }}">{{form.vaccinated.label_tag}}</label>{{form.vaccinated}}<span>{{form.vaccinated.error}}</span>
+            <label class="col-sm-2 col-form-label"for="{{ form.vaccinated.id_for_label }}">{{form.vaccinated.label_tag}}</label>{{form.vaccinated}}<span>{{form.vaccinated.errors}}</span>
         </div>
         <div class="form-group"> 
-            <label class="col-sm-2 col-form-label"for="{{ form.gender.id_for_label }}">{{form.gender.label_tag}}</label>{{form.gender}}<span>{{form.gender.error}}</span>
+            <label class="col-sm-2 col-form-label"for="{{ form.gender.id_for_label }}">{{form.gender.label_tag}}</label>{{form.gender}}<span>{{form.gender.errors}}</span>
         </div>
         <div class="wrapper">
             <button class="btn btn-primary"type="submit">Submit</button>
