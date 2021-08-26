@@ -7,3 +7,126 @@
 2021-08-25 15:11:30,745:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2770
 2021-08-25 15:11:40,047:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
 2021-08-25 15:11:40,161:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:02:07,470:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 16:02:15,704:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-25 16:02:15,875:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 819
+2021-08-25 16:02:16,096:django.request: WARNING->Not Found: /favicon.ico
+2021-08-25 16:02:16,098:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2770
+2021-08-25 16:02:24,319:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-25 16:02:24,367:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:02:24,413:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:02:44,631:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:02:44,680:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 834
+2021-08-25 16:02:45,604:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:02:45,647:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:02:56,797:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:02:56,854:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 835
+2021-08-25 16:03:04,703:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:03:04,745:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 841
+2021-08-25 16:03:17,011:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:03:17,059:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 841
+2021-08-25 16:03:17,194:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:46,321:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:46,384:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 864
+2021-08-25 16:09:47,180:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:47,218:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:09:47,355:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:47,715:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:47,754:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:09:47,894:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:47,933:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:09:48,098:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:48,142:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:09:56,236:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:56,286:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 870
+2021-08-25 16:09:57,089:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:09:57,128:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:10:17,314:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:10:17,362:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 829
+2021-08-25 16:10:17,953:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:10:17,991:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:10:18,117:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:10:18,156:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:11:02,070:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 16:11:02,110:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:14:43,532:django.server: INFO->"GET /base/logout HTTP/1.1" 302 0
+2021-08-25 16:14:43,570:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-25 16:14:43,631:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 16:14:50,411:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-25 16:14:50,449:django.server: INFO->"GET /doctor/index HTTP/1.1" 200 3479
+2021-08-25 16:14:54,369:django.server: INFO->"GET /base/logout HTTP/1.1" 302 0
+2021-08-25 16:14:54,400:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-25 18:52:51,384:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-25 18:52:51,430:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 18:52:51,453:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-08-25 18:52:51,453:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 18:52:51,461:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 304 0
+2021-08-25 18:53:01,755:django.server: INFO->"GET /checkup/pat_get_checklis/6 HTTP/1.1" 200 922
+2021-08-25 18:53:06,199:django.server: INFO->"GET /patient/appoinment HTTP/1.1" 200 3379
+2021-08-25 18:53:22,433:django.server: INFO->"POST /patient/apply_appoinment HTTP/1.1" 200 3565
+2021-08-25 18:53:56,367:django.server: INFO->"POST /patient/apply_appoinment HTTP/1.1" 200 3565
+2021-08-25 18:53:58,905:django.server: INFO->"POST /patient/apply_appoinment HTTP/1.1" 200 3565
+2021-08-25 18:54:03,269:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 18:54:11,499:django.server: INFO->"GET /checkup/pat_get_checklis/6 HTTP/1.1" 200 922
+2021-08-25 18:54:17,393:django.server: INFO->"GET /checkup/pat_get_checklis/6 HTTP/1.1" 200 922
+2021-08-25 18:54:22,481:django.server: INFO->"GET /checkup/pat_get_checklis/6 HTTP/1.1" 200 922
+2021-08-25 18:54:29,992:django.server: INFO->"GET /checkup/pat_get_checklis/6 HTTP/1.1" 200 922
+2021-08-25 18:54:47,897:django.server: INFO->"GET /checkup/pat_get_checklis/6 HTTP/1.1" 200 922
+2021-08-25 19:03:38,295:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:03:39,053:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:05:10,545:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\models.py changed, reloading.
+2021-08-25 19:05:11,207:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:06:44,238:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\doctor\views.py changed, reloading.
+2021-08-25 19:06:44,935:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:10:09,429:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:10:10,075:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:10:48,369:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:10:49,431:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:11:43,190:django.server: INFO->"GET /patient/appoinment HTTP/1.1" 200 3379
+2021-08-25 19:11:43,210:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-08-25 19:12:47,735:django.server: INFO->"GET /patient/appoinment HTTP/1.1" 200 3379
+2021-08-25 19:13:14,050:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\urls.py changed, reloading.
+2021-08-25 19:13:14,903:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:13:31,371:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 19:13:46,078:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\urls.py changed, reloading.
+2021-08-25 19:13:46,975:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:13:47,334:django.request: WARNING->Not Found: /patient/index
+2021-08-25 19:13:47,334:django.server: WARNING->"GET /patient/index HTTP/1.1" 404 3454
+2021-08-25 19:13:52,805:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\urls.py changed, reloading.
+2021-08-25 19:13:53,620:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:13:55,687:django.server: INFO->"GET /patient/index HTTP/1.1" 200 3376
+2021-08-25 19:13:58,512:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\urls.py changed, reloading.
+2021-08-25 19:13:59,149:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:14:06,514:django.server: INFO->"GET /patient/ HTTP/1.1" 200 3376
+2021-08-25 19:14:23,935:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\doctor\urls.py changed, reloading.
+2021-08-25 19:14:24,574:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:14:29,974:django.server: INFO->"GET /base/logout HTTP/1.1" 302 0
+2021-08-25 19:14:29,992:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-25 19:15:30,605:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:15:31,246:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:19:35,617:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:19:36,317:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:19:45,422:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-25 19:19:45,445:django.server: INFO->"GET / HTTP/1.1" 200 1141
+2021-08-25 19:19:51,811:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-25 19:19:51,824:django.request: WARNING->Not Found: /patient/index
+2021-08-25 19:19:51,825:django.server: WARNING->"GET /patient/index HTTP/1.1" 404 3454
+2021-08-25 19:19:55,023:django.server: INFO->"GET /patient/ HTTP/1.1" 200 3376
+2021-08-25 19:19:56,738:django.server: INFO->"GET /patient/appoinment HTTP/1.1" 200 3379
+2021-08-25 19:20:09,301:django.server: INFO->"POST /patient/apply_appoinment HTTP/1.1" 200 3516
+2021-08-25 19:20:19,711:django.request: ERROR->Internal Server Error: /patient/apply_appoinment
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py", line 33, in apply_appoinment
+    form.save()
+AttributeError: 'PatientDetails' object has no attribute 'save'
+2021-08-25 19:20:19,712:django.server: ERROR->"POST /patient/apply_appoinment HTTP/1.1" 500 73842
+2021-08-25 19:20:40,879:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:20:41,557:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-25 19:20:43,134:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
+2021-08-25 19:20:43,774:django.utils.autoreload: INFO->Watching for file changes with StatReloader
