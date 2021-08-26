@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block container %}
+    <nav>
+        <ul>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/checkup/createChecklist">Checklist</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to Doctor page!!!!</h1>
+    <h2>Hi {{user}}!!!</h2>
+    <div class="container">
+        <div class="appoinmentDetails">
+            <table  class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for appoinment in appoinments %}
+                    <tr>
+                        <td>{{ appoinment.id }}</td>
+                        <td>{{ appoinment.date }}</td>
+                        <td>{{ appoinment.doctor }}</td>
+                        <td>{{appoinment.status}}</td>
+                        <td><a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> <span class="result" id="{{appoinment.id}}">Status: {{appoinment.status}}</span> </td>
+                    </tr>   
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div>
+            {% for message in messages%}
+            <h4>{{message}}</h4>
+            {%endfor%}
+        </div>
+    </div>
+{% endblock %}

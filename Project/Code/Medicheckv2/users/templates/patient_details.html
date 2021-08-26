@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block container %}
+<div class="container">
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Reason</td>
+                <td>Vaccinated</td>
+                <td>Scan File</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{user}}</td>
+                <td>{{detail.age}}</td>
+                <td>{{detail.gender}}</td>
+                <td>{{appsdet.reason}}</td>
+                <td>{{appsdet.vaccinated}}</td>
+                <td><a class="btn btn-primary"  href="{{appsdet.file.url}}" download>Click Here</a></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="wrapper">
+        <button class="btn btn-primary" onclick="goback()">Go back</button> 
+        <a class="btn btn-primary" href="/checkup/doc_get_checklis/{{user.id}}">Check previuos checkup</a>
+    </div>
+</div>
+{% endblock %}

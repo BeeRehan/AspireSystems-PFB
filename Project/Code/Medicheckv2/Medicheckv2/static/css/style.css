@@ -1,0 +1,58 @@
+body{
+    background-image: url(../image/background1.jpg);
+}
+
+nav{
+    margin-bottom: 10px;
+}
+nav ul{
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+   overflow: hidden;
+}
+nav ul li{
+    display: inline;
+    margin-left:5px ;
+    float: right;
+}
+
+nav ul li a{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color : #000;
+    background-color: #fff;
+    padding: 10px;
+}
+table,th,td{
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+
+.formContainer{
+    width: 600px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #91f2fd;   
+}
+
+.wrapper {
+    text-align: center;
+}
+
+/* .btn {
+    position: absolute;
+    top: 100%;
+} */
+
+.result{
+    /* display: hidden; */
+    visibility: hidden;    
+}

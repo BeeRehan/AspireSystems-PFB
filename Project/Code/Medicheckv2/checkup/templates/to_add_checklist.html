@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block container %}
+
+    <div class="formContainer">
+        <form action="/checkup/add_checklist/{{pk}}" method="POST">
+            <h3>Checkup details</h3>
+        {% csrf_token %}
+        <div class="form-group"> 
+            <label class="col-sm-2 col-form-label"for="{{ form.temprature.id_for_label }}">{{form.temprature.label_tag}}</label>{{form.temprature}}<span>{{form.temprature.error}}</span>
+        </div>
+        <div class="form-group"> 
+            <label class="col-sm-2 col-form-label"for="{{ form.sugar_level.id_for_label }}">{{form.sugar_level.label_tag}}</label>{{form.sugar_level}}<span>{{form.sugar_level.error}}</span>
+        </div>
+        <div class="form-group"> 
+            <label class="col-sm-2 col-form-label"for="{{ form.bp_level.id_for_label }}">{{form.bp_level.label_tag}}</label>{{form.bp_level}}<span>{{form.bp_level.error}}</span>
+        </div>
+        <div class="form-group"> 
+            <label class="col-sm-2 col-form-label"for="{{ form.con_deseas.id_for_label }}">{{form.con_deseas.label_tag}}</label>{{form.con_deseas}}<span>{{form.con_deseas.error}}</span>
+        </div>
+        <div class="form-group"> 
+            <label class="col-sm-2 col-form-label"for="{{ form.advice.id_for_label }}">{{form.advice.label_tag}}</label><div class="col-sm-10">{{form.advice}}</div><span>{{form.advice.error}}</span>
+        </div>
+      
+        <div class="form-group"> 
+            <label class="col-sm-2 col-form-label"for="{{ form.prescription.id_for_label }}">{{form.prescription.label_tag}}</label>
+            <div class="col-sm-10">
+            {{form.prescription}}
+            </div>
+        <span>{{form.prescription.error}}</span>
+        </div>   
+        <div class="wrapper">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" onclick="goback()" type="submit">Go back</button>
+        </div>
+    </form>
+    </div>
+    <div class="container"></div>
+{% endblock %}

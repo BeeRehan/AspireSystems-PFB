@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block container %}
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Sugar Level</td>
+                <td>BP level</td>
+                <td>Advice</td>
+                <td>Prescription</td>
+                <td>Confirmed Diseases</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{checks.temprature}}</td>
+                <td>{{checks.sugar_level}}</td>
+                <td>{{checks.Advice}}</td>
+                <td>{{checks.prescription}}</td>
+                <td>{{checks.confirmed_diseases}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="goback()">Go Back</button>
+    {% if checks is None  %}
+    <p>No data found</p>
+    {% endif %}
+</div>
+{% endblock %}
