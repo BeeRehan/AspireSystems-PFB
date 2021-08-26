@@ -23,9 +23,9 @@ def authenticate_user(request):
                 g = request.user.groups.all()[0].name
                 print("=>",g)
                 if(g=='patients'):
-                   return redirect('/patient/index')
+                   return redirect('/patient/')
                 elif(g=='doctors'):
-                    return redirect('/doctor/index')
+                    return redirect('/doctor/')
                 # logger.info(f"User {username} logged in!!!")
             else:
                 messages.info(request,"Invalid Login")

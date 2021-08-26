@@ -5,7 +5,8 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>S. No</th>
+                <th>Appoinment Id</th>
                 <th>Date</th>
                 <th>User Detais</th>
                 <th>Checklist</th>
@@ -15,6 +16,7 @@
             <tr>
                 {% for app in apps%}
                 <tr>
+                    <td>{{ forloop.counter }}</td>
                     <td>{{app.id}}</td>
                     <td>{{app.date}}</td>
                     <td><a class="btn btn-primary" href="/users/get_details/{{app.user_id}}/{{app.id}}">Click Here</a></td>
@@ -24,6 +26,6 @@
             </tr>
         </tbody>
     </table>
-    <button class="btn btn-primary" onclick="goback()">Go back</button>
+    <a class="btn btn-primary" href="/users/doctor">Home page</a>
 </div>
 {% endblock %}

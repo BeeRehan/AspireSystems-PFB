@@ -2,7 +2,7 @@ from django.forms.widgets import DateInput, RadioSelect
 from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext as uge
-
+from appointment.models import AppoinmentDetails
 import datetime
 
 def date_validate(value):
@@ -21,7 +21,7 @@ def time_validate(value):
     value = now.replace(hour=int(h),minute=int(m),second=int(s),microsecond=0)
     h,m,s = datetime.datetime.now().strftime("%H:%M:%S").split(':')
     now = now.replace(hour=int(h),minute=int(m),second=int(s),microsecond=0)
-    print(type(value),type(now))
+    # print(type(value),type(now))
     if(not (value >now)):
         raise ValidationError(uge('Enter the correct time!!!'))
     else:
@@ -43,3 +43,14 @@ class PatientDetails(forms.Form):
     scan_report = forms.FileField()
     vaccinated = forms.ChoiceField(label="Covid Vaccinaed",choices=[("yes","Yes"),("no","No")],widget=RadioSelect)
     gender = forms.ChoiceField(label="Gender",choices=(("male","Male"),("female","Female")),disabled=True,required=False)
+
+    def save(self,request):
+            date = self.cleaned_data['date']
+            time = self.cleaned_data['time']
+            reason = self.cleaned_data['reason']
+            doctor = self.cleaned_data['doctor']
+            vaccinated = self.cleaned_data['vaccinated']
+            file = self.cleaned_data['scan_report'] 
+            app = AppoinmentDetails(date=(str(date)+" "+str(time)),vaccinated=vaccinated,file=file,doctor=doctor,
+            reason=reason,status="requested",user_id=request.user.id)
+            app.save()

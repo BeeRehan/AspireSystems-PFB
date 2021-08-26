@@ -130,3 +130,19 @@ AttributeError: 'PatientDetails' object has no attribute 'save'
 2021-08-25 19:20:41,557:django.utils.autoreload: INFO->Watching for file changes with StatReloader
 2021-08-25 19:20:43,134:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\patient\views.py changed, reloading.
 2021-08-25 19:20:43,774:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-26 11:42:27,002:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-26 11:42:35,366:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-26 11:42:35,483:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 829
+2021-08-26 11:42:35,490:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 184
+2021-08-26 11:42:35,494:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144877
+2021-08-26 11:42:35,556:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-08-26 11:42:35,795:django.request: WARNING->Not Found: /favicon.ico
+2021-08-26 11:42:35,796:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2770
+2021-08-26 11:42:42,108:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-26 11:42:42,132:django.request: WARNING->Not Found: /patient/index
+2021-08-26 11:42:42,133:django.server: WARNING->"GET /patient/index HTTP/1.1" 404 3454
+2021-08-26 11:43:19,378:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheck\base\views.py changed, reloading.
+2021-08-26 11:43:22,120:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-08-26 11:43:23,409:django.server: INFO->"GET / HTTP/1.1" 200 1109
+2021-08-26 11:43:29,551:django.server: INFO->"POST /base/authenticate_user HTTP/1.1" 302 0
+2021-08-26 11:43:29,607:django.server: INFO->"GET /patient/ HTTP/1.1" 200 3376
