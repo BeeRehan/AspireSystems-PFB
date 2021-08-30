@@ -12,6 +12,7 @@ def safe_account(request):
     if(user.attempt == 3):
         user.account_status='blocked'
     user.save()
+    
 # Create your views here.
 def index(request):
     title = "Homepage"
@@ -38,7 +39,7 @@ def authenticate_user(request):
                     elif(g=='doctors'):
                         return redirect('users/doctor')
                 else:
-                    messages.info(request,"Your account was blocked \n Contact your admin team!!!")
+                    messages.info(request,"Your account was blocked Contact your admin team!!!")
                     return redirect('/')
 
                 # logger.info(f"User {username} logged in!!!")
