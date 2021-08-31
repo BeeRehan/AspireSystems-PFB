@@ -13,10 +13,11 @@ from appointment.form import ApprovalForm
 def pat_homepage(request):
     form = PatientDetails()
     title = 'Patient Page'
+    # header = 'Welcome to Patient page!!!!'
     user = request.user
     appoinments = AppoinmentDetails.objects.filter(user_id=request.user).values()
    # print(appoinments)
-    return render(request,"pat_homepage.html",{'form':form,'title':title,'appoinments':appoinments,'user':user})
+    return render(request,"pat_homepage.html",{'form':form,'title':title,'appoinments':appoinments,'user':user,})
 
 @login_required(login_url='/')
 def apply_appoinment(request):

@@ -3,7 +3,13 @@ function goback(){
 }
 
 function visibility(id){
-    //console.log(id);
+    console.log(id);
     span = document.getElementById(id);
-    span.style.visibility = "visible";
+    span.style.display = "block";
+}
+
+function warn(){
+    console.log('warn');
+    var alert = document.getElementById('alertid');
+    alert.style.display = 'block';
 }

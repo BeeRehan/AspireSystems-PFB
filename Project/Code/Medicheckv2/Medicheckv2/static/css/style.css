@@ -2,9 +2,9 @@ body{
     background-image: url(../image/background1.jpg);
 }
 
-nav{
+/* nav{
     margin-bottom: 10px;
-}
+} */
 nav ul{
     list-style: none;
     background-color: black;
@@ -38,7 +38,7 @@ table,th,td{
 .formContainer{
     width: 600px;
     position: relative;
-    margin: 6% auto;
+    margin: auto;
     background: transparent;
     padding: 5px;
     overflow: hidden;
@@ -47,6 +47,7 @@ table,th,td{
 
 .wrapper {
     text-align: center;
+    width: 600px;
 }
 
 /* .btn {
@@ -54,12 +55,17 @@ table,th,td{
     top: 100%;
 } */
 
-.result{
-    /* display: hidden; */
-    visibility: hidden;    
+/* .result, .alert{
+    display: none;
+    /* visibility: hidden;     */
+/* } */
+
+
+#alertid{
+    display: none;  
 }
-footer{
+/* footer{
     position: absolute;
     bottom: 0;
     width:100%;
-}
+} */
