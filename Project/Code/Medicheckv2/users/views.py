@@ -1,4 +1,5 @@
 from django import forms
+from django.contrib import messages
 from django.contrib.auth.models import User
 from django.http.response import Http404, HttpResponse
 from django.shortcuts import redirect, render
@@ -17,21 +18,23 @@ def pat_homepage(request):
     user = request.user
     appoinments = AppoinmentDetails.objects.filter(user_id=request.user).values()
    # print(appoinments)
-    return render(request,"pat_homepage.html",{'form':form,'title':title,'appoinments':appoinments,'user':user,})
+    return render(request, "pat_homepage.html", {'form':form,'title':title,'appoinments':appoinments,'user':user,})
 
 @login_required(login_url='/')
 def apply_appoinment(request):
     title = 'Appoinment'
     header = 'Appoinment Form'
     userdata = UserProfile.objects.get(user_id=request.user.id)
-    form = PatientDetails(request.POST,request.FILES,initial={'name':request.user,'age':userdata.age,'gender':userdata.gender,'header':header})
+    form = PatientDetails(request.POST,request.FILES,initial={'name':request.user,
+    'age':userdata.age,'gender':userdata.gender,'header':header})
     if request.method=='POST':
         if form.is_valid():
             form.save(request)
             return redirect('/users/patient')
         else:
             title = 'Appoinment'
-            return render(request,"appoinment_form.html",{'form':form,'title':title,'header':header})
+            return render(request,"appoinment_form.html",{'form':form,
+            'title':title,'header':header})
     else:
         print("Not a POST request")         
 
@@ -80,6 +83,7 @@ def approval(request,pk):
             apps.save()
             return redirect(f'/appointment/doc_appoinnment_details/{apps.id}')
         else:
+            messages.info(request,"Not valid")
             print("Not valid")
     else:
         print("Not a post request")

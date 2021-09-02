@@ -12,7 +12,7 @@ urlpatterns = [
     path('checkup/',include('checkup.urls'),name="checkup"),
     path('users/',include('users.urls'),name="users"),
     path('password_reset/',views.password_reset,name="password_reset"),
+    path('password_reseter/',views.password_reseter,name="password_reseter"),
     #path('username_index',views.username_index,name="username_index"),
     #path('check_username',views.check_username,name="check_username"),
-    path('password_reseter/',views.password_reseter,name="password_reseter"),
 ]

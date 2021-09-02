@@ -30,6 +30,7 @@ class PasswordResetForm(forms.Form):
     key = forms.CharField(label="Secret Key",max_length=20)
     new_password = forms.CharField(label="New Password",widget=forms.PasswordInput(),validators=[PasswordValidation])
     con_password = forms.CharField(label="Confirm Password",widget=forms.PasswordInput())
+
     def save(self,user):
         new_password = self.cleaned_data['new_password']
         user = User.objects.get(id=user)
@@ -40,3 +41,4 @@ class PasswordResetForm(forms.Form):
         user_profile.save()
         user.save()
         print("Success!!!")
+
