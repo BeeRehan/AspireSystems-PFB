@@ -1,12 +1,11 @@
 {% extends "base.html" %}
-
 {% block container %}
 <div class="container">
     <div class="formContainer">
         <form action="/users/to_create_user" method="POST">
             {% csrf_token %}
             <div class="form-group">
-                <label class="col-sm-2 col-form-label" for="{{ form.username.id_for_label }}">{{form.username.label_tag}}</label>{{form.username}}<span>{{form.username.errors}}</span>
+                <label class="col-sm-2 col-form-label" for="{{ form.sname.id_for_label }}">{{form.sname.label_tag}}</label>{{form.sname}}<span>{{form.sname.errors}}</span>
             </div>
             <div class="form-group">
                 <label class="col-sm-2 col-form-label" for="{{ form.new_password.id_for_label }}">{{form.new_password.label_tag}}</label>{{form.new_password}}<span>{{form.new_password.errors}}</span>
@@ -14,7 +13,17 @@
             <div class="form-group">
                 <label class="col-sm-2 col-form-label" for="{{ form.group.id_for_label }}">{{form.group.label_tag}}</label>{{form.group}}<span>{{form.group.errors}}</span>
             </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-form-label" for="{{ form.age.id_for_label }}">{{form.age.label_tag}}</label>{{form.age}}<span>{{form.age.errors}}</span>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-form-label" for="{{ form.gender.id_for_label }}">{{form.gender.label_tag}}</label>{{form.gender}}<span>{{form.gender.errors}}</span>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-form-label" for="{{ form.secret_key.id_for_label }}">{{form.secret_key.label_tag}}</label>{{form.secret_key}}<span>{{form.secret_key.errors}}</span>
+            </div>
             <div class="wrapper">
+                <button class="btn btn-primary" onclick="goback()">Go back</button>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>
         </form>

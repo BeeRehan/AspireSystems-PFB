@@ -10,4 +10,5 @@ urlpatterns = [
     path('go_admin_page',views.go_admin_page,name='go_admin_page'),
     path('create_user',views.create_user,name='create_user'),
     path('to_create_user',views.to_create_user,name='to_create_user'),   
+    path('to_delete_user/<int:pk>',views.to_delete_user,name='to_delete_user'),   
 ]

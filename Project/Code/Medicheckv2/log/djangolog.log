@@ -8501,3 +8501,1263 @@ users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist
 2021-09-03 12:57:44,917:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2122
 2021-09-03 13:00:14,988:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2122
 2021-09-03 13:04:20,299:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:04:23,272:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:08:51,617:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:19:33,483:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:20:22,773:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'password'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 137, in to_create_user
+    print(request.POST['password'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'password'
+2021-09-03 13:20:22,780:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80614
+2021-09-03 13:21:40,377:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'password'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 137, in to_create_user
+    print(request.POST['password'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'password'
+2021-09-03 13:21:40,383:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80614
+2021-09-03 13:22:08,734:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:22:11,513:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:22:15,594:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:22:18,879:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:22:24,272:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:22:28,475:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:22:30,492:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'password'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 137, in to_create_user
+    print(request.POST['password'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'password'
+2021-09-03 13:22:30,497:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80614
+2021-09-03 13:22:54,994:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:22:57,410:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:23:05,957:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:23:09,956:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:23:10,497:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'password'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 137, in to_create_user
+    print(request.POST['password'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'password'
+2021-09-03 13:23:10,502:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80618
+2021-09-03 13:23:17,540:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:23:19,893:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:23:20,444:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1773
+2021-09-03 13:23:48,182:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1907
+2021-09-03 13:23:57,107:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 138, in to_create_user
+    print(request.POST['group'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'group'
+2021-09-03 13:23:57,119:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80342
+2021-09-03 13:24:08,839:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:24:13,070:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:24:21,230:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 1916
+2021-09-03 13:24:31,336:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1907
+2021-09-03 13:26:06,309:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1907
+2021-09-03 13:26:16,250:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1907
+2021-09-03 13:27:49,285:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:27:50,708:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:28:20,037:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2118
+2021-09-03 13:44:35,986:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:44:38,133:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:44:51,839:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:44:53,508:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:45:11,622:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1993
+2021-09-03 13:45:26,841:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'new_password'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 137, in to_create_user
+    print(request.POST['new_password'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'new_password'
+2021-09-03 13:45:26,844:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80393
+2021-09-03 13:45:39,927:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:45:41,649:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:45:42,974:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 138, in to_create_user
+    print(request.POST['group'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'group'
+2021-09-03 13:45:42,977:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80336
+2021-09-03 13:47:52,814:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 138, in to_create_user
+    print(request.POST['group'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'group'
+2021-09-03 13:47:52,817:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80336
+2021-09-03 13:47:56,464:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 138, in to_create_user
+    print(request.POST['group'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'group'
+2021-09-03 13:47:56,465:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80336
+2021-09-03 13:47:58,405:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2002
+2021-09-03 13:48:03,297:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1993
+2021-09-03 13:48:07,503:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1993
+2021-09-03 13:48:16,878:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1993
+2021-09-03 13:49:48,348:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:49:50,028:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:50:11,146:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:50:12,704:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:50:14,287:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:50:16,054:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:50:22,034:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:50:24,235:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:50:26,055:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:50:27,497:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:50:32,544:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:50:34,041:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:50:35,879:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'new_password'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 137, in to_create_user
+    print(request.POST['new_password'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'new_password'
+2021-09-03 13:50:35,888:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80400
+2021-09-03 13:50:51,110:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 13:50:59,672:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:51:02,239:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 13:51:11,549:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 51, in authenticate_user
+    print("auth",safe_account(request))
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 71, in safe_account
+    name = User.objects.get(username=request.POST['username'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+2021-09-03 13:51:11,555:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 79675
+2021-09-03 13:51:51,023:django.server: INFO->"GET /users/ HTTP/1.1" 200 1809
+2021-09-03 13:51:52,473:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 13:52:01,636:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 13:52:01,655:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3034
+2021-09-03 13:52:04,462:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 1883
+2021-09-03 13:52:11,616:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 1998
+2021-09-03 13:52:22,962:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 13:52:24,537:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:52:39,461:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:52:41,104:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:52:44,202:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:52:45,572:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:57:44,142:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:57:46,624:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:58:03,754:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:58:05,768:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:58:13,232:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:58:15,036:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:58:22,234:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 13:58:23,882:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 13:58:28,011:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST['username'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+2021-09-03 13:58:28,014:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80262
+2021-09-03 13:58:30,399:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2127
+2021-09-03 13:58:33,478:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2127
+2021-09-03 13:58:34,225:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2127
+2021-09-03 14:00:35,554:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2211
+2021-09-03 14:00:42,847:django.request: WARNING->Not Found: /
+2021-09-03 14:00:42,847:django.server: WARNING->"GET / HTTP/1.1" 404 2390
+2021-09-03 14:00:47,636:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 14:00:57,455:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 14:00:57,472:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3034
+2021-09-03 14:01:00,444:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2087
+2021-09-03 14:01:04,047:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2087
+2021-09-03 14:01:15,609:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2202
+2021-09-03 14:28:29,662:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:28:31,486:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:28:43,369:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:28:45,049:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:28:56,382:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:28:57,988:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:29:17,926:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:29:19,553:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:29:22,539:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2073
+2021-09-03 14:30:09,683:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2186
+2021-09-03 14:30:19,483:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:30:20,940:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:30:22,045:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST['name'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'name'
+2021-09-03 14:30:22,052:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80444
+2021-09-03 14:30:35,564:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:30:37,340:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:30:37,708:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2186
+2021-09-03 14:30:44,933:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-03 14:30:44,952:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 14:31:17,709:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 14:31:17,735:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3034
+2021-09-03 14:31:28,496:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2071
+2021-09-03 14:31:39,875:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2186
+2021-09-03 14:32:13,343:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:32:15,021:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:32:23,416:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:32:24,979:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:32:31,249:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:32:32,654:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:33:07,555:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: '_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST['_name'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: '_name'
+2021-09-03 14:33:07,558:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80443
+2021-09-03 14:34:22,499:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:34:24,157:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:35:32,564:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:35:34,189:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:35:35,451:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'sname'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST['sname'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'sname'
+2021-09-03 14:35:35,454:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 80443
+2021-09-03 14:36:14,323:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:36:15,953:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:36:55,933:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST.get['sname'])
+TypeError: 'method' object is not subscriptable
+2021-09-03 14:36:55,935:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 71878
+2021-09-03 14:40:03,675:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:40:05,279:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:40:13,342:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST.get['sname',False])
+TypeError: 'method' object is not subscriptable
+2021-09-03 14:40:13,345:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 71890
+2021-09-03 14:40:20,776:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2075
+2021-09-03 14:40:40,434:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST.get['sname',False])
+TypeError: 'method' object is not subscriptable
+2021-09-03 14:40:40,436:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 71891
+2021-09-03 14:43:28,330:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2199
+2021-09-03 14:43:37,871:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 136, in to_create_user
+    print(request.POST.get['sname',False])
+TypeError: 'method' object is not subscriptable
+2021-09-03 14:43:37,873:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 71894
+2021-09-03 14:43:55,407:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:43:56,880:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:44:07,909:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:44:09,613:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:44:13,810:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:44:22,180:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:45:13,108:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:45:14,706:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:45:15,788:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:45:25,890:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:45:40,378:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:45:44,774:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2199
+2021-09-03 14:45:49,401:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-03 14:45:49,422:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 14:45:56,289:django.request: WARNING->Not Found: /users/admin
+2021-09-03 14:45:56,290:django.server: WARNING->"GET /users/admin HTTP/1.1" 404 3822
+2021-09-03 14:46:04,392:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 302 0
+2021-09-03 14:46:04,397:django.server: INFO->"GET /users?next=/users/go_admin_page HTTP/1.1" 301 0
+2021-09-03 14:46:04,417:django.server: INFO->"GET /users/?next=/users/go_admin_page HTTP/1.1" 200 1681
+2021-09-03 14:46:16,013:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 51, in authenticate_user
+    print("auth",safe_account(request))
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 71, in safe_account
+    name = User.objects.get(username=request.POST['username'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+2021-09-03 14:46:16,017:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 79484
+2021-09-03 14:46:21,340:django.server: INFO->"GET /users/?next=/users/go_admin_page HTTP/1.1" 200 1809
+2021-09-03 14:46:23,198:django.server: INFO->"GET /users/?next=/users/go_admin_page HTTP/1.1" 200 1681
+2021-09-03 14:46:23,757:django.server: INFO->"GET /users/?next=/users/go_admin_page HTTP/1.1" 200 1681
+2021-09-03 14:46:23,893:django.server: INFO->"GET /users/?next=/users/go_admin_page HTTP/1.1" 200 1681
+2021-09-03 14:46:24,108:django.server: INFO->"GET /users/?next=/users/go_admin_page HTTP/1.1" 200 1681
+2021-09-03 14:46:37,108:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 14:46:37,128:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3034
+2021-09-03 14:46:43,449:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2075
+2021-09-03 14:47:05,300:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:49:04,679:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:49:06,100:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:49:17,065:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:49:28,764:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 200 2190
+2021-09-03 14:52:03,211:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:52:04,646:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:52:40,131:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:52:41,614:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:54:50,111:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 14:54:51,546:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:54:55,555:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 141, in to_create_user
+    form.save()
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 99, in save
+    name = self.cleaned_data['username']
+KeyError: 'username'
+2021-09-03 14:54:55,558:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 75727
+2021-09-03 14:56:56,237:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:56:57,800:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:57:00,599:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 14:57:02,205:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 14:57:03,011:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'patients'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 141, in to_create_user
+    form.save()
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 103, in save
+    user.groups.add(group)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 950, in add
+    self._add_items(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1126, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1073, in _get_target_ids
+    target_ids.add(target_field.get_prep_value(obj))
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\fields\related.py", line 977, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'patients'.
+2021-09-03 14:57:03,019:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 102670
+2021-09-03 15:00:22,006:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:00:24,223:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:00:40,009:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:00:41,482:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:00:51,553:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:00:53,391:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:01:04,789:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:01:06,217:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:03:13,764:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:03:15,524:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:03:28,854:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:03:30,271:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:03:33,105:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:03:35,066:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:03:43,614:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 141, in to_create_user
+    form.save()
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 102, in save
+    user = User.objects.create_user(username=name,password=new_password)#
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+2021-09-03 15:03:43,627:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 200446
+2021-09-03 15:04:46,033:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 15:04:54,534:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:04:56,971:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 15:05:03,954:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 51, in authenticate_user
+    print("auth",safe_account(request))
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 72, in safe_account
+    user = UserProfile.objects.get(user_id=name.id)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 15:05:03,958:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 79905
+2021-09-03 15:05:13,604:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 302 0
+2021-09-03 15:05:13,659:django.server: INFO->"GET /admin/login/?next=/admin/users/userprofile/ HTTP/1.1" 200 2534
+2021-09-03 15:05:20,896:django.server: INFO->"POST /admin/login/?next=/admin/users/userprofile/ HTTP/1.1" 302 0
+2021-09-03 15:05:20,979:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 8225
+2021-09-03 15:05:21,029:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:05:24,225:django.server: INFO->"GET /admin/users/userprofile/add/ HTTP/1.1" 200 10134
+2021-09-03 15:05:24,278:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:05:42,497:django.server: INFO->"POST /admin/users/userprofile/add/ HTTP/1.1" 302 0
+2021-09-03 15:05:42,577:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 8675
+2021-09-03 15:05:42,615:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:06:14,399:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/authenticate_user
+2021-09-03 15:06:14,400:django.server: WARNING->"POST /users/authenticate_user HTTP/1.1" 403 2519
+2021-09-03 15:06:24,592:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 15:06:34,408:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 15:06:34,414:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-03 15:06:34,437:django.server: INFO->"GET /users/ HTTP/1.1" 200 1809
+2021-09-03 15:06:43,182:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 15:06:43,187:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-03 15:06:43,208:django.server: INFO->"GET /users/ HTTP/1.1" 200 1809
+2021-09-03 15:06:46,815:django.server: INFO->"GET /users/password_reset HTTP/1.1" 200 2063
+2021-09-03 15:07:18,907:django.server: INFO->"POST /users/password_reseter HTTP/1.1" 302 0
+2021-09-03 15:07:18,912:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-03 15:07:18,932:django.server: INFO->"GET /users/ HTTP/1.1" 200 1805
+2021-09-03 15:07:25,744:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 36, in authenticate_user
+    g = request.user.groups.all()[0].name
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2021-09-03 15:07:25,746:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 71040
+2021-09-03 15:07:48,121:django.server: INFO->"GET /admin/auth/group/ HTTP/1.1" 302 0
+2021-09-03 15:07:48,142:django.server: INFO->"GET /admin/login/?next=/admin/auth/group/ HTTP/1.1" 200 2236
+2021-09-03 15:07:54,765:django.server: INFO->"POST /admin/login/?next=/admin/auth/group/ HTTP/1.1" 302 0
+2021-09-03 15:07:54,838:django.server: INFO->"GET /admin/auth/group/ HTTP/1.1" 200 7990
+2021-09-03 15:07:54,880:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:07:57,667:django.server: INFO->"GET /admin/auth/group/3/change/ HTTP/1.1" 200 10900
+2021-09-03 15:07:57,710:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:08:03,701:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 12230
+2021-09-03 15:08:03,739:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:08:06,456:django.server: INFO->"GET /admin/auth/user/7/change/ HTTP/1.1" 200 17868
+2021-09-03 15:08:06,507:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 15:08:39,669:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 15:08:41,062:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 15:08:59,561:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/authenticate_user
+2021-09-03 15:08:59,563:django.server: WARNING->"POST /users/authenticate_user HTTP/1.1" 403 2519
+2021-09-03 15:09:02,027:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view users.views.authenticate_user didn't return an HttpResponse object. It returned None instead.
+2021-09-03 15:09:02,029:django.server: ERROR->"GET /users/authenticate_user HTTP/1.1" 500 66095
+2021-09-03 15:09:05,024:django.server: INFO->"GET /users/ HTTP/1.1" 200 1805
+2021-09-03 16:39:45,276:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 36, in authenticate_user
+    g = request.user.groups.all()[0].name
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2021-09-03 16:39:45,281:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 71040
+2021-09-03 16:41:19,487:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 302 0
+2021-09-03 16:41:19,606:django.server: INFO->"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2234
+2021-09-03 16:41:28,620:django.server: INFO->"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+2021-09-03 16:41:28,811:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 12230
+2021-09-03 16:41:28,892:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:41:39,901:django.server: INFO->"GET /admin/auth/user/2/change/ HTTP/1.1" 200 17869
+2021-09-03 16:41:39,999:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:42:09,815:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 12230
+2021-09-03 16:42:09,974:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:42:38,304:django.server: INFO->"GET /admin/auth/user/7/change/ HTTP/1.1" 200 17868
+2021-09-03 16:42:38,476:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:42:43,939:django.server: INFO->"GET /admin/auth/user/7/delete/ HTTP/1.1" 200 6217
+2021-09-03 16:42:44,096:django.server: INFO->"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2021-09-03 16:42:45,922:django.server: INFO->"POST /admin/auth/user/7/delete/ HTTP/1.1" 302 0
+2021-09-03 16:42:46,076:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11999
+2021-09-03 16:42:46,140:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:43:31,407:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 16:44:25,769:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 16:44:25,798:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3034
+2021-09-03 16:44:29,567:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2075
+2021-09-03 16:44:41,814:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view users.views.to_create_user didn't return an HttpResponse object. It returned None instead.
+2021-09-03 16:44:41,815:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 67294
+2021-09-03 16:46:12,001:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 16:46:14,609:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:46:15,667:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 141, in to_create_user
+    form.save()
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 102, in save
+    user = User.objects.create_user(username=name,password=new_password)#
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+2021-09-03 16:46:15,687:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 200533
+2021-09-03 16:48:13,854:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 16:48:15,741:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:48:42,129:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 16:48:44,245:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:48:53,013:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 141, in to_create_user
+    form.save()
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 102, in save
+    user = User.objects.create_user(username=name,password=new_password)#
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+2021-09-03 16:48:53,038:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 200530
+2021-09-03 16:48:57,606:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 302 0
+2021-09-03 16:48:57,688:django.server: INFO->"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2390
+2021-09-03 16:49:04,801:django.server: INFO->"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+2021-09-03 16:49:04,968:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 12230
+2021-09-03 16:49:05,046:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:49:08,295:django.server: INFO->"GET /admin/auth/user/9/change/ HTTP/1.1" 200 17841
+2021-09-03 16:49:08,394:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:49:14,295:django.server: INFO->"GET /admin/auth/user/9/delete/ HTTP/1.1" 200 6190
+2021-09-03 16:49:16,385:django.server: INFO->"POST /admin/auth/user/9/delete/ HTTP/1.1" 302 0
+2021-09-03 16:49:16,557:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11999
+2021-09-03 16:49:16,642:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 16:49:28,074:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/to_create_user
+2021-09-03 16:49:28,079:django.server: WARNING->"POST /users/to_create_user HTTP/1.1" 403 2519
+2021-09-03 16:49:30,166:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 2376
+2021-09-03 16:49:51,903:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 302 0
+2021-09-03 16:49:51,929:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3447
+2021-09-03 16:49:57,290:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-03 16:49:57,406:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 16:50:10,401:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 33, in authenticate_user
+    if(not UserProfile.objects.get(user_id=user.id).account_status=='blocked'):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 16:50:10,404:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 76145
+2021-09-03 16:50:20,618:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 16:50:23,601:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 16:50:30,525:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 33, in authenticate_user
+    if(not UserProfile.objects.get(user_id=user.id).account_status=='blocked'):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 16:50:30,531:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 76145
+2021-09-03 16:51:45,167:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 16:51:47,297:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:52:12,348:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 16:52:15,536:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:52:39,283:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 16:52:41,597:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:55:14,286:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-03 16:55:26,719:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-03 16:55:26,754:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3316
+2021-09-03 16:55:29,954:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2629
+2021-09-03 16:55:59,546:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 16:56:01,410:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 16:56:34,302:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2620
+2021-09-03 17:01:07,707:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:01:09,678:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:01:15,183:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:01:17,451:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:01:20,726:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:01:22,720:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:02:11,496:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:02:14,602:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:06:09,617:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:06:12,542:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:06:31,224:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:06:33,418:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:07:08,793:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:07:10,936:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:07:31,033:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:07:33,045:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:08:33,762:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:08:35,894:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:08:41,137:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:08:44,086:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:10:02,462:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:10:04,713:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:10:34,524:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:10:36,574:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:10:55,300:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:10:57,425:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:11:17,072:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:11:19,552:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:12:05,952:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:12:08,541:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:12:15,294:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:12:17,840:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:13:34,735:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2899
+2021-09-03 17:14:34,893:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-03 17:14:37,007:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:15:08,996:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 2899
+2021-09-03 17:15:34,145:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 141, in to_create_user
+    form.save()
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 108, in save
+    user = User.objects.create_user(username=name,password=new_password)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'testuser' for key 'auth_user.username'")
+2021-09-03 17:15:34,164:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 201625
+2021-09-03 17:15:45,574:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 302 0
+2021-09-03 17:15:45,660:django.server: INFO->"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2390
+2021-09-03 17:15:46,378:django.server: INFO->"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2390
+2021-09-03 17:15:56,742:django.server: INFO->"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+2021-09-03 17:15:56,912:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 12232
+2021-09-03 17:15:57,006:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 17:16:00,290:django.server: INFO->"GET /admin/auth/user/12/change/ HTTP/1.1" 200 17879
+2021-09-03 17:16:00,381:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 17:16:04,114:django.server: INFO->"GET /admin/auth/user/12/delete/ HTTP/1.1" 200 6192
+2021-09-03 17:16:05,618:django.server: INFO->"POST /admin/auth/user/12/delete/ HTTP/1.1" 302 0
+2021-09-03 17:16:05,867:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11999
+2021-09-03 17:16:05,947:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-03 17:16:17,190:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/to_create_user
+2021-09-03 17:16:17,192:django.server: WARNING->"POST /users/to_create_user HTTP/1.1" 403 2519
+2021-09-03 17:16:19,852:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 3377
+2021-09-03 17:16:39,227:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 302 0
+2021-09-03 17:16:39,252:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3447
+2021-09-03 17:19:54,001:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:19:56,404:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:20:08,191:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:20:10,268:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:20:19,120:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:20:22,137:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:20:33,518:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:20:35,354:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:21:16,591:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:21:19,223:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:21:36,554:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\urls.py changed, reloading.
+2021-09-03 17:21:39,779:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:21:48,766:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\urls.py changed, reloading.
+2021-09-03 17:21:52,966:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:22:11,199:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\urls.py changed, reloading.
+2021-09-03 17:22:13,825:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:23:45,878:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:23:52,383:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:24:09,058:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:24:10,895:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:24:23,096:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:24:25,383:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:28:20,301:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:28:22,841:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:29:13,707:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:29:16,787:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:29:32,046:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:29:36,968:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:29:37,776:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3995
+2021-09-03 17:30:06,350:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4058
+2021-09-03 17:30:10,140:django.request: ERROR->Internal Server Error: /users/to_delete_user/4
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view users.views.to_delete_user didn't return an HttpResponse object. It returned None instead.
+2021-09-03 17:30:10,142:django.server: ERROR->"GET /users/to_delete_user/4 HTTP/1.1" 500 66249
+2021-09-03 17:30:49,782:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:30:53,030:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:30:54,025:django.request: ERROR->Internal Server Error: /users/to_delete_user/4
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 152, in to_delete_user
+    user_profle = UserProfile.objects.get(user_id=pk)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 17:30:54,029:django.server: ERROR->"GET /users/to_delete_user/4 HTTP/1.1" 500 74721
+2021-09-03 17:30:55,781:django.request: ERROR->Internal Server Error: /users/to_delete_user/4
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 152, in to_delete_user
+    user_profle = UserProfile.objects.get(user_id=pk)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 17:30:55,784:django.server: ERROR->"GET /users/to_delete_user/4 HTTP/1.1" 500 74721
+2021-09-03 17:31:04,735:django.request: ERROR->Internal Server Error: /users/to_delete_user/4
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 152, in to_delete_user
+    user_profle = UserProfile.objects.get(user_id=pk)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 17:31:04,737:django.server: ERROR->"GET /users/to_delete_user/4 HTTP/1.1" 500 74584
+2021-09-03 17:31:08,722:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:31:09,929:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:31:10,541:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:31:10,894:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:31:11,203:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:31:14,095:django.request: ERROR->Internal Server Error: /users/to_delete_user/15
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 152, in to_delete_user
+    user_profle = UserProfile.objects.get(user_id=pk)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 17:31:14,097:django.server: ERROR->"GET /users/to_delete_user/15 HTTP/1.1" 500 74598
+2021-09-03 17:40:40,693:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-03 17:40:46,783:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-03 17:41:01,941:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:03,729:django.request: ERROR->Internal Server Error: /users/to_delete_user/15
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 152, in to_delete_user
+    user_profle = UserProfile.objects.get(user_id=pk)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 17:41:03,736:django.server: ERROR->"GET /users/to_delete_user/15 HTTP/1.1" 500 74329
+2021-09-03 17:41:13,881:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:14,682:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:14,907:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:15,030:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:15,196:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:15,360:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:15,566:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4060
+2021-09-03 17:41:36,660:django.request: ERROR->Internal Server Error: /users/to_delete_user/15
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 152, in to_delete_user
+    user_profle = UserProfile.objects.get(user_id=pk)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-03 17:41:36,663:django.server: ERROR->"GET /users/to_delete_user/15 HTTP/1.1" 500 74329
+2021-09-03 17:43:23,503:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3679
+2021-09-03 17:43:30,998:django.server: INFO->"GET /users/to_delete_user/5 HTTP/1.1" 302 0
+2021-09-03 17:43:31,026:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3300
+2021-09-03 17:55:49,796:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3300
+2021-09-03 17:55:50,684:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3300

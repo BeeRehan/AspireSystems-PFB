@@ -120,6 +120,7 @@ def go_admin_page(request):
     users = User.objects.all()
     # print(users[1].groups[0].name)
     return render(request,"admin.html",{'title':title,'users':users})
+
 @login_required(login_url='/users')
 def create_user(request):
     form = CreateUsersForm()
@@ -129,15 +130,17 @@ def create_user(request):
 
 @login_required(login_url='/users')
 def to_create_user(request):
-    form = CreateUsersForm()
+    form = CreateUsersForm(request.POST)
     title = 'Create User'
     header = 'Create User Here!!!'
     if request.method == 'POST':
-        print(request.POST['username'])
+        print(request.POST['sname'])
         print(request.POST['new_password'])
         print(request.POST['group'])
-        if form.is_valid():
+        if(form.is_valid()):
             form.save()
+            messages.info(request,"User Created Successfully!!!")
+            return redirect('/users/go_admin_page')
         else:
             messages.info(request,"Not Valid!!!")
             return render(request,"create_user.html",{'form':form,'title':title,"header":header})
@@ -145,3 +148,9 @@ def to_create_user(request):
         messages.info(request,"Not a POST request!!!")
         return render(request,"create_user.html",{'form':form,'title':title,"header":header})
 
+def to_delete_user(request,pk):
+    user_profle = UserProfile.objects.get(user_id=pk)
+    user_profle.delete()
+    user = User.objects.get(id=pk)
+    user.delete()
+    return redirect('/users/go_admin_page')

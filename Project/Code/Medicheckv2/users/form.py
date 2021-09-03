@@ -3,7 +3,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext as uge
 from appointment.models import AppoinmentDetails
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User,Group
 from .models import UserProfile
 import re
 from django.contrib.auth.hashers import make_password
@@ -91,14 +91,25 @@ class PasswordResetForm(forms.Form):
         print("Success!!!")
 
 class CreateUsersForm(forms.Form):
-    username = forms.CharField(label="Username",max_length=15)
-    new_password = forms.CharField(label="New Password",widget=forms.PasswordInput(),validators=[PasswordValidation])
+    sname = forms.CharField(label="Username",max_length=15)
+    new_password = forms.CharField(label="Password",widget=forms.PasswordInput())
     group = forms.ChoiceField(label="Group",choices=(("patients","Patients"),("doctors","Doctors"),("admins","Admin")))
-    
+    age = forms.IntegerField(label="Age")
+    gender = forms.ChoiceField(label="Gender",choices=(("male","Male"),("female","Female")))
+    secret_key = forms.CharField(label="Secret Key",max_length=10)
+
     def save(self):
-        username = self.cleaned_data['username']
+        name = self.cleaned_data['sname']
         new_password = self.cleaned_data['new_password']
         group = self.cleaned_data['group']
-        user = User.objects.create_user(username=username,password=new_password)
-        user.groups.add(group)
+        age = self.cleaned_data['age']
+        gender = self.cleaned_data['gender']
+        secret_key = self.cleaned_data['secret_key']
+        user = User.objects.create_user(username=name,password=new_password)
+        user_profile = UserProfile.objects.create(user_id=user.id,age=age,gender=gender,attempt=0,account_status='Open',secret_key=secret_key)
+        user_profile.save()
+        groups = Group.objects.get(name=group)
+        groups.user_set.add(user)
+        # user.groups.add(group)
+        groups.save()
         user.save()

@@ -17,6 +17,7 @@
                         <th>User Id</th>
                         <th>Username</th>
                         <th>Status</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,8 +31,10 @@
                         {% else %}
                             <td>Not Active</td>
                         {% endif %}
+                        <td><a class="btn btn-primary" href="to_delete_user/{{user.id}}">Delete User</a></td>
                     </tr>   
                     {% endfor %}
+
                 </tbody>
             </table>
         </div>
