@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block container %}
+<nav>
+    <ul>
+        <li><a href="/users/logout">Logout</a></li>
+        <li><a href="/users/create_user">Create User</a></li>
+    </ul>
+</nav>
+<h1>Welcome to Admin page!!!!</h1>
+    <h2>Hi {{user}}!!!</h2>
+    <div class="container">
+        <div class="appoinmentDetails">
+            <table  class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>S. No</th>
+                        <th>User Id</th>
+                        <th>Username</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ user.id }}</td>
+                        <td>{{ user }}</td>
+                        {% if  user.is_active %}
+                            <td>Active</td>
+                        {% else %}
+                            <td>Not Active</td>
+                        {% endif %}
+                    </tr>   
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

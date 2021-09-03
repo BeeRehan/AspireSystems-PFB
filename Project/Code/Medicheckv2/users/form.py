@@ -3,7 +3,15 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext as uge
 from appointment.models import AppoinmentDetails
+from django.contrib.auth.models import User
+from .models import UserProfile
+import re
+from django.contrib.auth.hashers import make_password
 import datetime
+
+class UserLoginForm(forms.Form):
+    username = forms.CharField(label="Username",max_length=30)
+    password = forms.CharField(label="Password",widget=forms.PasswordInput())
 
 def date_validate(value):
     print("Validator",value)
@@ -54,3 +62,43 @@ class PatientDetails(forms.Form):
             app = AppoinmentDetails(date=(str(date)+" "+str(time)),vaccinated=vaccinated,file=file,doctor=doctor,
             reason=reason,status="requested",user_id=request.user.id)
             app.save()
+        
+def PasswordValidation(value):
+        if not len(re.findall('\d', value)) >= 3:
+            raise ValidationError(uge('atleast 3 numbers needed!'))
+        elif not len(value) > 10:
+            raise ValidationError(uge('Minimum password length is 11!'))
+        elif not re.findall('[()[\]|\\`~!@#$%^&*_\-+=;:\'",<>./?]', value):
+            raise ValidationError(uge('atleast 1 special character needed!'))
+        else:
+            return True
+
+class PasswordResetForm(forms.Form):
+    username = forms.CharField(label="Username",max_length=30)
+    key = forms.CharField(label="Secret Key",max_length=20)
+    new_password = forms.CharField(label="New Password",widget=forms.PasswordInput(),validators=[PasswordValidation])
+    con_password = forms.CharField(label="Confirm Password",widget=forms.PasswordInput())
+
+    def save(self,user):
+        new_password = self.cleaned_data['new_password']
+        user = User.objects.get(id=user)
+        user_profile = UserProfile.objects.get(user_id=user.id)
+        user_profile.attept = 0
+        user_profile.account_status  = 'Open'
+        user.password = make_password(new_password)
+        user_profile.save()
+        user.save()
+        print("Success!!!")
+
+class CreateUsersForm(forms.Form):
+    username = forms.CharField(label="Username",max_length=15)
+    new_password = forms.CharField(label="New Password",widget=forms.PasswordInput(),validators=[PasswordValidation])
+    group = forms.ChoiceField(label="Group",choices=(("patients","Patients"),("doctors","Doctors"),("admins","Admin")))
+    
+    def save(self):
+        username = self.cleaned_data['username']
+        new_password = self.cleaned_data['new_password']
+        group = self.cleaned_data['group']
+        user = User.objects.create_user(username=username,password=new_password)
+        user.groups.add(group)
+        user.save()

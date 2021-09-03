@@ -2,7 +2,7 @@
 {% block container %}
 <div class="container">
     <div class="formContainer">
-    <form action="/authenticate_user" method="POST">
+    <form action="/users/authenticate_user" method="POST">
         <h1>Login Here</h1>
         {% csrf_token %}
         <div class="form-group">
@@ -13,7 +13,7 @@
         </div>
         <div class="wrapper">
             <button class="btn btn-primary" type="submit">Submit</button> 
-            <a class="btn btn-primary" href="/password_reset" >Unolock Account </a>
+            <a class="btn btn-primary" href="/users/password_reset" >Unolock Account </a>
         </div>
     </form>
     </div>

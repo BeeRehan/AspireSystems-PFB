@@ -2,7 +2,7 @@
 {% block container %}
     <nav>
         <ul>
-            <li><a href="/logout">Logout</a></li>
+            <li><a href="/users/logout">Logout</a></li>
             <li><a href="/checkup/createChecklist">Checklist</a></li>
         </ul>
     </nav>
@@ -16,7 +16,6 @@
                         <th>S. No</th>
                         <th>Appoinment Id</th>
                         <th>Date</th>
-                        <th>Doctor</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
@@ -27,9 +26,8 @@
                         <td>{{ forloop.counter }}</td>
                         <td>{{ appoinment.id }}</td>
                         <td>{{ appoinment.date }}</td>
-                        <td>{{ appoinment.doctor }}</td>
                         <td>{{appoinment.status}}</td>
-                        <td><a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> <span class="result" id="{{appoinment.id}}">Status: {{appoinment.status}}</span> </td>
+                        <td><a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> </td>
                     </tr>   
                     {% endfor %}
                 </tbody>
