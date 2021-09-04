@@ -51,7 +51,7 @@ def apply_appoinment(request):
     header = 'Appoinment Form'
     userdata = UserProfile.objects.get(user_id=request.user.id)
     form = PatientDetails(request.POST,request.FILES,initial={'name':request.user,
-    'age':userdata.age,'gender':userdata.gender,'header':header})
+    'age':userdata.age,'gender':userdata.gender})
     if request.method=='POST':
         if form.is_valid():
             form.save(request)

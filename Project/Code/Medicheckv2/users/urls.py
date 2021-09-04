@@ -11,4 +11,7 @@ urlpatterns = [
     path('create_user',views.create_user,name='create_user'),
     path('to_create_user',views.to_create_user,name='to_create_user'),   
     path('to_delete_user/<int:pk>',views.to_delete_user,name='to_delete_user'),   
+    path('show_user_profile',views.show_user_profile,name='show_user_profile'),  
+    path('reset_user_profile',views.reset_user_profile,name='reset_user_profile'),   
+    
 ]

@@ -30,6 +30,7 @@ nav ul li a:hover{
     padding: 10px;
     text-decoration: none;
 }
+
 table,th,td{
     border: 1px solid black ;
     border-collapse: collapse;
@@ -59,7 +60,12 @@ table,th,td{
     display: none;
     /* visibility: hidden;     */
 /* } */
-
+p span{
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 40px;  
+}
 
 #alertid{
     display: none;  

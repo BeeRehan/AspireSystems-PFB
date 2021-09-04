@@ -9761,3 +9761,500 @@ users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist
 2021-09-03 17:43:31,026:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3300
 2021-09-03 17:55:49,796:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3300
 2021-09-03 17:55:50,684:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 3300
+2021-09-04 15:00:06,937:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 15:00:52,905:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\urls.py changed, reloading.
+2021-09-04 15:00:54,319:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 15:01:15,162:django.request: WARNING->Not Found: /
+2021-09-04 15:01:15,163:django.server: WARNING->"GET / HTTP/1.1" 404 2390
+2021-09-04 15:01:15,371:django.request: WARNING->Not Found: /favicon.ico
+2021-09-04 15:01:15,372:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2441
+2021-09-04 15:01:18,421:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-04 15:01:18,492:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 304 0
+2021-09-04 15:01:18,494:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:01:18,501:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-04 15:01:18,555:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 304 0
+2021-09-04 15:01:26,724:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-04 15:01:26,731:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-04 15:01:26,759:django.server: INFO->"GET /users/ HTTP/1.1" 200 1809
+2021-09-04 15:01:36,255:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-04 15:01:36,314:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3642
+2021-09-04 15:01:54,547:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2936
+2021-09-04 15:02:52,371:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 15:02:54,114:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 15:02:57,552:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2193
+2021-09-04 15:22:12,738:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 15:22:14,640:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 15:22:17,097:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1608
+2021-09-04 15:27:22,697:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 15:27:41,399:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 15:38:37,281:django.request: ERROR->Internal Server Error: /users/show_user_profile
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 157, in show_user_profile
+    return render(request,"userprofile.html",{'form':form,'title':title,'header':header,'userdata':userdata})
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 445, in parse
+    raise self.error(token, 'Empty variable tag on line %d' % token.lineno)
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 11
+2021-09-04 15:38:37,291:django.server: ERROR->"GET /users/show_user_profile HTTP/1.1" 500 154832
+2021-09-04 15:38:48,751:django.request: ERROR->Internal Server Error: /users/show_user_profile
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 157, in show_user_profile
+    return render(request,"userprofile.html",{'form':form,'title':title,'header':header,'userdata':userdata})
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\base.py", line 445, in parse
+    raise self.error(token, 'Empty variable tag on line %d' % token.lineno)
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 11
+2021-09-04 15:38:48,756:django.server: ERROR->"GET /users/show_user_profile HTTP/1.1" 500 154892
+2021-09-04 15:39:02,843:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1718
+2021-09-04 15:39:54,920:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1751
+2021-09-04 15:41:13,665:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:49:37,679:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:49:38,763:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:49:38,877:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:49:39,047:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:51:23,417:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:51:29,046:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:51:53,263:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 302 0
+2021-09-04 15:51:53,278:django.server: INFO->"GET /users?next=/users/show_user_profile HTTP/1.1" 301 0
+2021-09-04 15:51:53,392:django.server: INFO->"GET /users/?next=/users/show_user_profile HTTP/1.1" 200 1681
+2021-09-04 15:51:53,480:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1197
+2021-09-04 15:51:53,487:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-04 15:51:53,495:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-04 15:51:53,539:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-04 15:52:03,861:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-04 15:52:03,927:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3642
+2021-09-04 15:52:03,977:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:52:06,109:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:52:56,461:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:52:56,531:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1203
+2021-09-04 15:52:57,295:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:52:57,341:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:52:57,521:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:52:57,662:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:55:22,631:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:55:22,731:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1197
+2021-09-04 15:55:23,434:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:55:23,801:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1783
+2021-09-04 15:55:36,785:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1752
+2021-09-04 15:55:36,836:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:56:06,685:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1784
+2021-09-04 15:56:06,739:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:56:26,344:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1784
+2021-09-04 15:56:26,489:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:56:53,587:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 15:56:53,656:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 15:56:54,599:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 15:56:54,750:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 15:56:54,885:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:00:03,573:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:00:03,719:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:00:04,483:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:00:04,812:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:00:04,964:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:00:05,497:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:00:05,804:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:00:06,035:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:01:41,733:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:01:41,948:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1198
+2021-09-04 16:01:42,658:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:01:42,732:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:01:42,783:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:01:42,850:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:01:42,957:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:01:43,012:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:02:08,468:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 302 0
+2021-09-04 16:02:08,498:django.server: INFO->"GET /users?next=/users/show_user_profile HTTP/1.1" 301 0
+2021-09-04 16:02:08,607:django.server: INFO->"GET /users/?next=/users/show_user_profile HTTP/1.1" 200 1681
+2021-09-04 16:02:08,762:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1198
+2021-09-04 16:02:08,775:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-04 16:02:08,777:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-04 16:02:08,810:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-04 16:02:18,400:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-04 16:02:18,437:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3642
+2021-09-04 16:02:18,492:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:02:20,806:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1755
+2021-09-04 16:26:28,298:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:26:28,365:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1198
+2021-09-04 16:27:12,833:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:27:13,923:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:27:14,227:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:27:14,309:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:27:14,465:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:27:14,612:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:48,231:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:49,411:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:49,492:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:49,579:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:49,737:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:50,070:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:28:50,135:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1221
+2021-09-04 16:30:45,853:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:30:50,388:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:30:55,397:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:30:59,472:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:31:57,731:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:32:04,490:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:32:13,165:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:32:16,560:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:32:17,976:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:32:18,020:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:34:28,905:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:34:31,790:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:36:29,742:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:36:32,719:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:36:41,517:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:36:45,397:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:36:53,490:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:36:57,407:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:36:58,925:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:36:58,971:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:37:29,868:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:37:34,023:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:37:54,774:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:37:57,757:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:37:57,814:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:37:57,956:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:37:58,112:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1770
+2021-09-04 16:39:08,450:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1778
+2021-09-04 16:39:08,492:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:39:09,107:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1778
+2021-09-04 16:39:09,278:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1778
+2021-09-04 16:39:24,383:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1778
+2021-09-04 16:41:29,267:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1902
+2021-09-04 16:41:29,437:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:41:30,105:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1902
+2021-09-04 16:41:30,222:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 1902
+2021-09-04 16:41:54,879:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:41:55,611:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:41:55,816:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:42:14,076:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:42:14,871:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:42:15,098:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:42:45,736:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:42:46,553:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:42:46,746:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:14,026:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:14,110:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1221
+2021-09-04 16:43:14,689:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:14,737:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:43:14,946:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:15,005:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:43:15,122:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:18,901:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:19,005:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1221
+2021-09-04 16:43:19,838:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:19,884:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:43:20,108:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:20,160:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:43:31,479:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2029
+2021-09-04 16:43:31,522:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:43:31,863:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2029
+2021-09-04 16:43:32,090:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2029
+2021-09-04 16:43:32,283:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2029
+2021-09-04 16:43:36,505:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:36,544:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:43:36,678:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:43:36,839:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2030
+2021-09-04 16:49:10,620:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2234
+2021-09-04 16:49:10,712:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1223
+2021-09-04 16:50:08,515:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2094
+2021-09-04 16:50:08,560:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:50:09,325:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2094
+2021-09-04 16:50:09,490:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2094
+2021-09-04 16:50:21,150:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2103
+2021-09-04 16:52:40,622:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2207
+2021-09-04 16:52:40,676:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 16:52:41,372:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2207
+2021-09-04 16:52:41,567:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2207
+2021-09-04 16:53:29,633:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:53:34,234:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:53:48,149:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:53:52,079:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:54:35,005:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:54:37,176:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:54:49,287:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:54:52,703:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:55:56,822:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:55:59,100:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 16:56:14,819:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 16:56:16,786:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:01:03,523:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2207
+2021-09-04 17:01:03,666:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 17:08:09,518:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:08:13,585:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:08:35,812:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:08:38,393:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:08:47,645:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:08:51,851:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:09:42,828:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:09:44,974:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:09:55,301:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:09:58,261:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:10:59,650:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:11:01,954:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:11:33,514:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:11:36,540:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:11:39,302:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:11:42,341:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:13:00,275:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:13:02,179:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:13:11,263:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:13:13,500:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:13:19,643:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:13:22,015:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:13:35,265:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:13:37,628:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:14:15,001:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:14:17,666:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:14:37,606:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:14:39,917:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:15:09,236:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:15:11,466:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:15:23,174:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:15:25,725:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:15:26,364:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2207
+2021-09-04 17:15:26,422:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 17:16:59,814:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2301
+2021-09-04 17:17:18,765:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2303
+2021-09-04 17:17:26,212:django.server: INFO->"GET /users/password_reset HTTP/1.1" 200 2063
+2021-09-04 17:17:55,711:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:17:58,011:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:18:14,165:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:18:17,426:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:18:41,284:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:41,325:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 17:18:42,195:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:42,395:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:42,576:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:42,751:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:42,916:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:43,098:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:18:43,294:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2328
+2021-09-04 17:19:13,521:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2308
+2021-09-04 17:19:18,269:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:19:18,269:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:19:20,865:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2385
+2021-09-04 17:19:30,422:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2399
+2021-09-04 17:19:32,613:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2399
+2021-09-04 17:19:34,975:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2399
+2021-09-04 17:20:49,397:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3642
+2021-09-04 17:20:51,972:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2406
+2021-09-04 17:20:54,794:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:20:54,800:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:20:57,699:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2483
+2021-09-04 17:21:05,192:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:21:05,193:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:21:20,015:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:21:20,018:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:21:22,139:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2613
+2021-09-04 17:21:25,675:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 200 2613
+2021-09-04 17:21:44,520:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:21:47,517:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:21:48,081:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:21:48,194:django.request: WARNING->Not Found: /show_user_profile
+2021-09-04 17:21:48,195:django.server: WARNING->"GET /show_user_profile HTTP/1.1" 404 2459
+2021-09-04 17:22:02,902:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:22:05,648:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:22:06,461:django.request: WARNING->Not Found: /show_user_profile
+2021-09-04 17:22:06,462:django.server: WARNING->"GET /show_user_profile HTTP/1.1" 404 2459
+2021-09-04 17:22:20,286:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2656
+2021-09-04 17:22:22,530:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2536
+2021-09-04 17:22:22,581:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 17:22:29,369:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:22:29,371:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:22:33,276:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:22:33,355:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2656
+2021-09-04 17:22:34,623:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2536
+2021-09-04 17:22:35,417:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2536
+2021-09-04 17:22:38,047:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:22:38,048:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:23:09,717:django.security.csrf: WARNING->Forbidden (CSRF token missing or incorrect.): /users/reset_user_profile
+2021-09-04 17:23:09,719:django.server: WARNING->"POST /users/reset_user_profile HTTP/1.1" 403 2519
+2021-09-04 17:23:11,757:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:23:11,840:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2660
+2021-09-04 17:23:14,239:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2540
+2021-09-04 17:23:16,692:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 200 2609
+2021-09-04 17:23:59,634:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:24:01,657:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:24:10,083:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:24:12,563:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:24:21,132:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:24:23,725:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:24:31,694:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:24:34,020:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:24:34,454:django.request: ERROR->Internal Server Error: /users/reset_user_profile
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 172, in reset_user_profile
+    print(request.POST['username'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+2021-09-04 17:24:34,459:django.server: ERROR->"POST /users/reset_user_profile HTTP/1.1" 500 81179
+2021-09-04 17:24:36,780:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:24:36,908:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2660
+2021-09-04 17:24:39,473:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2540
+2021-09-04 17:24:43,228:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2540
+2021-09-04 17:24:47,695:django.request: ERROR->Internal Server Error: /users/reset_user_profile
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 172, in reset_user_profile
+    print(request.POST['username'])
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'username'
+2021-09-04 17:24:47,699:django.server: ERROR->"POST /users/reset_user_profile HTTP/1.1" 500 81179
+2021-09-04 17:25:25,101:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:25:27,016:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:25:42,920:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:25:45,156:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:25:53,484:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:25:55,987:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:25:59,820:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:26:03,150:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:26:03,748:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:26:03,810:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2660
+2021-09-04 17:26:06,879:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2540
+2021-09-04 17:26:06,941:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-04 17:26:11,381:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 200 2609
+2021-09-04 17:26:16,120:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:26:18,780:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:26:19,537:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 200 2609
+2021-09-04 17:26:21,601:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:26:21,653:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2660
+2021-09-04 17:26:23,077:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2540
+2021-09-04 17:26:24,430:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2540
+2021-09-04 17:26:26,645:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 200 2609
+2021-09-04 17:27:04,011:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:27:23,264:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 200 2609
+2021-09-04 17:27:23,332:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1223
+2021-09-04 17:27:23,334:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-04 17:27:23,340:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-04 17:27:23,374:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-04 17:27:35,946:django.server: INFO->"GET /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-04 17:27:36,013:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2660
+2021-09-04 17:30:51,975:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:30:57,184:django.request: WARNING->Not Found: /
+2021-09-04 17:30:57,186:django.server: WARNING->"GET / HTTP/1.1" 404 2390
+2021-09-04 17:30:57,504:django.request: WARNING->Not Found: /favicon.ico
+2021-09-04 17:30:57,505:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2441
+2021-09-04 17:31:02,375:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-04 17:31:02,480:django.server: INFO->"GET /users/ HTTP/1.1" 200 1681
+2021-09-04 17:31:02,540:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1223
+2021-09-04 17:31:02,547:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-04 17:31:02,549:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-04 17:31:02,594:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-04 17:31:10,214:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-04 17:31:10,292:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 3232
+2021-09-04 17:31:13,230:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 2537
+2021-09-04 17:31:17,584:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 200 2608
+2021-09-04 17:32:22,996:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:32:26,018:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:32:33,907:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:32:37,201:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:32:49,866:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:32:52,392:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:32:56,375:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:32:59,803:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:33:05,381:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:33:08,314:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:33:19,484:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:33:21,953:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:33:29,049:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:33:31,506:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-04 17:33:37,511:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-04 17:33:39,616:django.utils.autoreload: INFO->Watching for file changes with StatReloader

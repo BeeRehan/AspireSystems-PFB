@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib import messages
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User,Group
 from django.http.response import Http404, HttpResponse
 from django.shortcuts import redirect, render
 from .form import CreateUsersForm, PatientDetails,PasswordResetForm
@@ -148,9 +148,41 @@ def to_create_user(request):
         messages.info(request,"Not a POST request!!!")
         return render(request,"create_user.html",{'form':form,'title':title,"header":header})
 
+@login_required(login_url='/users')
+def show_user_profile(request):
+    title = request.user
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+    header = f"Hi {title}"
+    groups = request.user.groups.all()[0]
+    print(groups)
+    form = CreateUsersForm(initial={'sname':request.user,'age':userdata.age,'secret_key':userdata.secret_key})
+    return render(request,"userprofile.html",{'form':form,'title':title,'header':header,'userdata':userdata,'groups':groups}) 
+
+
+@login_required(login_url='/users')
+def reset_user_profile(request):
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+    user = User.objects.get(id=request.user.id)
+    form = CreateUsersForm()
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+    if(request.method == 'POST'):
+        print(request.POST['sname'])
+        print(request.POST['age'])
+        print(request.POST['secret_key'])
+        user.username = request.POST['sname']
+        userdata.secret_key = request.POST['secret_key']
+        userdata.age = request.POST['age']
+        user.save()
+        userdata.save()
+        return redirect('/users/show_user_profile')
+    else:
+        messages.info(request,"Not a post method")
+        return redirect('/users/show_user_profile')
+        
+@login_required(login_url='/users')
 def to_delete_user(request,pk):
     user_profle = UserProfile.objects.get(user_id=pk)
-    user_profle.delete()
+    user_profle.delete()    
     user = User.objects.get(id=pk)
     user.delete()
     return redirect('/users/go_admin_page')
