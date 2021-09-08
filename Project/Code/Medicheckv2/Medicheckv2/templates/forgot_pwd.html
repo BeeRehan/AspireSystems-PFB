@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block container %} 
+<div class="container">
+    <div class="formContainer">
+    <form action="/users/to_reset_password" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label class="col-sm-2 col-form-label" for="{{ form.crtpwd.id_for_label }}">{{form.crtpwd.label_tag}}</label>{{form.crtpwd}}<span>{{form.crtpwd.errors}}</span>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-form-label" for="{{ form.newpwd.id_for_label }}">{{form.newpwd.label_tag}}</label>{{form.newpwd}}<span>{{form.newpwd.errors}}</span>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-form-label" for="{{ form.repwd.id_for_label }}">{{form.repwd.label_tag}}</label>{{form.repwd}}<span>{{form.repwd.errors}}</span>
+        </div>
+        <div class="wrapper">
+            <a class="btn btn-primary"  href="/users/show_user_profile">Go back</a>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+{% endblock %}

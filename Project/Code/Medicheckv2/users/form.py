@@ -113,3 +113,9 @@ class CreateUsersForm(forms.Form):
         # user.groups.add(group)
         groups.save()
         user.save()
+
+
+class ForgotPasswordForm(forms.Form):
+    crtpwd =  forms.CharField(label="Current Password",widget=forms.PasswordInput())
+    newpwd =  forms.CharField(label="New Password",widget=forms.PasswordInput(),validators=[PasswordValidation])
+    repwd =  forms.CharField(label="Re-enter Password",widget=forms.PasswordInput())

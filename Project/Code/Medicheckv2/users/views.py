@@ -1,21 +1,21 @@
 from django import forms
 from django.contrib import messages
+from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import User,Group
-from django.http.response import Http404, HttpResponse
 from django.shortcuts import redirect, render
-from .form import CreateUsersForm, PatientDetails,PasswordResetForm
+from .form import CreateUsersForm, ForgotPasswordForm, PatientDetails,PasswordResetForm
 from django.contrib.auth.decorators import login_required
 from appointment.models import AppoinmentDetails
 from .models import UserProfile
 from appointment.form import ApprovalForm
 from django.contrib import auth 
 from .form import UserLoginForm
+from hashlib import sha1
 # Create your views here.
-
 #("-----------------------------------------------------------------")
 
-def index(request):
-    title = "Homepage"
+def to_login(request):
+    title = "Login Page"
     form = UserLoginForm()
     print("Page")
     return render(request,"login.html",{'title':title ,'form':form})
@@ -186,3 +186,51 @@ def to_delete_user(request,pk):
     user = User.objects.get(id=pk)
     user.delete()
     return redirect('/users/go_admin_page')
+
+def show_forgot_password_form(request):
+    title = 'Forgot Password'
+    header = 'To Reset Password'
+    form = ForgotPasswordForm()
+    return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
+
+def to_reset_password(request):
+    form = ForgotPasswordForm(request.POST)
+    title = 'Forgot Password'
+    header = 'To Reset Password'
+    user = User.objects.get(id=request.user.id)
+    if request.method == 'POST':
+        print(request.POST['crtpwd'])
+        print(request.POST['newpwd'])
+        print(request.POST['repwd'])
+        if form.is_valid():
+            print("POST")
+            password = user.password
+            print(password)
+            
+            crtpassword = form.cleaned_data['crtpwd']
+            print("current",make_password(crtpassword))
+            newpassword = form.cleaned_data['newpwd']
+            repassword = form.cleaned_data['repwd']
+
+            if(crtpassword == password):
+                if(newpassword==repassword):
+                    user.password = make_password(newpassword)
+                    messages.info("Password chenged!")
+                    return redirect("/users/logout")
+                else:
+                    messages.info(request,"Both password must be same!!!")
+                    print("POST1")
+                    return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
+            else:
+                messages.info(request,"current password is wrong!!!")
+                print("POST2")
+                return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
+        else:
+            messages.info(request,"Not valid!")
+            print("POST3")
+            return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
+    else:
+        messages.info(request,"Not a post method!")
+        print("POST4")
+        return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
+        

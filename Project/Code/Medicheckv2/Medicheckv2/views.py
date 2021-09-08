@@ -5,3 +5,6 @@ from django.contrib import messages,auth
 from users.models import UserProfile
 
 # Create your views here.
+def get_homepage(request):
+    title = "Home page"
+    return render(request,"homepage.html",{"title":title})

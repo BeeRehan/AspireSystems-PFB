@@ -21,9 +21,9 @@
                 <label class="col-sm-2 col-form-label" for="{{ form.secret_key.id_for_label }}">{{form.secret_key.label_tag}}</label>{{form.secret_key}}<span>{{form.secret_key.error}}</span>
             </div>
             <div class="wrapper">
-                <button class="btn btn-primary" onclick="goback()">Go back</button>
+                <a class="btn btn-primary" href="/appointment/patient">Go Back</a>
                 <button class="btn btn-primary" type="submit">Submit</button>
-                <a class="btn btn-primary" href="/users/password_reset" >To change password</a>
+                <a class="btn btn-primary" href="/users/show_forgot_password_form" >To change password</a>
             </div>
         </div>
     </form>

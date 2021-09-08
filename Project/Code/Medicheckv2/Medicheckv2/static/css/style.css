@@ -70,8 +70,7 @@ p span{
 #alertid{
     display: none;  
 }
-/* footer{
-    position: absolute;
-    bottom: 0;
-    width:100%;
-} */
+
+.slideimg{
+    height: 300px;
+}
