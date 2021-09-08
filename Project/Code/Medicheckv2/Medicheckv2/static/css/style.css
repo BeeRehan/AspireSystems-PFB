@@ -1,10 +1,12 @@
+*{
+    color: #fff;
+}
 body{
     background-image: url(../image/background1.jpg);
 }
-
-/* nav{
-    margin-bottom: 10px;
-} */
+input{
+    color: #000;
+}
 nav ul{
     list-style: none;
     background-color: black;
@@ -73,4 +75,9 @@ p span{
 
 .slideimg{
     height: 300px;
+}
+
+form span ul li{
+    color: #f00;
+    font-size: 15px;
 }
