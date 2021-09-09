@@ -30,8 +30,8 @@
                         <td>{{forloop.counter}}</td>
                         <td>{{ appoinment.id }}</td>
                         <td>{{ appoinment.date }}</td>
-                        <td>{{ appoinment.doctor }}</td>
-                        <td>{{ appoinment.status }}</td>
+                        <td>{{ appoinment.doctor|title }}</td>
+                        <td>{{ appoinment.status|title }}</td>
                         <td><a class="btn btn-primary" href="/checkup/pat_get_checklis/{{appoinment.id}}"> Check Report</a></td>
                     </tr>   
                     {% endfor %}

@@ -19,7 +19,7 @@ class checklistForm(forms.Form):
         prescription = self.cleaned_data['prescription']
         deseas = self.cleaned_data['con_deseas']
         app = AppoinmentDetails.objects.get(id=pk)
-        app.status = "Checked"
+        app.status = "checked"
         app.save()
         check = CheckupDetails.objects.create(temprature=temp,sugar_level=sugar,bp_level=bp,Advice=advice,prescription=prescription,confirmed_diseases=deseas,appointment_id=pk)
         check.save()

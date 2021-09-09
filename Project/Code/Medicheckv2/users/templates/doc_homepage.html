@@ -4,7 +4,7 @@
         <ul>
             <li><a href="/users/logout">Logout</a></li>
             <li><a href="/users/show_user_profile">{{request.user}}</a></li>
-            <li><a href="/checkup/createChecklist">Checklist</a></li>
+            <li><a href="/checkup/create_checklist">Checklist</a></li>
         </ul>
     </nav>
     <h1>Welcome to Doctor page!!!!</h1>
@@ -17,7 +17,7 @@
                         <th>S. No</th>
                         <th>Appoinment Id</th>
                         <th>Date</th>
-                        <!-- <th>patient Name</th> -->
+                        <th>patient Name</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
@@ -28,9 +28,13 @@
                         <td>{{ forloop.counter }}</td>
                         <td>{{ appoinment.id }}</td>
                         <td>{{ appoinment.date }}</td>
-                        <!-- <td>{{names}}</td> -->
-                        <td>{{appoinment.status}}</td>
-                        <td><a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> </td>
+                        <td>{{ appoinment.name|title }}</td>
+                        <td>{{ appoinment.status|title }}</td>
+                        <td>
+                            {% if appoinment.status is not "checked"   %}
+                                <a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> 
+                            {% endif %}
+                            <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> </td>
                     </tr>   
                     {% endfor %}
                 </tbody>

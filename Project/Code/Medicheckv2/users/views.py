@@ -118,8 +118,11 @@ def password_reseter(request):
 def go_admin_page(request):
     title = "Admin"
     users = User.objects.all()
-    # users[1].groups[0].name
-    return render(request,"admin.html",{'title':title,'users':users})
+    users_list = []
+    for user in users:
+        users_list.append(dict(name=user,id=user.id,group=user.groups.all()[0],status=user.is_active))
+    # print(users_list)
+    return render(request,"admin.html",{'title':title,'users':users_list})
 
 @login_required(login_url='/users')
 def create_user(request):
@@ -187,6 +190,7 @@ def to_delete_user(request,pk):
     user.delete()
     return redirect('/users/go_admin_page')
 
+@login_required(login_url='/users')
 def show_forgot_password_form(request):
     title = 'Forgot Password'
     header = 'To Reset Password'

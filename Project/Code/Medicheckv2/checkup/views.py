@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 @login_required(login_url='/')
-def createChecklist(request):
+def create_checklist(request):
     apps = AppoinmentDetails.objects.filter(status="approved",doctor=request.user)
     #print(apps.id)
     return render(request,"checklist.html",{'apps':apps})
@@ -24,7 +24,7 @@ def add_checklist(request,pk):
     if request.method == 'POST':
         if(form.is_valid()):
             form.save(pk)
-            return redirect('/checkup/createChecklist')
+            return redirect('/checkup/create_checklist')
         else:
             print("Not valid")
     else:

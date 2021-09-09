@@ -1,12 +1,12 @@
 *{
-    color: #fff;
+    color: #304;
 }
 body{
     background-image: url(../image/background1.jpg);
 }
-input,textarea{
+/* input,textarea,select,option{
     color: #000;
-}
+} */
 nav ul{
     list-style: none;
     background-color: black;

@@ -17,6 +17,7 @@
                         <th>S. No</th>
                         <th>User Id</th>
                         <th>Username</th>
+                        <th>Group name</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
@@ -26,8 +27,9 @@
                     <tr>
                         <td>{{ forloop.counter }}</td>
                         <td>{{ user.id }}</td>
-                        <td>{{ user }}</td>
-                        {% if  user.is_active %}
+                        <td>{{ user.name|title  }}</td>
+                        <td>{{ user.group|title }}</td>
+                        {% if  user.status %}
                             <td>Active</td>
                         {% else %}
                             <td>Not Active</td>

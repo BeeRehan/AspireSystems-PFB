@@ -1,3 +1,4 @@
+from typing import get_origin
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -6,7 +7,7 @@ from .models import AppoinmentDetails
 from .form import ApprovalForm
 from users.form import PatientDetails
 from users.models import UserProfile 
-# Create your views here.
+
 @login_required(login_url='/users')
 def approve(request,pk):
     appoinment = AppoinmentDetails.objects.get(id=pk)
@@ -88,13 +89,12 @@ def doc_homepage(request):
     title = "Doctor page"
     user = request.user 
     appoinments = AppoinmentDetails.objects.filter(doctor=user)
-    names = [] 
+    appoinments_list = []
     for appoinment in appoinments:
-        patient_name =  User.objects.get(id=appoinment.user_id).username
-        names.append(patient_name)
-    print(names)
-    
-    return render(request,"doc_homepage.html",{'title':title,'appoinments':appoinments,'user':user,'names':names})
+            name = User.objects.get(id=appoinment.user_id).username
+            appoinments_list.append(dict(id=appoinment.id,date=appoinment.date,status=appoinment.status,name=name))
+    print(appoinments_list)
+    return render(request,"doc_homepage.html",{'title':title,'appoinments':appoinments_list,'user':user})
 
 @login_required(login_url='/users')
 def checklist(request):
