@@ -11,6 +11,7 @@ def createChecklist(request):
     apps = AppoinmentDetails.objects.filter(status="approved",doctor=request.user)
     #print(apps.id)
     return render(request,"checklist.html",{'apps':apps})
+
 @login_required(login_url='/')
 def view_checklist(request,pk):
     title = "Add Report"
@@ -28,6 +29,7 @@ def add_checklist(request,pk):
             print("Not valid")
     else:
         print("Not a post request") 
+        
 @login_required(login_url='/')
 def doc_get_checklis(request,pk):
     header = 'Previous Checkup Details!!!'

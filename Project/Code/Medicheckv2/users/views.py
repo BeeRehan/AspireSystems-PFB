@@ -114,11 +114,11 @@ def password_reseter(request):
     else:
         messages.info(request,"Not a post")
 
-@login_required(login_url='/users')
+# @login_required(login_url='/users')
 def go_admin_page(request):
     title = "Admin"
     users = User.objects.all()
-    # print(users[1].groups[0].name)
+    # users[1].groups[0].name
     return render(request,"admin.html",{'title':title,'users':users})
 
 @login_required(login_url='/users')

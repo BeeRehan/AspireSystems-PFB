@@ -4,7 +4,7 @@
 body{
     background-image: url(../image/background1.jpg);
 }
-input{
+input,textarea{
     color: #000;
 }
 nav ul{
@@ -53,15 +53,6 @@ table,th,td{
     width: 600px;
 }
 
-/* .btn {
-    position: absolute;
-    top: 100%;
-} */
-
-/* .result, .alert{
-    display: none;
-    /* visibility: hidden;     */
-/* } */
 p span{
   padding: 10px;
   color: white;

@@ -1,9 +1,7 @@
-from abc import ABCMeta
 from django import forms
-from django.forms.fields import CharField
 from django.forms.widgets import Textarea
 from .models import CheckupDetails
-
+from appointment.models import AppoinmentDetails
 class checklistForm(forms.Form):
     #id = forms.IntegerField(label="Appoinment id")
     temprature = forms.CharField(label="Temprature",max_length=10)
@@ -20,5 +18,8 @@ class checklistForm(forms.Form):
         advice  =self.cleaned_data['advice']
         prescription = self.cleaned_data['prescription']
         deseas = self.cleaned_data['con_deseas']
+        app = AppoinmentDetails.objects.get(id=pk)
+        app.status = "Checked"
+        app.save()
         check = CheckupDetails.objects.create(temprature=temp,sugar_level=sugar,bp_level=bp,Advice=advice,prescription=prescription,confirmed_diseases=deseas,appointment_id=pk)
         check.save()

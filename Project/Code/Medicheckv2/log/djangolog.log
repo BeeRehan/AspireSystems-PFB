@@ -11660,3 +11660,403 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 28: 'ser', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
 2021-09-08 16:35:00,092:django.server: ERROR->"GET /appointment/doctor HTTP/1.1" 500 183613
+2021-09-08 18:16:10,376:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:16:48,941:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:16:57,790:django.server: INFO->"GET / HTTP/1.1" 200 3051
+2021-09-08 18:16:57,883:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 304 0
+2021-09-08 18:16:57,887:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1113
+2021-09-08 18:16:57,911:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-08 18:16:58,105:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 200 102112
+2021-09-08 18:16:58,609:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-08 18:16:58,682:django.request: WARNING->Not Found: /favicon.ico
+2021-09-08 18:16:58,684:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-08 18:17:14,341:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 18:17:14,392:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 18:17:14,394:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 18:17:23,234:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 18:17:23,248:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-08 18:17:23,281:django.server: INFO->"GET /users/ HTTP/1.1" 200 2545
+2021-09-08 18:17:31,505:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 18:17:31,517:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-08 18:17:31,549:django.server: INFO->"GET /users/ HTTP/1.1" 200 2545
+2021-09-08 18:17:31,595:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 18:17:31,596:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 18:17:43,235:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 18:17:43,295:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3971
+2021-09-08 18:17:43,349:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 18:17:49,022:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3267
+2021-09-08 18:17:49,068:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 18:18:08,779:django.server: INFO->"GET /admin HTTP/1.1" 301 0
+2021-09-08 18:18:08,839:django.server: INFO->"GET /admin/ HTTP/1.1" 302 0
+2021-09-08 18:18:08,947:django.server: INFO->"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2367
+2021-09-08 18:18:09,039:django.server: INFO->"GET /static/admin/css/base.css HTTP/1.1" 304 0
+2021-09-08 18:18:09,041:django.server: INFO->"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2021-09-08 18:18:09,043:django.server: INFO->"GET /static/admin/css/login.css HTTP/1.1" 304 0
+2021-09-08 18:18:09,051:django.server: INFO->"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2021-09-08 18:18:09,074:django.server: INFO->"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2021-09-08 18:18:09,075:django.server: INFO->"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2021-09-08 18:18:09,190:django.server: INFO->"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2021-09-08 18:18:09,192:django.server: INFO->"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2021-09-08 18:18:09,196:django.server: INFO->"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2021-09-08 18:18:20,017:django.server: INFO->"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2021-09-08 18:18:20,101:django.server: INFO->"GET /admin/ HTTP/1.1" 200 8454
+2021-09-08 18:18:20,154:django.server: INFO->"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2021-09-08 18:18:20,174:django.server: INFO->"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2021-09-08 18:18:20,175:django.server: INFO->"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2021-09-08 18:18:24,175:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 7773
+2021-09-08 18:18:24,250:django.server: INFO->"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+2021-09-08 18:18:24,256:django.server: INFO->"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2021-09-08 18:18:24,265:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 18:18:24,265:django.server: INFO->"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2021-09-08 18:18:24,267:django.server: INFO->"GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+2021-09-08 18:18:24,270:django.server: INFO->"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2021-09-08 18:18:24,275:django.server: INFO->"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2021-09-08 18:18:24,280:django.server: INFO->"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2021-09-08 18:18:24,284:django.server: INFO->"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+2021-09-08 18:18:24,290:django.server: INFO->"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2021-09-08 18:18:24,375:django.server: INFO->"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2021-09-08 18:18:26,866:django.server: INFO->"GET /admin/users/userprofile/1/change/ HTTP/1.1" 200 10324
+2021-09-08 18:18:26,923:django.server: INFO->"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+2021-09-08 18:18:26,939:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 18:18:26,940:django.server: INFO->"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+2021-09-08 18:18:26,941:django.server: INFO->"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+2021-09-08 18:18:26,956:django.server: INFO->"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2021-09-08 18:18:33,397:django.server: INFO->"POST /admin/users/userprofile/1/change/ HTTP/1.1" 302 0
+2021-09-08 18:18:33,530:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 7999
+2021-09-08 18:18:33,600:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 18:18:33,691:django.server: INFO->"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2021-09-08 18:18:36,640:django.request: ERROR->Internal Server Error: /users/show_user_profile
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 154, in show_user_profile
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-08 18:18:36,646:django.server: ERROR->"GET /users/show_user_profile HTTP/1.1" 500 79295
+2021-09-08 18:18:39,653:django.request: ERROR->Internal Server Error: /users/show_user_profile
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 154, in show_user_profile
+    userdata = UserProfile.objects.get(user_id=request.user.id)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-08 18:18:39,655:django.server: ERROR->"GET /users/show_user_profile HTTP/1.1" 500 79125
+2021-09-08 18:18:43,849:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2383
+2021-09-08 18:18:52,676:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-08 18:18:52,719:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 18:18:52,771:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 18:18:52,772:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 18:19:02,877:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 18:19:02,910:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3971
+2021-09-08 18:19:05,177:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3284
+2021-09-08 18:19:28,025:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3971
+2021-09-08 18:19:28,079:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 18:19:28,080:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 18:22:27,200:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2156
+2021-09-08 18:22:27,261:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 18:22:27,263:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 18:24:46,428:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:24:48,393:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:26:58,676:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:27:00,931:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:27:09,983:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:27:11,907:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:55:38,130:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:55:40,366:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:56:51,491:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:56:53,553:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:57:52,977:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:57:55,547:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:59:08,679:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:59:10,734:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:59:24,201:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:59:26,603:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:59:43,857:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:59:45,938:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 18:59:53,461:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\form.py changed, reloading.
+2021-09-08 18:59:55,854:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 19:00:10,770:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2156
+2021-09-08 19:00:10,837:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 19:00:10,839:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 19:00:13,838:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-08 19:00:13,895:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:00:22,125:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 19:00:22,142:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-08 19:00:22,181:django.server: INFO->"GET /users/ HTTP/1.1" 200 2545
+2021-09-08 19:00:29,461:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 19:00:29,714:django.request: ERROR->Internal Server Error: /appointment/doctor
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'ser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py", line 97, in doc_homepage
+    return render(request,"doc_homepage.html",{'title':title,'appoinments':appoinments,'user':user,'names':names})
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\defaulttags.py", line 814, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 28: 'ser', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2021-09-08 19:00:29,728:django.server: ERROR->"GET /appointment/doctor HTTP/1.1" 500 182543
+2021-09-08 19:01:30,285:django.request: ERROR->Internal Server Error: /appointment/doctor
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py", line 97, in doc_homepage
+    return render(request,"doc_homepage.html",{'title':title,'appoinments':appoinments,'user':user,'names':names})
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 34: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2021-09-08 19:01:30,289:django.server: ERROR->"GET /appointment/doctor HTTP/1.1" 500 168057
+2021-09-08 19:02:02,270:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4505
+2021-09-08 19:02:06,063:django.server: INFO->"GET /checkup/createChecklist HTTP/1.1" 200 3048
+2021-09-08 19:02:08,510:django.server: INFO->"GET /checkup/view_checklist/1 HTTP/1.1" 200 3682
+2021-09-08 19:02:11,857:django.server: INFO->"GET /appointment/get_details/2/1 HTTP/1.1" 200 2320
+2021-09-08 19:02:14,908:django.server: INFO->"GET /appointment/get_details/2/1 HTTP/1.1" 200 2320
+2021-09-08 19:02:16,225:django.server: INFO->"GET /checkup/doc_get_checklis/2 HTTP/1.1" 200 1845
+2021-09-08 19:02:18,848:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2156
+2021-09-08 19:02:25,821:django.server: INFO->"GET /checkup/view_checklist/1 HTTP/1.1" 200 3682
+2021-09-08 19:02:41,715:django.server: INFO->"POST /checkup/add_checklist/1 HTTP/1.1" 302 0
+2021-09-08 19:02:41,749:django.server: INFO->"GET /checkup/createChecklist HTTP/1.1" 200 2663
+2021-09-08 19:02:46,849:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4504
+2021-09-08 19:02:52,860:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-08 19:02:52,904:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:02:59,910:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 19:02:59,944:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3970
+2021-09-08 19:03:02,652:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2051
+2021-09-08 19:03:44,082:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-08 19:03:44,124:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:03:58,698:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 19:03:58,740:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4504
+2021-09-08 19:04:00,945:django.server: INFO->"GET /checkup/createChecklist HTTP/1.1" 200 2663
+2021-09-08 19:04:02,251:django.server: INFO->"GET /checkup/view_checklist/3 HTTP/1.1" 200 3682
+2021-09-08 19:04:15,306:django.server: WARNING->"GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2021-09-08 19:04:45,899:django.server: INFO->"GET /checkup/view_checklist/3 HTTP/1.1" 200 3682
+2021-09-08 19:04:45,950:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 19:04:45,953:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1122
+2021-09-08 19:04:46,113:django.server: WARNING->"GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+2021-09-08 19:11:51,278:django.server: INFO->"GET / HTTP/1.1" 200 3051
+2021-09-08 19:11:51,408:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 19:11:51,410:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 19:11:51,488:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 304 0
+2021-09-08 19:11:51,660:django.request: WARNING->Not Found: /favicon.ico
+2021-09-08 19:11:51,662:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-08 19:12:02,193:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:12:09,071:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 19:12:09,111:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3970
+2021-09-08 19:12:12,679:django.server: INFO->"GET / HTTP/1.1" 200 3051
+2021-09-08 19:12:18,032:django.server: INFO->"GET /admin/ HTTP/1.1" 302 0
+2021-09-08 19:12:18,127:django.server: INFO->"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2367
+2021-09-08 19:12:38,662:django.server: INFO->"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2532
+2021-09-08 19:12:42,707:django.server: INFO->"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2021-09-08 19:12:42,845:django.server: INFO->"GET /admin/ HTTP/1.1" 200 8488
+2021-09-08 19:12:44,726:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 10997
+2021-09-08 19:12:44,873:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:12:44,893:django.server: INFO->"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2021-09-08 19:12:44,901:django.server: INFO->"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2021-09-08 19:12:45,084:django.server: INFO->"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2021-09-08 19:12:51,419:django.server: INFO->"GET /admin/auth/user/add/ HTTP/1.1" 200 8562
+2021-09-08 19:12:51,583:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:05,256:django.server: INFO->"POST /admin/auth/user/add/ HTTP/1.1" 200 8799
+2021-09-08 19:13:05,403:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:19,728:django.server: INFO->"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+2021-09-08 19:13:20,196:django.server: INFO->"GET /admin/auth/user/5/change/ HTTP/1.1" 200 18003
+2021-09-08 19:13:20,367:django.server: INFO->"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2021-09-08 19:13:20,368:django.server: INFO->"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+2021-09-08 19:13:20,370:django.server: INFO->"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+2021-09-08 19:13:20,383:django.server: INFO->"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+2021-09-08 19:13:20,395:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:20,651:django.server: INFO->"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+2021-09-08 19:13:20,653:django.server: INFO->"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+2021-09-08 19:13:20,654:django.server: INFO->"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+2021-09-08 19:13:20,655:django.server: INFO->"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2021-09-08 19:13:20,657:django.server: INFO->"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2021-09-08 19:13:31,581:django.server: INFO->"GET /admin/auth/group/ HTTP/1.1" 200 7787
+2021-09-08 19:13:31,719:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:33,884:django.server: INFO->"GET /admin/auth/group/add/ HTTP/1.1" 200 10330
+2021-09-08 19:13:34,032:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:39,465:django.server: INFO->"POST /admin/auth/group/add/ HTTP/1.1" 302 0
+2021-09-08 19:13:39,672:django.server: INFO->"GET /admin/auth/group/ HTTP/1.1" 200 8184
+2021-09-08 19:13:39,824:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:43,844:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11456
+2021-09-08 19:13:43,955:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:45,571:django.server: INFO->"GET /admin/auth/user/5/change/ HTTP/1.1" 200 17820
+2021-09-08 19:13:45,736:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:51,738:django.server: INFO->"POST /admin/auth/user/5/change/ HTTP/1.1" 302 0
+2021-09-08 19:13:52,052:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11649
+2021-09-08 19:13:52,192:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-08 19:13:54,395:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-08 19:13:54,463:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:13:54,553:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 19:14:08,759:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 33, in authenticate_user
+    if(not UserProfile.objects.get(user_id=user.id).account_status=='blocked'):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-08 19:14:08,772:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 75504
+2021-09-08 19:14:12,666:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:14:36,053:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 33, in authenticate_user
+    if(not UserProfile.objects.get(user_id=user.id).account_status=='blocked'):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-08 19:14:36,057:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 75504
+2021-09-08 19:14:37,921:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:14:40,803:django.server: INFO->"GET /admin/auth/user/5/change/ HTTP/1.1" 302 0
+2021-09-08 19:14:40,879:django.server: INFO->"GET /admin/login/?next=/admin/auth/user/5/change/ HTTP/1.1" 200 2252
+2021-09-08 19:14:50,196:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 33, in authenticate_user
+    if(not UserProfile.objects.get(user_id=user.id).account_status=='blocked'):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+users.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2021-09-08 19:14:50,201:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 75504
+2021-09-08 19:14:52,524:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-08 19:15:01,506:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-08 19:15:01,564:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3970
+2021-09-08 19:15:01,665:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 19:15:03,140:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3284
+2021-09-08 19:15:08,491:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2633
+2021-09-08 19:15:23,900:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3284
+2021-09-08 19:15:27,615:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3970
+2021-09-08 19:15:32,973:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3284
+2021-09-08 19:15:39,211:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3970
+2021-09-08 19:16:33,427:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-08 19:16:36,855:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 19:21:31,536:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4086
+2021-09-08 19:21:31,566:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-08 19:21:31,566:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-08 19:21:41,810:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 3633
+2021-09-08 19:23:52,796:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-08 19:23:53,465:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 19:31:17,562:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-08 19:31:18,177:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-08 19:31:23,577:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-08 19:31:24,205:django.utils.autoreload: INFO->Watching for file changes with StatReloader
