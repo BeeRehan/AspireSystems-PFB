@@ -216,25 +216,17 @@ def to_reset_password(request):
             newpassword = form.cleaned_data['newpwd']
             repassword = form.cleaned_data['repwd']
 
-            if(crtpassword == password):
-                if(newpassword==repassword):
-                    user.password = make_password(newpassword)
-                    messages.info("Password chenged!")
-                    return redirect("/users/logout")
-                else:
-                    messages.info(request,"Both password must be same!!!")
-                    print("POST1")
-                    return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
+            if(newpassword==repassword):
+                user.password = make_password(newpassword)
+                messages.info("Password chenged!")
+                return redirect("/users/logout")
             else:
-                messages.info(request,"current password is wrong!!!")
-                print("POST2")
+                messages.info(request,"Both password must be same!!!")
                 return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
         else:
             messages.info(request,"Not valid!")
-            print("POST3")
             return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
     else:
         messages.info(request,"Not a post method!")
-        print("POST4")
         return render(request,"forgot_pwd.html",{'form':form,'title':title,'header':header})
         

@@ -5,6 +5,11 @@ from .models import CheckupDetails
 from .form import checklistForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from checkup.serializers import CheckupSerializer
+from rest_framework.response import Response
+from rest_framework.decorators import MethodMapper, api_view
+
+
 # Create your views here.
 @login_required(login_url='/')
 def create_checklist(request):
@@ -37,13 +42,18 @@ def doc_get_checklis(request,pk):
     print("apps",apps)
     return render(request,"detail_appoinment.html",{'apps':apps,'title':'Previuous','header':header})
 
-@login_required(login_url='/')
+@api_view(['GET'])
+# @login_required(login_url='/')
 def pat_get_checklis(request,pk):
     try:
         title = 'Checkup'
         header = 'Checkup Details'
         checks = CheckupDetails.objects.get(appointment_id=pk)
-        return render(request,"show_checklist.html",{"header":header,"title":title,"checks":checks})
+        if(request.content_type=="application/json"):
+            serializer = CheckupSerializer(checks)
+            return Response(serializer.data)
+        elif(request.content_type=="text/plain"):
+            return render(request,"show_checklist.html",{"header":header,"title":title,"checks":checks})
     except Exception:
         messages.info(request,"No checkup details found")
         return render(request,"show_checklist.html")

@@ -12842,3 +12842,208 @@ django.template.exceptions.TemplateSyntaxError: Not expecting 'not' as infix ope
 2021-09-09 17:23:41,301:django.utils.autoreload: INFO->Watching for file changes with StatReloader
 2021-09-09 17:23:41,737:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
 2021-09-09 17:23:41,785:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:24:07,805:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:24:08,029:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:24:08,364:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:24:08,549:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:24:08,722:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:24:09,031:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:26:55,337:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:26:57,144:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:27:01,007:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:28:08,452:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-09 17:28:39,234:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 302 0
+2021-09-09 17:28:39,242:django.server: INFO->"GET /users?next=/appointment/doctor HTTP/1.1" 301 0
+2021-09-09 17:28:39,280:django.server: INFO->"GET /users/?next=/appointment/doctor HTTP/1.1" 200 2417
+2021-09-09 17:28:39,395:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1136
+2021-09-09 17:28:39,399:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-09 17:28:39,437:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-09 17:28:39,872:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-09 17:28:58,239:django.server: INFO->"GET /users/?next=/appointment/doctor HTTP/1.1" 200 2417
+2021-09-09 17:28:58,349:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1136
+2021-09-09 17:29:00,117:django.server: INFO->"GET /users/?next=/appointment/doctor HTTP/1.1" 200 2417
+2021-09-09 17:29:00,193:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:29:07,432:django.server: INFO->"GET /users/?next=/appointment/doctor HTTP/1.1" 200 2417
+2021-09-09 17:29:07,538:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1136
+2021-09-09 17:29:14,102:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-09 17:29:14,138:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4375
+2021-09-09 17:29:14,199:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:29:20,848:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4502
+2021-09-09 17:29:20,913:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:29:41,541:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4502
+2021-09-09 17:29:41,717:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1142
+2021-09-09 17:29:56,213:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-09 17:29:56,248:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-09 17:29:56,300:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-09 17:29:56,348:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:30:05,520:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-09 17:30:05,565:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:05,621:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:30:14,505:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 3633
+2021-09-09 17:30:14,573:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:30:44,507:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:44,756:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1163
+2021-09-09 17:30:46,482:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:46,641:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:30:46,663:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:46,725:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:30:46,812:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:46,863:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:30:51,604:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:51,711:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1164
+2021-09-09 17:30:59,207:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:30:59,307:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1163
+2021-09-09 17:31:06,975:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:07,127:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1163
+2021-09-09 17:31:13,826:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:13,965:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1164
+2021-09-09 17:31:14,586:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:14,726:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:14,774:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:14,901:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:14,938:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:15,024:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:24,585:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:24,765:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1142
+2021-09-09 17:31:25,452:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:25,578:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:25,700:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:25,746:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:26,071:django.server: INFO->- Broken pipe from ('127.0.0.1', 62169)
+
+2021-09-09 17:31:26,113:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:26,159:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:34,001:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:34,102:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1163
+2021-09-09 17:31:34,705:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:34,936:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:34,986:django.server: INFO->- Broken pipe from ('127.0.0.1', 55763)
+
+2021-09-09 17:31:35,027:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:35,073:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:43,836:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:44,051:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1166
+2021-09-09 17:31:44,441:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:44,550:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:44,660:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:44,712:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-09 17:31:45,527:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4349
+2021-09-09 17:31:45,647:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-13 10:26:07,089:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 10:28:19,784:django.server: INFO->"GET / HTTP/1.1" 200 3051
+2021-09-13 10:28:20,069:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 304 0
+2021-09-13 10:28:20,140:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-13 10:28:20,185:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1142
+2021-09-13 10:28:20,289:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 200 102112
+2021-09-13 10:28:20,807:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 304 0
+2021-09-13 10:28:21,815:django.request: WARNING->Not Found: /favicon.ico
+2021-09-13 10:28:21,817:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-13 10:28:23,287:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-13 10:28:34,390:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-13 10:28:34,396:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-13 10:28:34,419:django.server: INFO->"GET /users/ HTTP/1.1" 200 2545
+2021-09-13 10:28:42,387:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-13 10:28:42,580:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4375
+2021-09-13 10:28:45,686:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3284
+2021-09-13 10:28:48,381:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2633
+2021-09-13 10:39:01,380:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-13 10:39:07,629:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 10:39:34,605:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-13 10:39:37,824:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 10:39:47,127:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-13 10:39:50,784:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 10:40:57,715:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2633
+2021-09-13 10:40:59,991:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2633
+2021-09-13 10:41:27,777:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2642
+2021-09-13 10:54:20,490:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3284
+2021-09-13 10:54:22,018:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4375
+2021-09-13 10:54:27,963:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-13 10:54:27,997:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-13 10:54:35,804:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-13 10:54:35,812:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-13 10:54:35,842:django.server: INFO->"GET /users/ HTTP/1.1" 200 2545
+2021-09-13 10:54:44,092:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-13 10:54:44,201:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-13 10:55:29,741:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 4652
+2021-09-13 15:30:44,906:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:31:26,715:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:31:28,149:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:33:33,621:django.server: INFO->"GET / HTTP/1.1" 200 3051
+2021-09-13 15:33:33,718:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1142
+2021-09-13 15:33:33,754:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-13 15:33:33,777:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-13 15:33:34,026:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 200 102112
+2021-09-13 15:33:34,212:django.server: INFO->"GET /static/image/background1.jpg HTTP/1.1" 200 73797
+2021-09-13 15:33:34,573:django.request: WARNING->Not Found: /favicon.ico
+2021-09-13 15:33:34,573:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-13 15:33:37,552:django.server: INFO->"GET /users/ HTTP/1.1" 200 2417
+2021-09-13 15:33:45,167:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-13 15:33:45,172:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-13 15:33:45,186:django.server: INFO->"GET /users/ HTTP/1.1" 200 2545
+2021-09-13 15:33:53,774:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-13 15:33:53,843:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4375
+2021-09-13 15:34:03,602:django.server: INFO->"GET /checkup/pat_get_checklis/5 HTTP/1.1" 200 2156
+2021-09-13 15:34:06,692:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041
+2021-09-13 15:34:47,376:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2156
+2021-09-13 15:35:43,632:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041
+2021-09-13 15:36:14,399:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041
+2021-09-13 15:37:21,643:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2156
+2021-09-13 15:37:31,701:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:37:33,464:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:37:36,112:django.request: ERROR->Internal Server Error: /checkup/pat_get_checklis/7
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+2021-09-13 15:37:36,118:django.server: ERROR->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 500 67869
+2021-09-13 15:39:00,345:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:39:01,774:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:39:09,090:django.request: ERROR->Internal Server Error: /checkup/pat_get_checklis/7
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+2021-09-13 15:39:09,094:django.server: ERROR->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 500 67869
+2021-09-13 15:40:49,454:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:40:51,224:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:41:09,279:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:41:10,856:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:41:13,623:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:41:15,157:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:43:40,372:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 302 0
+2021-09-13 15:43:40,389:django.server: INFO->"GET /?next=/checkup/pat_get_checklis/7 HTTP/1.1" 200 3051
+2021-09-13 15:43:57,196:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041
+2021-09-13 15:44:04,787:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 302 0
+2021-09-13 15:44:04,797:django.server: INFO->"GET /?next=/checkup/pat_get_checklis/7 HTTP/1.1" 200 3051
+2021-09-13 15:47:18,350:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-13 15:47:20,101:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-13 15:47:22,179:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 149
+2021-09-13 15:47:46,885:django.request: ERROR->Internal Server Error: /checkup/pat_get_checklis/7
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\mohamed.mohamed\Anaconda3\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2021-09-13 15:47:46,888:django.server: ERROR->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 500 77684
+2021-09-13 15:48:06,961:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041

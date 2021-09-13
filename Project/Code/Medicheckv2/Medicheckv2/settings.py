@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'Medicheckv2',
     'users',
     'checkup',
-    'appointment'
+    'appointment',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
