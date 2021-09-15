@@ -13047,3 +13047,4 @@ Traceback (most recent call last):
 AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
 2021-09-13 15:47:46,888:django.server: ERROR->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 500 77684
 2021-09-13 15:48:06,961:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041
+2021-09-15 12:57:23,594:django.utils.autoreload: INFO->Watching for file changes with StatReloader

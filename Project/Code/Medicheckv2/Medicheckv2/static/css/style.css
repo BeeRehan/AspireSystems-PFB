@@ -1,12 +1,11 @@
 *{
     color: #304;
 }
+
 body{
-    background-image: url(../image/background1.jpg);
+    /* background-image: url(../image/background1.png); */
+    background-image: repeating-linear-gradient(90deg, rgb(95, 152, 225) 0px, rgb(95, 152, 225) 10px,rgb(115, 164, 229) 10px, rgb(115, 164, 229) 20px,rgb(135, 175, 233) 20px, rgb(135, 175, 233) 30px,rgb(214, 222, 250) 30px, rgb(214, 222, 250) 40px,rgb(174, 199, 242) 40px, rgb(174, 199, 242) 50px,rgb(155, 187, 238) 50px, rgb(155, 187, 238) 60px,rgb(194, 210, 246) 60px, rgb(194, 210, 246) 70px);
 }
-/* input,textarea,select,option{
-    color: #000;
-} */
 nav ul{
     list-style: none;
     background-color: black;
@@ -45,7 +44,7 @@ table,th,td{
     background: transparent;
     padding: 5px;
     overflow: hidden;
-    box-shadow: 0 0 20px 0 #91f2fd;   
+    box-shadow: 0 0 20px 0 #fff;   
 }
 
 .wrapper {
