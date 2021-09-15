@@ -203,22 +203,16 @@ def to_reset_password(request):
     header = 'To Reset Password'
     user = User.objects.get(id=request.user.id)
     if request.method == 'POST':
-        print(request.POST['crtpwd'])
         print(request.POST['newpwd'])
         print(request.POST['repwd'])
         if form.is_valid():
             print("POST")
-            password = user.password
-            print(password)
-            
-            crtpassword = form.cleaned_data['crtpwd']
-            print("current",make_password(crtpassword))
             newpassword = form.cleaned_data['newpwd']
             repassword = form.cleaned_data['repwd']
-
             if(newpassword==repassword):
                 user.password = make_password(newpassword)
-                messages.info("Password chenged!")
+                user.save()
+                messages.info(request,"Password chenged!")
                 return redirect("/users/logout")
             else:
                 messages.info(request,"Both password must be same!!!")

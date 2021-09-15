@@ -116,6 +116,5 @@ class CreateUsersForm(forms.Form):
 
 
 class ForgotPasswordForm(forms.Form):
-    crtpwd =  forms.CharField(label="Current Password",widget=forms.PasswordInput())
     newpwd =  forms.CharField(label="New Password",widget=forms.PasswordInput(),validators=[PasswordValidation])
     repwd =  forms.CharField(label="Re-enter Password",widget=forms.PasswordInput())

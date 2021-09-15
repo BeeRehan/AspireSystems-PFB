@@ -10,11 +10,15 @@ from users.models import UserProfile
 
 @login_required(login_url='/users')
 def approve(request,pk):
-    appoinment = AppoinmentDetails.objects.get(id=pk)
-    print(appoinment.status)
-    appoinment.status = "approved"
-    appoinment.save()
-    return redirect('/appointment/doctor')
+    try:
+        appoinment = AppoinmentDetails.objects.get(id=pk)
+        print(appoinment.status)
+        appoinment.status = "approved"
+        appoinment.save()
+        return redirect('/appointment/doctor')
+    except Exception:
+        messages.info(request,"No object")
+        return redirect('/appointment/doctor')
 
 @login_required(login_url='/users')
 def reject(request,pk):

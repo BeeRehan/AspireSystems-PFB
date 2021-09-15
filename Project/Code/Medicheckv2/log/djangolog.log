@@ -13048,3 +13048,447 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2021-09-13 15:47:46,888:django.server: ERROR->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 500 77684
 2021-09-13 15:48:06,961:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2041
 2021-09-15 12:57:23,594:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 16:56:19,772:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 16:56:25,212:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 16:56:25,268:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 304 0
+2021-09-15 16:56:25,271:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 304 0
+2021-09-15 16:56:25,283:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1487
+2021-09-15 16:56:25,286:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 304 0
+2021-09-15 16:56:25,302:django.server: INFO->"GET /static/image/slide/slide2.jpg HTTP/1.1" 200 475167
+2021-09-15 16:56:25,307:django.server: INFO->"GET /static/image/slide/slide1.jpg HTTP/1.1" 200 80502
+2021-09-15 16:56:25,373:django.request: WARNING->Not Found: /favicon.ico
+2021-09-15 16:56:25,373:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-15 16:58:08,394:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-09-15 16:58:09,029:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 16:58:33,482:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-09-15 16:58:34,113:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 16:59:20,850:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-09-15 16:59:21,475:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 16:59:23,062:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-09-15 16:59:23,684:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 16:59:24,401:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 16:59:24,419:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 16:59:24,425:django.server: INFO->"GET /static/image/slide/slide2.jpg HTTP/1.1" 304 0
+2021-09-15 16:59:24,427:django.server: INFO->"GET /static/image/slide/slide1.jpg HTTP/1.1" 304 0
+2021-09-15 16:59:24,974:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 16:59:25,172:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 16:59:25,325:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 16:59:27,149:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 16:59:33,556:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 16:59:33,562:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 16:59:33,573:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 16:59:39,759:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 16:59:39,764:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 16:59:39,775:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 16:59:48,358:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 16:59:48,385:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3961
+2021-09-15 16:59:51,833:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4493
+2021-09-15 16:59:51,849:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:00:22,790:django.server: INFO->"POST /appointment/apply_appoinment HTTP/1.1" 302 0
+2021-09-15 17:00:22,804:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4362
+2021-09-15 17:00:22,821:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:00:29,150:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3275
+2021-09-15 17:00:38,779:django.server: INFO->"POST /users/reset_user_profile HTTP/1.1" 302 0
+2021-09-15 17:00:38,801:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3275
+2021-09-15 17:00:41,161:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2633
+2021-09-15 17:00:51,325:django.request: ERROR->Internal Server Error: /users/to_reset_password
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'crtpwd'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 206, in to_reset_password
+    print(request.POST['crtpwd'])
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'crtpwd'
+2021-09-15 17:00:51,326:django.server: ERROR->"POST /users/to_reset_password HTTP/1.1" 500 74996
+2021-09-15 17:01:20,278:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:01:20,870:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:01:27,755:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:01:28,324:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:01:31,745:django.request: ERROR->Internal Server Error: /users/to_reset_password
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'crtpwd'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 206, in to_reset_password
+    print(request.POST['crtpwd'])
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'crtpwd'
+2021-09-15 17:01:31,747:django.server: ERROR->"POST /users/to_reset_password HTTP/1.1" 500 75057
+2021-09-15 17:01:45,963:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:01:46,670:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:01:47,695:django.server: INFO->"GET /users/to_reset_password HTTP/1.1" 200 2931
+2021-09-15 17:01:47,713:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:02:04,099:django.request: ERROR->Internal Server Error: /users/to_reset_password
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'crtpwd'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 206, in to_reset_password
+    print(request.POST['crtpwd'])
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'crtpwd'
+2021-09-15 17:02:04,101:django.server: ERROR->"POST /users/to_reset_password HTTP/1.1" 500 75043
+2021-09-15 17:02:14,559:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:02:15,238:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:02:19,110:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:02:19,872:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:02:22,498:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:02:35,902:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:02:35,920:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:02:43,727:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:02:44,438:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:02:46,559:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:02:49,388:django.server: INFO->"GET /users/to_reset_password HTTP/1.1" 200 2931
+2021-09-15 17:03:01,533:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:04:06,507:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:04:10,261:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:04:10,277:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:04:12,168:django.server: INFO->"GET /users/to_reset_password HTTP/1.1" 200 2931
+2021-09-15 17:04:25,421:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:06:31,235:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2866
+2021-09-15 17:06:31,254:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:06:43,699:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2805
+2021-09-15 17:08:22,886:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 17:08:24,022:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:08:26,102:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 200 2647
+2021-09-15 17:08:26,118:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:08:28,512:django.server: INFO->"GET /users/to_reset_password HTTP/1.1" 200 2754
+2021-09-15 17:08:41,916:django.request: ERROR->Internal Server Error: /users/to_reset_password
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 214, in to_reset_password
+    messages.info("Password chenged!")
+TypeError: info() missing 1 required positional argument: 'message'
+2021-09-15 17:08:41,917:django.server: ERROR->"POST /users/to_reset_password HTTP/1.1" 500 67236
+2021-09-15 17:08:58,566:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:08:59,494:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:09:04,035:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 302 0
+2021-09-15 17:09:04,049:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:09:04,054:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:09:04,071:django.server: INFO->"GET /users/ HTTP/1.1" 200 2528
+2021-09-15 17:09:13,123:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:09:13,127:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:09:13,138:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 17:09:21,007:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:09:21,012:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:09:21,024:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 17:09:35,578:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:09:35,583:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:09:35,594:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 17:09:47,802:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:09:47,807:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:09:47,818:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 17:09:47,832:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:09:50,578:django.server: INFO->"GET /users/password_reset HTTP/1.1" 200 2788
+2021-09-15 17:10:03,983:django.server: INFO->"POST /users/password_reseter HTTP/1.1" 302 0
+2021-09-15 17:10:03,988:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:10:03,997:django.server: INFO->"GET /users/ HTTP/1.1" 200 2532
+2021-09-15 17:10:10,373:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:10:10,389:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4362
+2021-09-15 17:10:12,094:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3275
+2021-09-15 17:10:13,538:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2515
+2021-09-15 17:10:22,169:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 302 0
+2021-09-15 17:10:22,180:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:10:22,184:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:10:22,195:django.server: INFO->"GET /users/ HTTP/1.1" 200 2528
+2021-09-15 17:10:31,058:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:10:31,757:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:10:37,271:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:10:37,275:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:10:37,293:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 17:10:42,958:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:10:42,973:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4362
+2021-09-15 17:10:44,856:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3275
+2021-09-15 17:10:46,620:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2515
+2021-09-15 17:10:58,302:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 302 0
+2021-09-15 17:10:58,313:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:10:58,318:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:10:58,329:django.server: INFO->"GET /users/ HTTP/1.1" 200 2528
+2021-09-15 17:11:04,898:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:11:04,910:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4362
+2021-09-15 17:11:07,349:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:11:07,362:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:11:13,343:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:11:13,364:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 5213
+2021-09-15 17:11:20,608:django.server: INFO->"GET /appointment/approve/5 HTTP/1.1" 302 0
+2021-09-15 17:11:20,631:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 5212
+2021-09-15 17:11:20,651:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:11:23,282:django.server: INFO->"GET /checkup/create_checklist HTTP/1.1" 200 3043
+2021-09-15 17:11:27,241:django.server: INFO->"GET /appointment/get_details/2/5 HTTP/1.1" 200 2333
+2021-09-15 17:11:28,656:django.server: INFO->"GET /checkup/doc_get_checklis/2 HTTP/1.1" 200 1840
+2021-09-15 17:11:29,870:django.server: INFO->"GET /checkup/pat_get_checklis/4 HTTP/1.1" 200 2321
+2021-09-15 17:11:32,565:django.server: INFO->"GET /checkup/pat_get_checklis/3 HTTP/1.1" 200 2195
+2021-09-15 17:11:34,508:django.server: INFO->"GET /checkup/pat_get_checklis/5 HTTP/1.1" 200 2321
+2021-09-15 17:11:37,608:django.request: WARNING->Not Found: /uploads/2021/09/15/after-school-clubs-31273871.png
+2021-09-15 17:11:37,609:django.server: WARNING->"GET /uploads/2021/09/15/after-school-clubs-31273871.png HTTP/1.1" 404 2679
+2021-09-15 17:11:42,848:django.server: INFO->"GET /checkup/view_checklist/5 HTTP/1.1" 200 3661
+2021-09-15 17:11:55,570:django.server: INFO->"POST /checkup/add_checklist/5 HTTP/1.1" 302 0
+2021-09-15 17:11:55,581:django.server: INFO->"GET /checkup/create_checklist HTTP/1.1" 200 2654
+2021-09-15 17:11:56,994:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 5211
+2021-09-15 17:12:00,150:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:12:00,165:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:12:07,781:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:12:07,792:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4360
+2021-09-15 17:12:10,300:django.server: INFO->"GET /checkup/pat_get_checklis/5 HTTP/1.1" 200 2205
+2021-09-15 17:12:13,884:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:12:13,900:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:12:26,704:django.request: ERROR->Internal Server Error: /users/authenticate_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 51, in authenticate_user
+    print("auth",safe_account(request))
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 71, in safe_account
+    name = User.objects.get(username=request.POST['username'])
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+2021-09-15 17:12:26,706:django.server: ERROR->"POST /users/authenticate_user HTTP/1.1" 500 78973
+2021-09-15 17:12:37,310:django.server: INFO->"GET /admin/ HTTP/1.1" 302 0
+2021-09-15 17:12:37,340:django.server: INFO->"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2342
+2021-09-15 17:12:37,386:django.server: INFO->"GET /static/admin/css/base.css HTTP/1.1" 304 0
+2021-09-15 17:12:37,386:django.server: INFO->"GET /static/admin/css/login.css HTTP/1.1" 304 0
+2021-09-15 17:12:37,387:django.server: INFO->"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2021-09-15 17:12:37,387:django.server: INFO->"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2021-09-15 17:12:37,390:django.server: INFO->"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2021-09-15 17:12:37,391:django.server: INFO->"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2021-09-15 17:12:37,397:django.server: INFO->"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+2021-09-15 17:12:37,437:django.server: INFO->"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2021-09-15 17:12:37,437:django.server: INFO->"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2021-09-15 17:12:44,512:django.server: INFO->"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2021-09-15 17:12:44,557:django.server: INFO->"GET /admin/ HTTP/1.1" 200 8484
+2021-09-15 17:12:44,574:django.server: INFO->"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2021-09-15 17:12:44,581:django.server: INFO->"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2021-09-15 17:12:44,581:django.server: INFO->"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2021-09-15 17:12:44,594:django.server: INFO->"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2021-09-15 17:12:47,486:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11456
+2021-09-15 17:12:47,506:django.server: INFO->"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2021-09-15 17:12:47,507:django.server: INFO->"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,508:django.server: INFO->"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,510:django.server: INFO->"GET /static/admin/js/core.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,516:django.server: INFO->"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,516:django.server: INFO->"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,517:django.server: INFO->"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,517:django.server: INFO->"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,518:django.server: INFO->"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2021-09-15 17:12:47,520:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:12:47,526:django.server: INFO->"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+2021-09-15 17:12:47,527:django.server: INFO->"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+2021-09-15 17:12:47,549:django.server: INFO->"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+2021-09-15 17:12:47,549:django.server: INFO->"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2021-09-15 17:12:51,559:django.server: INFO->"GET /admin/auth/user/5/change/ HTTP/1.1" 200 17865
+2021-09-15 17:12:51,588:django.server: INFO->"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+2021-09-15 17:12:51,589:django.server: INFO->"GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+2021-09-15 17:12:51,589:django.server: INFO->"GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+2021-09-15 17:12:51,590:django.server: INFO->"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+2021-09-15 17:12:51,590:django.server: INFO->"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+2021-09-15 17:12:51,594:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:12:51,595:django.server: INFO->"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+2021-09-15 17:12:51,602:django.server: INFO->"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+2021-09-15 17:12:51,602:django.server: INFO->"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+2021-09-15 17:12:51,635:django.server: INFO->"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+2021-09-15 17:12:51,635:django.server: INFO->"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+2021-09-15 17:12:51,636:django.server: INFO->"GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+2021-09-15 17:12:51,636:django.server: INFO->"GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+2021-09-15 17:12:51,636:django.server: INFO->"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+2021-09-15 17:12:56,465:django.server: INFO->"GET /admin/auth/user/5/delete/ HTTP/1.1" 200 6181
+2021-09-15 17:12:56,484:django.server: INFO->"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2021-09-15 17:12:57,634:django.server: INFO->"POST /admin/auth/user/5/delete/ HTTP/1.1" 302 0
+2021-09-15 17:12:57,688:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11225
+2021-09-15 17:12:57,714:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:00,926:django.server: INFO->"GET /admin/auth/user/add/ HTTP/1.1" 200 8562
+2021-09-15 17:13:00,951:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:11,992:django.server: INFO->"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+2021-09-15 17:13:12,069:django.server: INFO->"GET /admin/auth/user/6/change/ HTTP/1.1" 200 18060
+2021-09-15 17:13:12,094:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:19,755:django.server: INFO->"POST /admin/auth/user/6/change/ HTTP/1.1" 302 0
+2021-09-15 17:13:19,812:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11657
+2021-09-15 17:13:19,838:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:22,887:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 7773
+2021-09-15 17:13:22,910:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:24,184:django.server: INFO->"GET /admin/users/userprofile/3/change/ HTTP/1.1" 200 10362
+2021-09-15 17:13:24,207:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:27,830:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 7773
+2021-09-15 17:13:29,175:django.server: INFO->"GET /admin/users/userprofile/2/change/ HTTP/1.1" 200 10362
+2021-09-15 17:13:29,201:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:30,859:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 7773
+2021-09-15 17:13:33,966:django.server: INFO->"GET /admin/users/userprofile/add/ HTTP/1.1" 200 10058
+2021-09-15 17:13:33,990:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:46,583:django.server: INFO->"POST /admin/users/userprofile/add/ HTTP/1.1" 302 0
+2021-09-15 17:13:46,630:django.server: INFO->"GET /admin/users/userprofile/ HTTP/1.1" 200 8223
+2021-09-15 17:13:46,654:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:13:49,235:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:13:52,044:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:13:52,060:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:14:01,071:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:14:01,101:django.request: ERROR->Internal Server Error: /users/go_admin_page
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 123, in go_admin_page
+    users_list.append(dict(name=user,id=user.id,group=user.groups.all()[0],status=user.is_active))
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2021-09-15 17:14:01,102:django.server: ERROR->"GET /users/go_admin_page HTTP/1.1" 500 69444
+2021-09-15 17:14:27,495:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:14:28,098:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:14:30,456:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4484
+2021-09-15 17:14:46,745:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:14:47,393:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:14:47,963:django.request: ERROR->Internal Server Error: /users/go_admin_page
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 123, in go_admin_page
+    users_list.append(dict(name=user,id=user.id,group=user.groups.all().name,status=user.is_active))
+AttributeError: 'QuerySet' object has no attribute 'name'
+2021-09-15 17:14:47,964:django.server: ERROR->"GET /users/go_admin_page HTTP/1.1" 500 65828
+2021-09-15 17:17:42,092:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:17:42,882:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:17:43,747:django.request: ERROR->Internal Server Error: /users/go_admin_page
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 122, in go_admin_page
+    print(user.groups.all()[0])
+UnboundLocalError: local variable 'user' referenced before assignment
+2021-09-15 17:17:43,748:django.server: ERROR->"GET /users/go_admin_page HTTP/1.1" 500 65629
+2021-09-15 17:18:10,768:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:18:11,397:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:18:13,948:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:18:14,644:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:18:15,558:django.request: ERROR->Internal Server Error: /users/go_admin_page
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 123, in go_admin_page
+    print(user.groups.all()[0])
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2021-09-15 17:18:15,559:django.server: ERROR->"GET /users/go_admin_page HTTP/1.1" 500 69386
+2021-09-15 17:18:38,261:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:18:38,975:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:18:39,489:django.request: ERROR->Internal Server Error: /users/go_admin_page
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 124, in go_admin_page
+    users_list.append(dict(name=user,id=user.id,group=user.groups.all().name,status=user.is_active))
+AttributeError: 'QuerySet' object has no attribute 'name'
+2021-09-15 17:18:39,490:django.server: ERROR->"GET /users/go_admin_page HTTP/1.1" 500 65860
+2021-09-15 17:18:55,298:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:18:56,000:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:18:57,388:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4484
+2021-09-15 17:18:57,407:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:19:04,963:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:19:05,537:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:19:31,302:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:19:31,994:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:19:36,552:django.request: ERROR->Internal Server Error: /users/go_admin_page
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 123, in go_admin_page
+    print(user.groups.all()[0].name)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2021-09-15 17:19:36,554:django.server: ERROR->"GET /users/go_admin_page HTTP/1.1" 500 69391
+2021-09-15 17:19:48,415:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:19:49,048:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:19:51,365:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4484
+2021-09-15 17:20:19,529:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:20:20,139:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:20:38,422:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:20:39,030:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:20:40,415:django.server: INFO->"GET /admin/ HTTP/1.1" 302 0
+2021-09-15 17:20:40,465:django.server: INFO->"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2370
+2021-09-15 17:20:48,176:django.server: INFO->"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2535
+2021-09-15 17:20:50,859:django.server: INFO->"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2021-09-15 17:20:50,880:django.server: INFO->"GET /admin/ HTTP/1.1" 200 8355
+2021-09-15 17:20:50,904:django.server: INFO->"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+2021-09-15 17:20:53,198:django.server: INFO->"GET /admin/users/userprofile/add/ HTTP/1.1" 200 10058
+2021-09-15 17:20:53,229:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:20:57,951:django.server: INFO->"GET /admin/auth/group/ HTTP/1.1" 200 7990
+2021-09-15 17:20:57,984:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:21:00,176:django.server: INFO->"GET /admin/auth/group/add/ HTTP/1.1" 200 10330
+2021-09-15 17:21:00,200:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:21:04,010:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11460
+2021-09-15 17:21:04,036:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:21:05,359:django.server: INFO->"GET /admin/auth/user/1/change/ HTTP/1.1" 200 17888
+2021-09-15 17:21:05,381:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:21:12,127:django.server: INFO->"POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+2021-09-15 17:21:12,181:django.server: INFO->"GET /admin/auth/user/ HTTP/1.1" 200 11657
+2021-09-15 17:21:12,204:django.server: INFO->"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+2021-09-15 17:21:30,517:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 17:21:31,263:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 17:21:32,338:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4335
+2021-09-15 17:21:32,353:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 17:21:46,198:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 3624
+2021-09-15 17:22:08,503:django.server: INFO->"POST /users/to_create_user HTTP/1.1" 302 0
+2021-09-15 17:22:08,518:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4891
+2021-09-15 17:22:10,633:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:22:10,658:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:22:19,002:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:22:19,014:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2376
+2021-09-15 17:22:22,717:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4497
+2021-09-15 17:22:43,904:django.server: INFO->"POST /appointment/apply_appoinment HTTP/1.1" 302 0
+2021-09-15 17:22:43,918:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2776
+2021-09-15 17:22:48,743:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:22:48,758:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 17:22:57,085:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:22:57,089:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 17:22:57,099:django.server: INFO->"GET /users/ HTTP/1.1" 200 2536
+2021-09-15 17:23:03,801:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 17:23:03,812:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 2914
+2021-09-15 17:23:11,572:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 17:23:11,586:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
