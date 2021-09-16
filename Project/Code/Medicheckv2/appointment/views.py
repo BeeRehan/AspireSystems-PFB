@@ -12,7 +12,6 @@ from users.models import UserProfile
 def approve(request,pk):
     try:
         appoinment = AppoinmentDetails.objects.get(id=pk)
-        print(appoinment.status)
         appoinment.status = "approved"
         appoinment.save()
         return redirect('/appointment/doctor')
@@ -24,7 +23,6 @@ def approve(request,pk):
 def reject(request,pk):
     try:
         appoinment = AppoinmentDetails.objects.get(id=pk)
-        print(appoinment.status)
         appoinment.status = "rejected"
         appoinment.save()
         return redirect('/appointment/doctor')

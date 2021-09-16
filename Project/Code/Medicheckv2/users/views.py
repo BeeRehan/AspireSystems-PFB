@@ -1,23 +1,16 @@
-from django import forms
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import User,Group
 from django.shortcuts import redirect, render
-from .form import CreateUsersForm, ForgotPasswordForm, PatientDetails,PasswordResetForm
+from .form import CreateUsersForm, ForgotPasswordForm,PasswordResetForm
 from django.contrib.auth.decorators import login_required
-from appointment.models import AppoinmentDetails
 from .models import UserProfile
-from appointment.form import ApprovalForm
 from django.contrib import auth 
 from .form import UserLoginForm
-from hashlib import sha1
-# Create your views here.
-#("-----------------------------------------------------------------")
 
 def to_login(request):
     title = "Login Page"
     form = UserLoginForm()
-    print("Page")
     return render(request,"login.html",{'title':title ,'form':form})
 
 def authenticate_user(request):
@@ -29,12 +22,9 @@ def authenticate_user(request):
             user = auth.authenticate(username=username,password=password)
             if user is not None:
                 auth.login(request,user)
-                print('Login')
                 if(not UserProfile.objects.get(user_id=user.id).account_status=='blocked'):
-                    print("passed")
                     reset(request)
                     g = request.user.groups.all()[0].name
-                    print("=>",g)
                     if(g=='patients'):
                         return redirect('/appointment/patient')
                     elif(g=='doctors'):
@@ -44,21 +34,17 @@ def authenticate_user(request):
                 else:
                     messages.info(request,"Your account was blocked!!!")
                     return redirect('/users')
-
-                # logger.info(f"User {username} logged in!!!")
             else:
                 messages.info(request,"Invalid Login credentials")
-                print("auth",safe_account(request))
+                safe_account(request)
                 return redirect('/users')
         else:
             messages.info(request,"Invalid credentials!!!")
     else:
         messages.info(request,"Not a post request!!!")
-        # logger.error("Not a post request!!!")
 
 def logout(request):
     auth.logout(request)
-    # logger.info(f"User loggedout!!!")
     return redirect('/users')
 
 def reset(request):
@@ -121,7 +107,6 @@ def go_admin_page(request):
     users_list = []
     for user in users:
         users_list.append(dict(name=user,id=user.id,group=user.groups.all()[0],status=user.is_active))
-    # print(users_list)
     return render(request,"admin.html",{'title':title,'users':users_list})
 
 @login_required(login_url='/users')
@@ -137,9 +122,6 @@ def to_create_user(request):
     title = 'Create User'
     header = 'Create User Here!!!'
     if request.method == 'POST':
-        print(request.POST['sname'])
-        print(request.POST['new_password'])
-        print(request.POST['group'])
         if(form.is_valid()):
             form.save()
             messages.info(request,"User Created Successfully!!!")
@@ -157,7 +139,6 @@ def show_user_profile(request):
     userdata = UserProfile.objects.get(user_id=request.user.id)
     header = f"Hi {title}"
     groups = request.user.groups.all()[0]
-    print(groups)
     form = CreateUsersForm(initial={'sname':request.user,'age':userdata.age,'secret_key':userdata.secret_key})
     return render(request,"userprofile.html",{'form':form,'title':title,'header':header,'userdata':userdata,'groups':groups}) 
 
@@ -166,12 +147,8 @@ def show_user_profile(request):
 def reset_user_profile(request):
     userdata = UserProfile.objects.get(user_id=request.user.id)
     user = User.objects.get(id=request.user.id)
-    form = CreateUsersForm()
     userdata = UserProfile.objects.get(user_id=request.user.id)
     if(request.method == 'POST'):
-        print(request.POST['sname'])
-        print(request.POST['age'])
-        print(request.POST['secret_key'])
         user.username = request.POST['sname']
         userdata.secret_key = request.POST['secret_key']
         userdata.age = request.POST['age']
@@ -203,10 +180,7 @@ def to_reset_password(request):
     header = 'To Reset Password'
     user = User.objects.get(id=request.user.id)
     if request.method == 'POST':
-        print(request.POST['newpwd'])
-        print(request.POST['repwd'])
         if form.is_valid():
-            print("POST")
             newpassword = form.cleaned_data['newpwd']
             repassword = form.cleaned_data['repwd']
             if(newpassword==repassword):

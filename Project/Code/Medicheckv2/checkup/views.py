@@ -14,7 +14,6 @@ from rest_framework.decorators import MethodMapper, api_view
 @login_required(login_url='/')
 def create_checklist(request):
     apps = AppoinmentDetails.objects.filter(status="approved",doctor=request.user)
-    #print(apps.id)
     return render(request,"checklist.html",{'apps':apps})
 
 @login_required(login_url='/')
@@ -25,21 +24,23 @@ def view_checklist(request,pk):
 
 @login_required(login_url='/')
 def add_checklist(request,pk):
+    title = "Add Report"
     form = checklistForm(request.POST)
     if request.method == 'POST':
         if(form.is_valid()):
             form.save(pk)
             return redirect('/checkup/create_checklist')
         else:
-            print("Not valid")
+            messages.info(request,"Not valid")    
+            return render(request,"to_add_checklist.html",{'title':title,'form':form,"pk":pk}) 
     else:
-        print("Not a post request") 
+        messages.info(request,"Not a post request") 
+        return render(request,"to_add_checklist.html",{'title':title,'form':form,"pk":pk}) 
         
 @login_required(login_url='/')
 def doc_get_checklis(request,pk):
     header = 'Previous Checkup Details!!!'
     apps = AppoinmentDetails.objects.filter(user_id=pk,status="approved")
-    print("apps",apps)
     return render(request,"detail_appoinment.html",{'apps':apps,'title':'Previuous','header':header})
 
 @api_view(['GET'])

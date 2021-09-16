@@ -13492,3 +13492,336 @@ IndexError: list index out of range
 2021-09-15 17:23:03,812:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 2914
 2021-09-15 17:23:11,572:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
 2021-09-15 17:23:11,586:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 18:03:35,936:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 18:03:38,935:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:03:38,981:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1572
+2021-09-15 18:03:38,982:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-15 18:03:38,987:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-15 18:03:39,995:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 200 102112
+2021-09-15 18:03:40,001:django.server: INFO->"GET /static/image/slide/slide2.jpg HTTP/1.1" 200 475167
+2021-09-15 18:03:40,005:django.server: INFO->"GET /static/image/slide/slide1.jpg HTTP/1.1" 200 80502
+2021-09-15 18:03:40,057:django.request: WARNING->Not Found: /favicon.ico
+2021-09-15 18:03:40,057:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-15 18:03:57,723:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:03:57,778:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1573
+2021-09-15 18:03:57,804:django.server: INFO->"GET /static/image/slide/slide2.jpg HTTP/1.1" 304 0
+2021-09-15 18:03:57,806:django.server: INFO->"GET /static/image/slide/slide1.jpg HTTP/1.1" 304 0
+2021-09-15 18:03:57,856:django.request: WARNING->Not Found: /favicon.ico
+2021-09-15 18:03:57,857:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-15 18:04:09,375:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:04:09,391:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1573
+2021-09-15 18:04:09,391:django.server: INFO->"GET /static/css/boot.css HTTP/1.1" 200 144883
+2021-09-15 18:04:09,958:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:04:10,613:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:04:24,165:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:04:24,187:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1567
+2021-09-15 18:04:24,925:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:04:24,940:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 18:04:25,324:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:04:25,340:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 18:05:05,635:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:05:05,655:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1585
+2021-09-15 18:05:38,735:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:05:38,758:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1481
+2021-09-15 18:05:45,917:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 18:05:45,937:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 18:05:55,383:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 18:05:55,496:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4360
+2021-09-15 18:05:55,513:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 18:06:09,204:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4360
+2021-09-15 18:06:09,225:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 200 1481
+2021-09-15 18:58:52,885:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 18:59:03,989:django.server: INFO->"GET / HTTP/1.1" 200 3041
+2021-09-15 18:59:04,127:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 18:59:04,129:django.server: INFO->"GET /static/js/script.js HTTP/1.1" 200 317
+2021-09-15 18:59:04,282:django.server: INFO->"GET /static/image/slide/slide3.webp HTTP/1.1" 200 102112
+2021-09-15 18:59:04,307:django.server: INFO->"GET /static/image/slide/slide2.jpg HTTP/1.1" 200 475167
+2021-09-15 18:59:04,323:django.server: INFO->"GET /static/image/slide/slide1.jpg HTTP/1.1" 200 80502
+2021-09-15 18:59:04,876:django.request: WARNING->Not Found: /favicon.ico
+2021-09-15 18:59:04,878:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2562
+2021-09-15 18:59:19,500:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 18:59:43,310:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 18:59:43,373:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4360
+2021-09-15 19:00:10,365:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2200
+2021-09-15 19:00:27,259:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3275
+2021-09-15 19:00:41,741:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2515
+2021-09-15 19:01:14,031:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 302 0
+2021-09-15 19:01:14,067:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 19:01:14,082:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-15 19:01:14,118:django.server: INFO->"GET /users/ HTTP/1.1" 200 2528
+2021-09-15 19:01:26,915:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 19:01:26,957:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4360
+2021-09-15 19:01:51,276:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4493
+2021-09-15 19:03:09,432:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2200
+2021-09-15 19:03:56,459:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:04:00,095:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:04:59,467:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 302 0
+2021-09-15 19:04:59,507:django.server: INFO->"GET /?next=/checkup/pat_get_checklis/1 HTTP/1.1" 200 3041
+2021-09-15 19:05:11,113:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:05:13,791:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:05:15,385:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2200
+2021-09-15 19:05:27,921:django.request: ERROR->Internal Server Error: /checkup/pat_get_checklis/1
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2021-09-15 19:05:27,933:django.server: ERROR->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 500 76236
+2021-09-15 19:05:38,870:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 160
+2021-09-15 19:06:31,102:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:06:33,382:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:07:01,434:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:07:03,784:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:07:13,947:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:07:16,223:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:07:55,588:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:07:57,938:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:08:08,190:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:08:10,406:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:08:29,649:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py changed, reloading.
+2021-09-15 19:08:31,904:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:08:58,458:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-09-15 19:09:01,315:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:10:03,147:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 2200
+2021-09-15 19:15:24,840:django.server: INFO->"GET /checkup/pat_get_checklis/1 HTTP/1.1" 200 160
+2021-09-15 19:18:28,765:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-15 19:18:28,826:django.server: INFO->"GET /users/ HTTP/1.1" 200 2408
+2021-09-15 19:18:28,888:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 19:18:39,222:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-15 19:18:39,280:django.server: INFO->"GET /users/go_admin_page HTTP/1.1" 200 4760
+2021-09-15 19:25:16,243:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:25:18,358:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:25:42,681:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:25:44,832:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:27:53,220:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:27:55,407:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:29:14,694:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\Medicheckv2\urls.py changed, reloading.
+2021-09-15 19:29:16,805:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:34:56,124:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:34:58,470:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:35:08,846:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:35:11,135:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:35:16,763:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:35:18,762:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:35:34,740:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:35:36,921:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:35:40,034:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:35:42,182:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:35:57,858:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:35:59,978:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:36:11,194:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:36:13,358:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:36:16,415:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:36:18,573:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:36:28,612:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:36:30,884:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:36:38,544:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:36:40,524:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:02,285:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:04,446:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:12,011:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:14,008:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:19,426:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:21,546:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:30,431:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:32,517:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:38,055:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:40,190:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:48,981:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:51,239:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:37:54,278:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:37:56,437:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:38:33,363:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:38:35,455:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:38:39,699:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:38:41,912:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:38:49,640:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:38:51,866:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:39:26,266:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-15 19:39:28,547:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:39:57,268:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:39:59,352:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:40:04,624:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:40:06,617:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:40:09,597:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:40:11,671:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:40:18,174:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:40:20,216:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:40:25,825:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:40:27,853:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:41:05,769:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:41:07,888:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:41:15,574:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:41:17,661:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:41:29,208:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:41:31,430:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:41:37,399:django.server: INFO->"GET /users/create_user HTTP/1.1" 200 3624
+2021-09-15 19:41:37,454:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-15 19:42:09,170:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 126, in to_create_user
+    form.save()
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 102, in save
+    print(**self.cleaned_data)
+TypeError: print() takes at most 4 keyword arguments (6 given)
+2021-09-15 19:42:09,174:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 76951
+2021-09-15 19:43:51,008:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:43:53,087:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:44:02,109:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'kamali' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 126, in to_create_user
+    form.save()
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 102, in save
+    user = User.objects.create_user(username=name,password=new_password)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'kamali' for key 'auth_user.username'")
+2021-09-15 19:44:02,136:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 200544
+2021-09-15 19:45:47,294:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py changed, reloading.
+2021-09-15 19:45:49,435:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-15 19:59:35,042:django.request: ERROR->Internal Server Error: /users/to_create_user
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'kamali' for key 'auth_user.username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py", line 126, in to_create_user
+    form.save()
+  File "D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\users\form.py", line 102, in save
+    user = User.objects.create_user(username=name,password=new_password)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\mdati\anaconda3\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'kamali' for key 'auth_user.username'")
+2021-09-15 19:59:35,066:django.server: ERROR->"POST /users/to_create_user HTTP/1.1" 500 200544
+2021-09-15 19:59:37,569:django.server: INFO->"GET /users/to_create_user HTTP/1.1" 200 4102
+2021-09-15 19:59:37,629:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-16 10:07:04,015:django.utils.autoreload: INFO->Watching for file changes with StatReloader

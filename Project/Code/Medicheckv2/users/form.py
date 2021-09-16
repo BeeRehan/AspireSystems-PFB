@@ -14,22 +14,17 @@ class UserLoginForm(forms.Form):
     password = forms.CharField(label="Password",widget=forms.PasswordInput())
 
 def date_validate(value):
-    print("Validator",value)
-    print(datetime.date.today())
     if(not (value > datetime.date.today())):
         raise ValidationError(uge('Enter the correct date!!!'))
     else:
         return True
 
 def time_validate(value):
-    print("Validator",value)
-    print(datetime.datetime.now().strftime("%H:%M:%S"))
     h,m,s = str(value).split(':')
     now = datetime.datetime.now()
     value = now.replace(hour=int(h),minute=int(m),second=int(s),microsecond=0)
     h,m,s = datetime.datetime.now().strftime("%H:%M:%S").split(':')
     now = now.replace(hour=int(h),minute=int(m),second=int(s),microsecond=0)
-    # print(type(value),type(now))
     if(not (value >now)):
         raise ValidationError(uge('Enter the correct time!!!'))
     else:
@@ -88,7 +83,6 @@ class PasswordResetForm(forms.Form):
         user.password = make_password(new_password)
         user_profile.save()
         user.save()
-        print("Success!!!")
 
 class CreateUsersForm(forms.Form):
     sname = forms.CharField(label="Username",max_length=15)
@@ -110,7 +104,6 @@ class CreateUsersForm(forms.Form):
         user_profile.save()
         groups = Group.objects.get(name=group)
         groups.user_set.add(user)
-        # user.groups.add(group)
         groups.save()
         user.save()
 
