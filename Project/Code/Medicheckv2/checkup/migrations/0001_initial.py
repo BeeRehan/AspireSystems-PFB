@@ -9,21 +9,35 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('appointment', '0001_initial'),
+        ("appointment", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='CheckupDetails',
+            name="CheckupDetails",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('temprature', models.CharField(max_length=10)),
-                ('sugar_level', models.CharField(max_length=10)),
-                ('bp_level', models.CharField(max_length=10)),
-                ('Advice', models.CharField(max_length=100)),
-                ('prescription', models.CharField(max_length=100)),
-                ('confirmed_diseases', models.CharField(max_length=100)),
-                ('appointment', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='appointment.appoinmentdetails')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("temprature", models.CharField(max_length=10)),
+                ("sugar_level", models.CharField(max_length=10)),
+                ("bp_level", models.CharField(max_length=10)),
+                ("Advice", models.CharField(max_length=100)),
+                ("prescription", models.CharField(max_length=100)),
+                ("confirmed_diseases", models.CharField(max_length=100)),
+                (
+                    "appointment",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="appointment.appoinmentdetails",
+                    ),
+                ),
             ],
         ),
     ]
