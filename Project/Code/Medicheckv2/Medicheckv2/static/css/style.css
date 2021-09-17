@@ -46,7 +46,7 @@ table,th,td{
     background-color: whitesmoke;
     padding: 5px;
     overflow: hidden;
-    box-shadow: 0 0 20px 0 #fff;   
+    box-shadow: 0 0 20px 0 #fff;
 }
 
 .wrapper {
@@ -58,11 +58,11 @@ p span{
   padding: 10px;
   color: white;
   margin-bottom: 10px;
-  margin-left: 40px;  
+  margin-left: 40px;
 }
 
 #alertid{
-    display: none;  
+    display: none;
 }
 
 .slideimg{

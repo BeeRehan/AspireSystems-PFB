@@ -4,8 +4,8 @@ from accounts.models import UserInfo
 from django.core.checks import messages
 from django.contrib import messages,auth
 from django.shortcuts import redirect, render
-from django.contrib.auth.models import User 
-from django.core.exceptions import *  
+from django.contrib.auth.models import User
+from django.core.exceptions import *
 from testApp.views import *
 from .models import UserInfo
 from .form import UserRegistrationForm,UserLoginForm
@@ -26,7 +26,7 @@ logger.addHandler(err_file_handeler)
 def register(request):
     title = "Register Here"
     users = UserRegistrationForm(request.POST)
-    return render(request,"register.html",{'form':users,'title':title}) 
+    return render(request,"register.html",{'form':users,'title':title})
 
 def add_user(request):
     users = UserRegistrationForm(request.POST)
@@ -34,16 +34,16 @@ def add_user(request):
         print("Hi")
         if users.is_valid():
             print("valid")
-            fname = users.cleaned_data['firstName'] 
-            lname = users.cleaned_data['lastName'] 
-            email = users.cleaned_data['email'] 
+            fname = users.cleaned_data['firstName']
+            lname = users.cleaned_data['lastName']
+            email = users.cleaned_data['email']
             username = users.cleaned_data['username']
-            password = users.cleaned_data['password'] 
+            password = users.cleaned_data['password']
             password1 = users.cleaned_data['password1']
             gender = users.cleaned_data['gender']
             dob = users.cleaned_data['dob']
             bio = users.cleaned_data['bio']
-            
+
             if(password==password1):
                 user = User.objects.create_user(username=username, password=password, email=email, first_name=fname, last_name=lname)
                 user.save()
@@ -63,7 +63,7 @@ def add_user(request):
 def login(request):
     title = "Login"
     form = UserLoginForm(request.POST)
-    return render(request,'loginform.html',{'form':form,'title':title})  
+    return render(request,'loginform.html',{'form':form,'title':title})
 
 def authenticate_user(request):
     form = UserLoginForm(request.POST)

@@ -7,16 +7,16 @@ nav ul{
     background-color: black;
     padding: 10px;
     overflow: hidden;
-   
+
 }
 nav ul li{
     display: inline;
     margin-left:5px ;
-    
+
 }
 
 nav ul li{
-    float: right;   
+    float: right;
 }
 nav ul li a{
     color: #fff;
@@ -41,7 +41,7 @@ table,th,td{
     background: transparent;
     padding: 5px;
     overflow: hidden;
-    box-shadow: 0 0 20px 0 #91f2fd;   
+    box-shadow: 0 0 20px 0 #91f2fd;
 }
 
 .wrapper {
@@ -49,5 +49,5 @@ table,th,td{
 }
 
 .result{
-    visibility: hidden;    
+    visibility: hidden;
 }

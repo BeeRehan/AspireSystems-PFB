@@ -1,4 +1,4 @@
-# List 
+# List
 
 l = [i for i in range(10)]
 print("Original: ",l)

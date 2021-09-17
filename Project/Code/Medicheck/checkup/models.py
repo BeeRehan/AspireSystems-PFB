@@ -9,6 +9,3 @@ class CheckupDetails(models.Model):
     Advice = models.CharField(max_length=100)
     prescription = models.CharField(max_length=100)
     confirmed_diseases = models.CharField(max_length=100)
-
-    
-    

@@ -36,7 +36,7 @@ def apply_appoinment(request):
             title = 'Appoinment'
             return render(request,"appoinment_form.html",{'form':form,'title':title})
     else:
-        print("Not a POST request")         
+        print("Not a POST request")
 
 @login_required(login_url='/')
 def get_details(request,pk,ak):

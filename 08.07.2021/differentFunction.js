@@ -1,7 +1,7 @@
 
 function display(){   //declaratio
 	return("Hi");}
-  
+
 
 console.log(display());
 
@@ -15,4 +15,3 @@ const tell = (x)=>x; //arrw function
 
 console.log(find());
 console.log(tell("MD"));
-

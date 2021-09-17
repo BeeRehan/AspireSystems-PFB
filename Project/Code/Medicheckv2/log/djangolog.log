@@ -574,7 +574,7 @@ Traceback (most recent call last):
     return self.render(context)
   File "C:\Users\mdati\anaconda3\lib\site-packages\django\template\defaulttags.py", line 200, in render
     raise ValueError(
-ValueError: Need 2 values to unpack in for loop; got 8. 
+ValueError: Need 2 values to unpack in for loop; got 8.
 2021-08-26 17:13:00,680:django.server: ERROR->"GET /users/patient HTTP/1.1" 500 165912
 2021-08-26 17:13:23,904:django.server: INFO->"GET /users/patient HTTP/1.1" 200 2412
 2021-08-26 17:13:43,360:django.server: INFO->"GET /users/patient HTTP/1.1" 200 2450

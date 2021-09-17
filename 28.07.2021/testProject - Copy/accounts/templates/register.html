@@ -3,9 +3,9 @@
     <form action="/accounts/add_user" method="POST">
         <h1>Register Here!!!</h1>
         <pre>
-        {% csrf_token %} 
+        {% csrf_token %}
         <label for="{{ form.firstName.id_for_label }}">{{form.firstName.label_tag}}</label>{{form.firstName}}<span>{{form.firstName.errors}}</span>
-        <label for="{{ form.lastName.id_for_label }}">{{form.lastName.label_tag}}</label>{{form.lastName}}<span>{{form.lastName.errors}}</span> 
+        <label for="{{ form.lastName.id_for_label }}">{{form.lastName.label_tag}}</label>{{form.lastName}}<span>{{form.lastName.errors}}</span>
         <label for="{{ form.email.id_for_label }}">{{form.email.label_tag}}</label>{{form.email}}<span>{{form.email.errors}}</span>
         <label for="{{ form.username.id_for_label }}">{{form.username.label_tag}}</label>{{form.username}}<span>{{form.username.errors}}</span>
         <label for="{{ form.password.id_for_label }}">{{form.password.label_tag}}</label>{{form.password}}<span>{{form.password.errors}}</span>
@@ -18,7 +18,7 @@
             {% for message in messages%}
                <h4> {{message}}</h4>
             {%endfor%}
-        </div> 
+        </div>
         </pre>
     </form>
 </div>

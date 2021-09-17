@@ -28,7 +28,7 @@ logger.addHandler(err_file_handeler)
 
 def index(request):
     return render(request,"home.html")
-        
+
 
 @login_required(login_url='/accounts/login')
 def insert(request):
@@ -43,16 +43,16 @@ def add_product(request):
             logger.info("Item Inserted")
             return redirect('/testApp/show')
         else:
-            logger.info("Not added!!")  
+            logger.info("Not added!!")
 
 @login_required(login_url='/accounts/login')
-def show(request): 
-    try: 
-        products = Products.objects.all()  
+def show(request):
+    try:
+        products = Products.objects.all()
     except NameError:
         logger.error("Object Doesn't Exist")
         return HttpResponse("Object Doesn't Exist")
-    return render(request,"show.htm",{"things":products}) 
+    return render(request,"show.htm",{"things":products})
 
 @api_view(['GET'])
 def get(request):
@@ -63,10 +63,10 @@ def get(request):
             serializer = ProductsSerializer(products,many=True)
             logger.info("Json Response Returned")
             return Response(serializer.data)
-            
+
         elif(request.content_type=="text/plain"):
-            try: 
-                products = Products.objects.all()  
+            try:
+                products = Products.objects.all()
             except NameError:
                 logger.error("Object Doesn't Exist")
                 return HttpResponse("Object Doesn't Exist")
@@ -85,4 +85,3 @@ def post(request):
             return HttpResponse("Inserted Successfully!!!")
         # elif(request.content_type=="text/plain"):
         #     return redirect('insert')
-
