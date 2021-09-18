@@ -90,4 +90,4 @@ def api_patient_post_checklist(request):
             serializers.save()
             return HttpResponse("Inserted Successfully!!!")
     else:
-        return HttpResponse("Not a post request!!!")
+        return HttpResponse("Not a Post request!!!")

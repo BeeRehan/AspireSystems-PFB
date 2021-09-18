@@ -50,9 +50,19 @@ class PatientDetails(forms.Form):
     date = forms.DateField(widget=DateInput, validators=[date_validate])
     time = forms.TimeField(widget=TimeInput, validators=[time_validate])
     reason = forms.CharField(label="Reason", max_length=100)
-    doctor = forms.ChoiceField(
-        label="Doctor", choices=(("mohamed", "Mohamed"), ("rakesh", "Rakesh"))
-    )
+    users = User.objects.all()
+    doctors_list = []
+    for user in users:
+        try:
+            if user.groups.all()[0].name == "doctor":
+                doctors_list.append(user.username)
+        except Exception:
+            pass
+    doctors = list()
+    for doctor in doctors_list:
+        doctors.append((doctor, doctor.capitalize()))
+    doctors = tuple(doctors)
+    doctor = forms.ChoiceField(label="Doctor", choices=doctors)
     scan_report = forms.FileField()
     vaccinated = forms.ChoiceField(
         label="Covid Vaccinaed",
@@ -69,16 +79,13 @@ class PatientDetails(forms.Form):
     def save(self, request):
         date = self.cleaned_data["date"]
         time = self.cleaned_data["time"]
-        reason = self.cleaned_data["reason"]
-        doctor = self.cleaned_data["doctor"]
-        vaccinated = self.cleaned_data["vaccinated"]
-        file = self.cleaned_data["scan_report"]
+        print(date, time, self.cleaned_data["age"], type(self.cleaned_data["age"]))
         app = AppoinmentDetails(
             date=(str(date) + " " + str(time)),
-            vaccinated=vaccinated,
-            file=file,
-            doctor=doctor,
-            reason=reason,
+            vaccinated=self.cleaned_data["vaccinated"],
+            file=self.cleaned_data["scan_report"],
+            doctor=self.cleaned_data["doctor"],
+            reason=self.cleaned_data["reason"],
             status="requested",
             user_id=request.user.id,
         )
@@ -124,7 +131,7 @@ class CreateUsersForm(forms.Form):
     new_password = forms.CharField(label="Password", widget=forms.PasswordInput())
     group = forms.ChoiceField(
         label="Group",
-        choices=(("patients", "Patients"), ("doctors", "Doctors"), ("admins", "Admin")),
+        choices=(("patient", "Patient"), ("doctor", "Doctor"), ("admin", "Admin")),
     )
     age = forms.IntegerField(label="Age")
     gender = forms.ChoiceField(
@@ -133,23 +140,20 @@ class CreateUsersForm(forms.Form):
     secret_key = forms.CharField(label="Secret Key", max_length=10)
 
     def save(self):
-        name = self.cleaned_data["sname"]
-        new_password = self.cleaned_data["new_password"]
-        group = self.cleaned_data["group"]
-        age = self.cleaned_data["age"]
-        gender = self.cleaned_data["gender"]
-        secret_key = self.cleaned_data["secret_key"]
-        user = User.objects.create_user(username=name, password=new_password)
+        user = User.objects.create_user(
+            username=self.cleaned_data["sname"],
+            password=self.cleaned_data["new_password"],
+        )
         user_profile = UserProfile.objects.create(
             user_id=user.id,
-            age=age,
-            gender=gender,
+            age=self.cleaned_data["age"],
+            gender=self.cleaned_data["gender"],
             attempt=0,
             account_status="Open",
-            secret_key=secret_key,
+            secret_key=self.cleaned_data["secret_key"],
         )
         user_profile.save()
-        groups = Group.objects.get(name=group)
+        groups = Group.objects.get(name=self.cleaned_data["group"])
         groups.user_set.add(user)
         groups.save()
         user.save()

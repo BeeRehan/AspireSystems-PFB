@@ -25,4 +25,6 @@ urlpatterns = [
     path(
         "api/post_user_profile", views.api_post_user_profile, name="post_user_profile"
     ),
+    path("api/show_user", views.api_show_user, name="api_show_user"),
+    path("api/post_user", views.api_post_user, name="api_post_user"),
 ]

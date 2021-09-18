@@ -2,7 +2,6 @@
 {% block container %}
 
 <div class="container">
-    <img  src="{{image}}" alt="Profile Picture">
     <div class="formContainer">
         <form action="/users/reset_user_profile" method="POST">
             {% csrf_token %}

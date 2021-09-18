@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from django.contrib import auth
 from .form import UserLoginForm
-from .serializers import UserProfileSerializer
+from .serializers import UserProfileSerializer, UserSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
@@ -20,9 +20,28 @@ def api_show_user_profile(request):
     return Response(serializer.data)
 
 
+@api_view(["GET"])
+# @login_required(login_url='/users')
+def api_show_user(request):
+    deatils = User.objects.get(id=request.user.id)
+    serializer = UserSerializer(deatils)
+    return Response(serializer.data)
+
+
 @api_view(["POST"])
 def api_post_user_profile(request):
     serializers = UserProfileSerializer(data=request.data)
+    if request.method == "POST":
+        if serializers.is_valid():
+            serializers.save()
+            return HttpResponse("Inserted Successfully!!!")
+    else:
+        return HttpResponse("Not a post request!!!")
+
+
+@api_view(["POST"])
+def api_post_user(request):
+    serializers = UserSerializer(data=request.data)
     if request.method == "POST":
         if serializers.is_valid():
             serializers.save()
@@ -137,7 +156,7 @@ def password_reseter(request):
         messages.info(request, "Not a post")
 
 
-# @login_required(login_url='/users')
+@login_required(login_url="/users")
 def go_admin_page(request):
     title = "Admin"
     users = User.objects.all()
@@ -170,7 +189,7 @@ def to_create_user(request):
         if form.is_valid():
             form.save()
             messages.info(request, "User Created Successfully!!!")
-            return redirect("/users/go_admin_page")
+            return redirect("/users/admin")
         else:
             messages.info(request, "Not Valid!!!")
             return render(
@@ -193,7 +212,6 @@ def show_user_profile(request):
     userdata = UserProfile.objects.get(user_id=request.user.id)
     header = f"Hi {title}"
     groups = request.user.groups.all()[0]
-    base = os.getcwd()
     form = CreateUsersForm(
         initial={
             "sname": request.user,
@@ -210,8 +228,6 @@ def show_user_profile(request):
             "header": header,
             "userdata": userdata,
             "groups": groups,
-            "image": userdata.image,
-            "base": base,
         },
     )
 
@@ -239,7 +255,7 @@ def to_delete_user(request, pk):
     user_profle.delete()
     user = User.objects.get(id=pk)
     user.delete()
-    return redirect("/users/go_admin_page")
+    return redirect("/users/admin")
 
 
 @login_required(login_url="/users")
