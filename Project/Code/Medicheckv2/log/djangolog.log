@@ -17463,3 +17463,152 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2021-09-18 14:23:16,477:django.request: WARNING->Unauthorized: /checkup/api/pat_get_checklist/5
 2021-09-18 14:23:16,478:django.server: WARNING->"GET /checkup/api/pat_get_checklist/5 HTTP/1.1" 401 58
 2021-09-18 14:23:24,010:django.server: INFO->"GET /checkup/api/pat_get_checklist/5 HTTP/1.1" 200 172
+2021-09-18 15:04:13,821:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-18 15:04:18,837:django.server: INFO->"GET / HTTP/1.1" 200 3043
+2021-09-18 15:04:18,919:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-18 15:04:19,268:django.request: WARNING->Not Found: /favicon.ico
+2021-09-18 15:04:19,269:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2994
+2021-09-18 15:04:21,700:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-09-18 15:04:27,340:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:04:27,381:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 5151
+2021-09-18 15:04:36,940:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4448
+2021-09-18 15:04:41,743:django.server: INFO->"GET /checkup/pat_get_checklis/11 HTTP/1.1" 200 2195
+2021-09-18 15:04:46,176:django.server: INFO->"GET /checkup/pat_get_checklis/14 HTTP/1.1" 200 2320
+2021-09-18 15:05:10,666:django.request: ERROR->Internal Server Error: /checkup/api/pat_get_checklist/14
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py", line 80, in api_patient_get_checklist
+    checks = CheckupDetails.objects.get(appointment_id=pk)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+checkup.models.CheckupDetails.DoesNotExist: CheckupDetails matching query does not exist.
+2021-09-18 15:05:10,672:django.server: ERROR->"GET /checkup/api/pat_get_checklist/14 HTTP/1.1" 500 103290
+2021-09-18 15:05:24,111:django.server: INFO->"GET /checkup/api/pat_get_checklist/5 HTTP/1.1" 200 172
+2021-09-18 15:05:35,106:django.server: INFO->"POST /checkup/api/pat_post_checklist/ HTTP/1.1" 200 24
+2021-09-18 15:07:15,705:django.server: INFO->"GET /checkup/pat_get_checklis/5 HTTP/1.1" 200 2320
+2021-09-18 15:07:18,493:django.server: INFO->"GET /checkup/pat_get_checklis/7 HTTP/1.1" 200 2320
+2021-09-18 15:07:36,590:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2368
+2021-09-18 15:07:39,782:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4448
+2021-09-18 15:07:58,393:django.server: INFO->"POST /appointment/apply_appoinment HTTP/1.1" 302 0
+2021-09-18 15:07:58,423:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2768
+2021-09-18 15:08:02,198:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3274
+2021-09-18 15:08:04,632:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2768
+2021-09-18 15:08:05,823:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-18 15:08:05,853:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-09-18 15:08:12,753:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:08:12,774:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 2911
+2021-09-18 15:08:15,845:django.server: INFO->"GET /appointment/approve/15 HTTP/1.1" 302 0
+2021-09-18 15:08:15,879:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 2910
+2021-09-18 15:08:20,355:django.server: INFO->"GET /checkup/create_checklist HTTP/1.1" 200 2270
+2021-09-18 15:08:22,632:django.server: INFO->"GET /appointment/get_details/2/15 HTTP/1.1" 200 2322
+2021-09-18 15:08:25,139:django.server: INFO->"GET /checkup/doc_get_checklis/2 HTTP/1.1" 200 1647
+2021-09-18 15:08:26,863:django.server: INFO->"GET /checkup/pat_get_checklis/15 HTTP/1.1" 200 2320
+2021-09-18 15:08:32,876:django.server: INFO->"GET /checkup/view_checklist/15 HTTP/1.1" 200 3647
+2021-09-18 15:09:04,743:django.server: INFO->"POST /checkup/add_checklist/15 HTTP/1.1" 302 0
+2021-09-18 15:09:04,768:django.server: INFO->"GET /checkup/create_checklist HTTP/1.1" 200 1878
+2021-09-18 15:09:11,651:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 2909
+2021-09-18 15:09:17,178:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-18 15:09:17,201:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-09-18 15:09:22,986:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:09:23,006:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 2766
+2021-09-18 15:09:25,366:django.server: INFO->"GET /checkup/pat_get_checklis/15 HTTP/1.1" 200 2212
+2021-09-18 15:09:50,330:django.server: INFO->"GET /checkup/pat_get_checklis/15 HTTP/1.1" 200 2212
+2021-09-18 15:10:05,032:django.request: ERROR->Internal Server Error: /checkup/api/pat_get_checklist/5
+Traceback (most recent call last):
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\checkup\views.py", line 80, in api_patient_get_checklist
+    checks = CheckupDetails.objects.get(appointment_id=pk)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\mohamed.mohamed\AppData\Roaming\Python\Python39\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+checkup.models.CheckupDetails.DoesNotExist: CheckupDetails matching query does not exist.
+2021-09-18 15:10:05,034:django.server: ERROR->"GET /checkup/api/pat_get_checklist/5 HTTP/1.1" 500 103058
+2021-09-18 15:10:10,549:django.server: INFO->"GET /checkup/api/pat_get_checklist/15 HTTP/1.1" 200 175
+2021-09-18 15:30:29,424:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4448
+2021-09-18 15:30:29,459:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-18 15:30:52,112:django.server: INFO->"POST /appointment/apply_appoinment HTTP/1.1" 302 0
+2021-09-18 15:30:52,148:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3166
+2021-09-18 15:30:54,382:django.server: INFO->"GET /checkup/pat_get_checklis/16 HTTP/1.1" 200 2320
+2021-09-18 15:31:12,196:django.server: INFO->"POST /checkup/api/pat_post_checklist/ HTTP/1.1" 200 24
+2021-09-18 15:31:15,077:django.server: INFO->"GET /checkup/pat_get_checklis/16 HTTP/1.1" 200 2211
+2021-09-18 15:32:35,596:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3274
+2021-09-18 15:32:45,808:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3166
+2021-09-18 15:32:49,288:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3274
+2021-09-18 15:32:50,965:django.server: INFO->"GET /users/show_forgot_password_form HTTP/1.1" 200 2514
+2021-09-18 15:33:00,270:django.server: INFO->"POST /users/to_reset_password HTTP/1.1" 302 0
+2021-09-18 15:33:00,288:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-18 15:33:00,294:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-18 15:33:00,312:django.server: INFO->"GET /users/ HTTP/1.1" 200 2575
+2021-09-18 15:33:06,664:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:33:06,687:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3166
+2021-09-18 15:33:09,103:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-18 15:33:09,127:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-09-18 15:33:10,456:django.server: INFO->"GET /users/password_reset HTTP/1.1" 200 2788
+2021-09-18 15:33:15,789:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:33:15,795:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-18 15:33:15,813:django.server: INFO->"GET /users/ HTTP/1.1" 200 2583
+2021-09-18 15:33:19,431:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:33:19,435:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-18 15:33:19,456:django.server: INFO->"GET /users/ HTTP/1.1" 200 2583
+2021-09-18 15:33:24,988:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:33:24,993:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-18 15:33:25,014:django.server: INFO->"GET /users/ HTTP/1.1" 200 2583
+2021-09-18 15:33:30,761:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:33:30,766:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-18 15:33:30,786:django.server: INFO->"GET /users/ HTTP/1.1" 200 2585
+2021-09-18 15:33:33,487:django.server: INFO->"GET /users/password_reset HTTP/1.1" 200 2788
+2021-09-18 15:33:47,468:django.server: INFO->"POST /users/password_reseter HTTP/1.1" 302 0
+2021-09-18 15:33:47,474:django.server: INFO->"GET /users HTTP/1.1" 301 0
+2021-09-18 15:33:47,495:django.server: INFO->"GET /users/ HTTP/1.1" 200 2579
+2021-09-18 15:33:53,204:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:33:53,223:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3166
+2021-09-18 15:47:42,864:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-18 15:47:42,892:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-09-18 15:47:44,322:django.server: INFO->"GET /appointment/patient HTTP/1.1" 302 0
+2021-09-18 15:47:44,346:django.server: INFO->"GET /users/?next=/appointment/patient HTTP/1.1" 200 2456
+2021-09-18 15:47:54,241:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-09-18 15:47:54,261:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 3166
+2021-09-18 15:53:42,750:django.server: INFO->"GET /users/logout HTTP/1.1" 302 0
+2021-09-18 15:53:42,773:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-09-18 15:53:42,801:django.server: INFO->"GET /static/css/style.css HTTP/1.1" 304 0
+2021-09-18 15:54:25,120:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-09-18 15:58:23,984:django.server: INFO->"GET /users/api/show_user HTTP/1.1" 200 343
+2021-09-18 16:05:13,716:django.utils.autoreload: INFO->E:\Aspirian\Github\AspireSystems-PFB\Project\Code\Medicheckv2\users\views.py changed, reloading.
+2021-09-18 16:05:15,697:django.utils.autoreload: INFO->Watching for file changes with StatReloader
