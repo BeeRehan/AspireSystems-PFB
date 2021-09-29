@@ -6,28 +6,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('appointment', '0001_initial'),
+        ("appointment", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='appoinmentdetails',
-            name='file',
-            field=models.FileField(null=True, upload_to='uploads/%Y/%m/%d/'),
+            model_name="appoinmentdetails",
+            name="file",
+            field=models.FileField(null=True, upload_to="uploads/%Y/%m/%d/"),
         ),
         migrations.AddField(
-            model_name='appoinmentdetails',
-            name='reason',
+            model_name="appoinmentdetails",
+            name="reason",
             field=models.CharField(max_length=100, null=True),
         ),
         migrations.AddField(
-            model_name='appoinmentdetails',
-            name='vaccinated',
+            model_name="appoinmentdetails",
+            name="vaccinated",
             field=models.CharField(max_length=7, null=True),
         ),
         migrations.AlterField(
-            model_name='appoinmentdetails',
-            name='doctor',
+            model_name="appoinmentdetails",
+            name="doctor",
             field=models.CharField(max_length=20, null=True),
         ),
     ]

@@ -10,14 +10,14 @@ def init():
 
 def insert():
         val = (input("Enter the Name: "),input("Enter the cost: "),input("Enter the category: "),input("Enter the colour: "),input("Enter the currency"))
-        mc.execute(sql,val) 
+        mc.execute(sql,val)
         mc.execute("commit")
 
 def delete():
         sql = f"DELETE FROM Products WHERE name = %s"
         val = input('Enter the Item name for Deletion: ')
         vali = (val,)
-        mc.execute(sql,vali) 
+        mc.execute(sql,vali)
         mc.execute("commit")
 
 def display():

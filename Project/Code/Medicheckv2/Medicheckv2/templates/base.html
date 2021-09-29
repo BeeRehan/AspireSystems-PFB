@@ -13,13 +13,13 @@
         <!-- <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script> -->
     </head>
     <!-- class="p-3 mb-2 bg-secondary text-white" -->
-    <body > 
+    <body >
         <header><h1>{{header}}</h1></header>
         <div  class="alert alert-danger alert-dismissible fade show" id="alertid" role="alert">
             {% for message in messages%}
             <h4>{{message}}</h4>
             <script>
-                warn(); 
+                warn();
             </script>
             {%endfor%}
         </div>

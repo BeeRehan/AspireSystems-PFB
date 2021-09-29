@@ -28,7 +28,7 @@
                         <td>{{ appoinment.date }}</td>
                         <td>{{ appoinment.doctor }}</td>
                         <td><button class="btn btn-primary" onclick="visibility('{{appoinment.id}}')">Check Status</button> <a class="btn btn-primary" href="/checkup/pat_get_checklis/{{appoinment.id}}"> Check Report</a> <span class="result" id="{{appoinment.id}}">Status: {{appoinment.status}}</span> </td>
-                    </tr>   
+                    </tr>
                     {% endfor %}
                 </tbody>
             </table>

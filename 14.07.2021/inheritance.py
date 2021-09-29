@@ -1,14 +1,14 @@
 class Bank():
-	
+
 
 	__name = "Reserve Bank of India"
 	__tax = "the standard 2%"
-	
 
-	#print(__name)		
 
-	
-	
+	#print(__name)
+
+
+
 	def __repr__(self):
 		return(f"The bank  name is {self.__name} and the intrest rate is {self.__tax}")
 
@@ -22,7 +22,7 @@ class Iob(Bank):
 		self.name = name
 		self.tax = tax
 
-	
+
 	def __repr__(self):
 		return(f"The bank  name is {self.name} and the intrest rate is {self.tax}")
 
@@ -31,7 +31,7 @@ class Sbi(Iob):
 		self.name = name
 		self.tax = tax
 
-	
+
 	def __repr__(self):
 		return(f"The bank  name is {self.name} and the intrest rate is {self.tax}")
 
@@ -40,7 +40,7 @@ class Canara(Iob,Bank):
 		self.name = name
 		self.tax = tax
 
-	
+
 	def __repr__(self):
 		return(f"The bank  name is {self.name} and the intrest rate is {self.tax}")
 

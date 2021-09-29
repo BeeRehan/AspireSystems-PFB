@@ -43,5 +43,5 @@ Pages:
 
 Extra points:
   1. Bootstrap can be used for frontend designed
-  2. First complete the functionality. UI look and feel can be groomed late 
+  2. First complete the functionality. UI look and feel can be groomed late
   3. UI should be equalent to real time applications

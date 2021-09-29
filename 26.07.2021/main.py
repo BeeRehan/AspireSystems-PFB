@@ -7,7 +7,7 @@ database.init()
 database.display()
 cpj = Carts([])
 
-def payment():   
+def payment():
     print('1.Credit/Debit card\n2.Netbanking\n 3.Wallet\n 4.COD\n 5.Go back')
     ch=input()
     if(ch=='1'):
@@ -66,11 +66,11 @@ def viewItems(name):
         print("1. To add item\n 2.To view Cart\n 3.To delete items from cart\n 4.Payment\n 5.Go Back")
         ch = input()
         if (ch=='1'):
-            name = input("Enter the name: ") 
+            name = input("Enter the name: ")
             for fil in filtered:
                 print(print(fil[1])==name)
                 if(fil[1]==name):
-                    print("card") 
+                    print("card")
                     cpj.toAddItem(fil)
                     print('Added Successfully')
         elif(ch=='2'):

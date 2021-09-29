@@ -9,12 +9,12 @@ class Products:
 
     def __init__(self,products):
         self.products = products
-    
+
     def display(self):
         #return(self.products)
         for product in self.products:
             print(f"Name:{product['name']}\nCost:{product['cost']} {product['currency']}\nCategory:{product['category']}\n")
-        
+
     def add(self,ind):
         #print("Arrived")
         self.products.append(self.getInput(ind))
@@ -25,13 +25,13 @@ class Products:
         inner = dict()
         print(ip)
         for common in self.crendials['commons']:
-          inp[common] = input("Enter the {0}".format(common)) 
-        
+          inp[common] = input("Enter the {0}".format(common))
+
         for cat in self.crendials[ip]:
           inner[cat] = input("Enter {0}".format(cat))
-        
+
         inp.update({"product_details":inner})
-        
+
         return(inp)
 
     def delete(self,id):
@@ -39,6 +39,3 @@ class Products:
           if(product['id']==id):
             self.products.pop(index)
         self.display()
-
-    
-

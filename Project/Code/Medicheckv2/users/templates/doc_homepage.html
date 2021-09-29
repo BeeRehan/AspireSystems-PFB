@@ -32,10 +32,10 @@
                         <td>{{ appoinment.status|title }}</td>
                         <td>
                             {% if appoinment.status is not "checked"   %}
-                                <a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> 
+                                <a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a>
                             {% endif %}
                             <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> </td>
-                    </tr>   
+                    </tr>
                     {% endfor %}
                 </tbody>
             </table>

@@ -15,7 +15,7 @@ def createChecklist(request):
 def view_checklist(request,pk):
     title = "Add Report"
     form = checklistForm()
-    return render(request,"to_add_checklist.html",{'title':title,'form':form,"pk":pk}) 
+    return render(request,"to_add_checklist.html",{'title':title,'form':form,"pk":pk})
 
 @login_required(login_url='/')
 def add_checklist(request,pk):
@@ -34,7 +34,7 @@ def add_checklist(request,pk):
         else:
             print("Not valid")
     else:
-        print("Not a post request") 
+        print("Not a post request")
 @login_required(login_url='/')
 def doc_get_checklis(request,pk):
     apps = AppoinmentDetails.objects.filter(user_id=pk,status="approved")

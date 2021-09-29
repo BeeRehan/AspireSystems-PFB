@@ -13,7 +13,7 @@ def PasswordValidation(value):
             raise ValidationError(uge('atleast 1 special character needed!'))
         else:
             return True
- 
+
 class UserRegistrationForm(forms.Form):
     firstName = forms.CharField(label='First Name', max_length=100)
     lastName = forms.CharField(label='Last Name', max_length=100)

@@ -9,7 +9,7 @@ class Emp(Base):
 	def where(self):
 		print("This is where?")
 
-	
+
 	def find(self):
 		print("This is me..")
 

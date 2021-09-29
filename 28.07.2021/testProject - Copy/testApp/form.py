@@ -1,4 +1,4 @@
-from django import forms  
+from django import forms
 from .models import Products
 
 class FormProductForm(forms.ModelForm):

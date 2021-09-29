@@ -7,7 +7,3 @@ form validation with more than 10 fields.
 cutom events
 
 usage fn parameter with default values
-
-
-
-

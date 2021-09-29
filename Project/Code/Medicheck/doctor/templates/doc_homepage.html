@@ -29,7 +29,7 @@
                         <td>{{ appoinment.doctor }}</td>
                         <td>{{appoinment.status}}</td>
                         <td><a class="btn btn-primary" href="/appointment/approve/{{appoinment.id}}"> Accept</a> <a class="btn btn-primary" href="/appointment/reject/{{appoinment.id}}"> Cancel</a> <span class="result" id="{{appoinment.id}}">Status: {{appoinment.status}}</span> </td>
-                    </tr>   
+                    </tr>
                     {% endfor %}
                 </tbody>
             </table>

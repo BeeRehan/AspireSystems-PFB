@@ -73,7 +73,7 @@ def addProduct():
     else:
         print('-------------------')
 
-def deleteProduct():    
+def deleteProduct():
     id = input("Enter the id: ")
     obj.delete(id)
 
@@ -88,7 +88,7 @@ def admin():
         elif(ch=='2'):
             deleteProduct()
 
-def payment():   
+def payment():
     print('1.Credit/Debit card\n2.Netbanking\n 3.Wallet\n 4.COD\n 5.Go back')
     ch=input()
     if(ch=='1'):
@@ -133,7 +133,7 @@ def formatDisplay(filterd):
                 if(k=='id'):
                     continue
                 print(f"{k.capitalize() }: {v.capitalize() }")
-                
+
         print()
 
 
@@ -145,9 +145,9 @@ def viewItems(name):
         print("1. To add item\n 2.To view Cart\n 3.To delete items from cart\n 4.Payment\n 5.Go Back")
         ch = input()
         if (ch=='1'):
-            name = input("Enter the name: ") 
+            name = input("Enter the name: ")
             for fil in filterd:
-                if(fil['name']==name): 
+                if(fil['name']==name):
                     cpj.toAddItem(fil)
                     print('Added Successfully')
         elif(ch=='2'):
@@ -162,7 +162,7 @@ def viewItems(name):
 
             else:
                 print("Cart is Empty")
-                
+
 def customer():
      obj.display()
      while True:

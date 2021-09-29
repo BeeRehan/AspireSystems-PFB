@@ -12,26 +12,26 @@ class Payments:
       'CARD' : ['number','pin','cvv','date','otp'],
       'NET BANKING' :['username','password'],
        'Wallet' :  ['upi id','pin'],
-       'COD':['pwd'] 
+       'COD':['pwd']
     #    dt:{
     #        nu : {int
-    #    }    
+    #    }
   }
 
   def get_input(self,Class):
       inDic = dict()
-      
+
       for key in self.types[Class]:
           inDic[key] = input("Enter the {0}: ".format(key))
       return inDic
-    
+
   def validate(self,inDic,Class):
-      flag =  True 
-      
+      flag =  True
+
       for key in inDic.keys():
           #print(inDic[key])
           if(not (inDic[key] == config[Class][key])):
-              flag = False 
+              flag = False
       if(flag):
           print("Order Successful!!!")
       else:
@@ -39,13 +39,13 @@ class Payments:
 
 
 class CardPayement(Payments):
-    
+
     # Class  = 'CARD'
     credential = ''
 
     def __init__(self):
-        self.credential = self.get_input('CARD')         
-    
+        self.credential = self.get_input('CARD')
+
     def reg_check(self,credential):
         enterDate = credential['date']
         dd,mm,yy = enterDate.split('-')
@@ -58,7 +58,7 @@ class CardPayement(Payments):
             if(not len(credential['number'])==19):
                 print("Invalid Card Number")
                 return False
-            if(not len(credential['cvv'])==3): 
+            if(not len(credential['cvv'])==3):
                 print("Invalid CVV")
                 return False
         return True
@@ -87,7 +87,7 @@ class Wallets(Payments):
     }
 
     def __init__(self,ind):
-        self.ind = ind 
+        self.ind = ind
         self.credential = self.get_input('Wallet')
 
     def reg_validate(self):
@@ -108,7 +108,7 @@ class Cod(Payments):
 # class Sample:
 #     def __init__(MD,name):
 #         MD.name  = name
-    
+
 #     def dis(MD):
 #         print(MD.name)
 
@@ -120,11 +120,11 @@ class Cod(Payments):
 
 
 # class Phonepay('Wallets'):
-#     pass  
+#     pass
 
 # class Paytm('Wallets'):
-#     pass    
-# 
+#     pass
+#
 #   def cardValidate(self,number,enteredDate,cvv):
 #       if(not (enteredDate > datetime.datetime.today())):
 #           print("Card was expired")
@@ -133,7 +133,7 @@ class Cod(Payments):
 #         if(not len(number)==16):
 #             print("Invalid Card Number")
 #             return False
-#         if(not len(cvv)==3): 
+#         if(not len(cvv)==3):
 #             print("Invalid CVV")
 #             return False
 #       return True
@@ -144,7 +144,7 @@ class Cod(Payments):
 #       dd,mm,yy =date.split('-')
 #       enteredDate = datetime.datetime(int(yy), int(mm), int(dd))
 #       cvv = input("Enter The cvv")
-      
+
 #       if(input("Enter 's' to submit: ").lower()=='s'):
 #           if(self.cardValidate(number,enteredDate,cvv)):
 #               print("Transaction Success!!!")
@@ -214,16 +214,16 @@ class Cod(Payments):
 # class Wallets:
 #     _upiID = ''
 #     _pass=''
-    
+
 #     def setID(self,ID):
-#         self._upiID = ID 
-    
+#         self._upiID = ID
+
 #     def getID(self):
 #         return(self._upiID)
 
 #     def setPwd(self,pwd):
-#         self._pass = pwd 
-    
+#         self._pass = pwd
+
 #     def getPwd(self):
 #         return(self._pass)
 

@@ -1,0 +1,15 @@
+curl -X POST -d "grant_type=password&username=mohamed&password=water@12344" -u"dYOZCgCt3SXjRy7bfJ4HN0C2ogsjGAeqyE4WSPq9:xNLRdQELCrmwnPKKH1yTBBml2dMUgx3M489w8ibjYzONLMjzLpWVokDEI5V6vsZiqnSC3Ac7emKzzQnYgEZAYDRKATuhiROHkT8XyhIvpkVNZckCOZB63irrulcU0JTY" http://localhost:8000/o/token/
+
+dYOZCgCt3SXjRy7bfJ4HN0C2ogsjGAeqyE4WSPq9
+
+xNLRdQELCrmwnPKKH1yTBBml2dMUgx3M489w8ibjYzONLMjzLpWVokDEI5V6vsZiqnSC3Ac7emKzzQnYgEZAYDRKATuhiROHkT8XyhIvpkVNZckCOZB63irrulcU0JTY
+
+
+curl -H "Authorization: Bearer tSyqMvD62HfvhnG6VwUO9igCXrAoYR" http://localhost:8000/users/
+
+
+DJcCHG7uPHLXC2IsM0Sh1YH28xCfe2
+
+z3ULeAUwvdaEqIOga2fWq1d9sTgUQY
+
+tSyqMvD62HfvhnG6VwUO9igCXrAoYR

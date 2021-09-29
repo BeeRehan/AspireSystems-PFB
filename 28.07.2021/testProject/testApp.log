@@ -1,3 +1,4 @@
 2021-08-18 15:23:07,493:testApp.views: INFO->Item Inserted
 2021-08-18 19:28:29,001:accounts.views: INFO->User test1 logged in!!!
 2021-08-18 19:29:12,256:accounts.views: INFO->User loggedout!!!
+2021-09-17 12:25:05,485:accounts.views: INFO->User kamali logged in!!!
