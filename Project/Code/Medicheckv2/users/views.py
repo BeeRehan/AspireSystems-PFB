@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password
-from django.contrib.auth.models import User,Group
+from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
 from .form import CreateUsersForm, ForgotPasswordForm,PasswordResetForm
 from django.contrib.auth.decorators import login_required
