@@ -1,0 +1,74 @@
+body{
+    /* background-image: url(../image/background1.png); */
+    background-image: repeating-linear-gradient(90deg, rgb(95, 152, 225) 0px, rgb(95, 152, 225) 10px,rgb(115, 164, 229) 10px, rgb(115, 164, 229) 20px,rgb(135, 175, 233) 20px, rgb(135, 175, 233) 30px,rgb(214, 222, 250) 30px, rgb(214, 222, 250) 40px,rgb(174, 199, 242) 40px, rgb(174, 199, 242) 50px,rgb(155, 187, 238) 50px, rgb(155, 187, 238) 60px,rgb(194, 210, 246) 60px, rgb(194, 210, 246) 70px);
+}
+.container{
+    min-height: 550px;
+}
+nav ul{
+    list-style: none;
+    background: whitesmoke;
+    padding: 10px;
+    overflow: hidden;
+}
+nav ul li{
+    display: inline;
+    margin-left:5px ;
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color : #fff;
+    background-color: #000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+table,th,td{
+    border: 1px solid black ;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+}
+
+.formContainer{
+    width: 600px;
+    position: relative;
+    margin: auto;
+    /* background: transparent; */
+    background-color: whitesmoke;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #fff;
+}
+
+.wrapper {
+    text-align: center;
+    width: 600px;
+}
+
+p span{
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+#alertid{
+    display: none;
+}
+
+.slideimg{
+    height: 300px;
+}
+
+form span ul li{
+    color: #f00;
+    font-size: 15px;
+}
