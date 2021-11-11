@@ -2,26 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './App.js' 
+import App from './pages/App.js' 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Renderr from './pages/Lifiting'
 
-export default function Toroute(){
+function Toroute(){
   return(
     <Router>
       <div>
         <Link to='/'>Home</Link>
       </div>
       <div>
-        <Link to='/list'>List</Link>
+        <Link to='/app'>List</Link>
+      </div>
+      <div>
+        <Link to='/lift'>Lifting</Link>
       </div>
       <hr/>
       <Routes>
-        <Route exact path="/">
-          <Tolist/>
-        </Route>
-        <Route path="/list">
-          <App/>
-        </Route>
+        <Route path="/" element={<Tolist/>}/>
+        <Route path="/app" element={<App/>}/>
+        <Route path="/lift" element={<Renderr/>}/>
+
       </Routes>
     </Router>
   );
@@ -39,6 +41,8 @@ function Tolist(props){
     </ul>
   </>);
 }
+
+
 ReactDOM.render(
   <Toroute />,
   document.getElementById('root')
