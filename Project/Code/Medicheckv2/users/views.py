@@ -1,13 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import User
-<<<<<<< HEAD
 from django.shortcuts import redirect, render
+from rest_framework import serializers
 from .form import CreateUsersForm, ForgotPasswordForm,PasswordResetForm
-=======
 from django.shortcuts import redirect, render, HttpResponse
 from .form import CreateUsersForm, ForgotPasswordForm, PasswordResetForm
->>>>>>> 45ef7ae34fe82cd5403b4d63ff8f8d9c67891bcd
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from django.contrib import auth
@@ -15,7 +13,8 @@ from .form import UserLoginForm
 from .serializers import UserProfileSerializer, UserSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-
+from rest_framework.exceptions import AuthenticationFailed
+import jwt,datetime
 
 @api_view(["GET"])
 # @login_required(login_url='/users')
@@ -24,6 +23,14 @@ def api_show_user_profile(request):
     serializer = UserProfileSerializer(deatils)
     return Response(serializer.data)
 
+@api_view(["POST"])
+def api_register(request):
+    username = request.data['username']
+    password = request.data['password']
+    user = User.objects.create_user(username=username,password=password)
+    user.save()
+
+    return HttpResponse("User was created")
 
 @api_view(["GET"])
 # @login_required(login_url='/users')
@@ -31,6 +38,49 @@ def api_show_user(request):
     deatils = User.objects.get(id=request.user.id)
     serializer = UserSerializer(deatils)
     return Response(serializer.data)
+
+@api_view(["POST"])
+def api_login(request):
+    username = request.data['username']
+    password = request.data['password']
+
+    user = User.objects.filter(username=username).first()
+
+    # print(user.groups.all()[0].name)
+    if user is None and password is None:
+        raise AuthenticationFailed("User not Found!!!")
+
+    if not user.check_password(password):
+        raise AuthenticationFailed("Incorrect Password!!!")
+
+        
+    payload = {
+        'id': user.id,
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
+        'iat': datetime.datetime.utcnow(),
+        'group':user.groups.all()[0].name
+    }
+
+    token = jwt.encode(payload, 'secret', algorithm='HS256')
+
+    # token = jwt.decode(token,'utf-8',algorithms='HS256',options={"verify_signature": False})
+    response = Response()
+    response.set_cookie(key='jwt', value=token, httponly=True)
+    
+    response.data = {
+        'jwt': token
+    }
+    
+    return response
+
+@api_view(['POST'])
+def api_logout(request):
+    response = Response()
+    response.delete_cookie('jwt')
+    response.data = {
+        'message': 'success'
+    }
+    return response
 
 
 @api_view(["POST"])
@@ -76,8 +126,8 @@ def authenticate_user(request):
                 ):
                     reset(request)
                     g = request.user.groups.all()[0].name
-                    if not g == "admin":
-                        return redirect(f"/appointment/{g}")
+                    if not g == "admins":
+                        return redirect(f"/appointment/{g[:-1]}")
                     else:
                         return redirect("/users/admin")
                 else:

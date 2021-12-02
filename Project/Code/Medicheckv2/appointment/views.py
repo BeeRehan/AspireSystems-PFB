@@ -10,6 +10,8 @@ from users.models import UserProfile
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import AppoimentSerializer
+from rest_framework.exceptions import AuthenticationFailed
+import jwt,datetime
 
 
 @api_view(["GET"])
@@ -19,6 +21,25 @@ def api_get_patient(request):
     serializer = AppoimentSerializer(appoinments, many=True)
     return Response(serializer.data)
 
+@api_view(["GET"])
+def api_get_patientt(request):
+    
+    #print(dir(request))
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    appoinments = AppoinmentDetails.objects.filter(user_id=payload['id'])
+    serializer = AppoimentSerializer(appoinments, many=True)
+    return Response(serializer.data)
 
 @api_view(["POST"])
 def api_patient_post_checklist(request):

@@ -1,0 +1,20 @@
+table, td, th,td {
+  border: 1px solid #000;
+}
+table,th,tr,td{
+  border-collapse: collapse;
+}
+
+h1{
+  color: #61dafb;
+}
+
+ul {
+  list-style: none;
+  float: left;
+}
+
+ul li{
+  display: inline;
+  padding: 10px;
+}

@@ -12,5 +12,6 @@ urlpatterns = [
     path("reject/<int:pk>", views.reject, name="reject"),
     path("approve/<int:pk>", views.approve, name="approve"),
     path("api/patient", views.api_get_patient, name="users.index"),
+    path("api/patientt", views.api_get_patientt, name="api_get_patientt"),
     path("api/post_patient", views.api_patient_post_checklist, name="users.index"),
 ]

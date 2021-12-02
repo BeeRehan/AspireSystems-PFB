@@ -69,7 +69,7 @@ function UseRef(){
   },[state]);
 
   return(<>
-  <input type="text" value={state} onChange={(e)=>setState(e.target.value)}/>
+  <input type="text" ref={state} value={state} onChange={(e)=>setState(e.target.value)}/>
   <h1>UseRef-current State={state} |Previous state-{prevState.current} </h1>
   <hr/>
   </>);

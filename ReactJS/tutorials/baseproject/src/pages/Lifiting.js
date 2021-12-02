@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function Renderr(){
     const [state,setState] = useState("HI");
+    // const name = state
     return(
         <>
             <Type setState={setState}/>
@@ -12,6 +13,7 @@ function Renderr(){
 
 function Type({setState}){
     function change(e){
+        console.log(setState);
         setState(e.target.value);
     }
     return(
