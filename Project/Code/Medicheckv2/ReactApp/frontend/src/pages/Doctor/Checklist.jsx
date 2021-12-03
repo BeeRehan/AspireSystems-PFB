@@ -1,31 +1,29 @@
 import React from 'react'
 import { Container,Table } from 'react-bootstrap'
-import Fetch from './Fetch'
-import Navbar from '../../components/universe/Navbar'
 import {TableWrapper} from '../../static/css/styledcompunent/StyleCompounent'
 
-export default function Doctor() {
+export default function Checklist() {
     return (
         <div>
-            <Navbar  name="Check List" link="/doctors/checklist"/>
-            <h1>Welcome Doctor!!!</h1>
+            <h1>Welcome to Check List Page</h1>
             <Container>
             <TableWrapper color="whitesmoke">
                 <Table striped bordered hover>
                     <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Doctor</th>
+                        <th>S. NO</th>
+                        <th>Appoinment ID</th>
                         <th>Date</th>
-                        <th>Reason</th>
-                        <th>Status</th>
+                        <th>User Details</th>
+                        <th>Check List</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <Fetch/>
+                    {/* <Fetch/> */}
                     </tbody>
                 </Table>
             </TableWrapper>
+            {/* Need Home Button Here */}
             </Container>
         </div>
     )

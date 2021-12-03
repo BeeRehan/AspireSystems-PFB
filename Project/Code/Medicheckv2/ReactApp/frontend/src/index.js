@@ -4,6 +4,11 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login.jsx';
 import Patient from './pages/Patient/Patient.jsx';
 import CreationForm from './pages/Patient/CreationForm';
+import Checklist from "./pages/Doctor/Checklist"
+import UserDetails from "./pages/Doctor/UserDetails"
+import CheckupDetails from "./pages/Doctor/CheckupDetails"
+import Checklist from "./pages/Doctor/Checklist"
+import PreviousCheckup from "./pages/Doctor/PreviousCheckup"
 import Doctor from './pages/Doctor/Doctor'
 import Admin from './pages/Admin/Admin'
 import Myprofile from './pages/Myprofile/Myprofile';
@@ -31,7 +36,14 @@ export default function Index() {
                 <Route path="/patients" element={<Patient/>}/>
                 <Route path="creation" element={<CreationForm/>}/>       
               </Route>
-              <Route path="/doctors" element={<Doctor/>}>          
+              <Route path="/doctors">
+                <Route path="/doctors" element={<Doctor/>}/>          
+                <Route path="checklist" element={<Checklist/>}/>
+                <Route path="userdetails" element={<UserDetails/>}>
+                  <Route path="previousdetails" element={<PreviousCheckup/>}>
+                  <Route path="checkupupdetails" element={<CheckupDetails/>}/>
+                  </Route>
+                </Route> 
               </Route>
               <Route path="/admin" element={<Admin/>}>          
               </Route>

@@ -41,6 +41,29 @@ def api_get_patientt(request):
     serializer = AppoimentSerializer(appoinments, many=True)
     return Response(serializer.data)
 
+
+def api_doc_homepage(request):
+    title = "Doctor page"
+    user = request.user
+    appoinments = AppoinmentDetails.objects.filter(doctor=user)
+    appoinments_list = []
+    for appoinment in appoinments:
+        name = User.objects.get(id=appoinment.user_id).username
+        appoinments_list.append(
+            dict(
+                id=appoinment.id,
+                date=appoinment.date,
+                status=appoinment.status,
+                name=name,
+            )
+        )
+    # print(appoinments_list)
+    return render(
+        request,
+        "doc_homepage.html",
+        {"title": title, "appoinments": appoinments_list, "user": user},
+    )
+
 @api_view(["POST"])
 def api_patient_post_checklist(request):
     serializers = AppoimentSerializer(data=request.data)
@@ -182,7 +205,7 @@ def doc_homepage(request):
                 name=name,
             )
         )
-    print(appoinments_list)
+    # print(appoinments_list)
     return render(
         request,
         "doc_homepage.html",

@@ -22713,3 +22713,74 @@ AttributeError: 'NoneType' object has no attribute 'check_password'
 2021-12-01 19:42:11,256:django.server: INFO->"OPTIONS /appointment/api/patientt HTTP/1.1" 200 0
 2021-12-01 19:42:11,288:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
 2021-12-02 08:13:33,614:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-12-02 08:25:36,245:django.server: INFO->"OPTIONS /users/api/api_login HTTP/1.1" 200 0
+2021-12-02 08:25:36,435:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 173
+2021-12-02 08:25:39,627:django.server: INFO->"OPTIONS /appointment/api/patientt HTTP/1.1" 200 0
+2021-12-02 08:25:39,648:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 08:25:40,735:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 08:25:41,332:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 08:25:41,715:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 08:25:41,917:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 08:25:42,129:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 08:28:23,755:django.server: INFO->"GET / HTTP/1.1" 200 3043
+2021-12-02 08:28:24,737:django.request: WARNING->Not Found: /favicon.ico
+2021-12-02 08:28:24,738:django.server: WARNING->"GET /favicon.ico HTTP/1.1" 404 2994
+2021-12-02 08:28:34,822:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-12-02 08:28:41,635:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-12-02 08:28:41,657:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4345
+2021-12-02 08:28:51,280:django.server: INFO->"GET /appointment/appoinment HTTP/1.1" 200 4404
+2021-12-02 08:58:12,203:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 11:14:41,053:django.server: INFO->"OPTIONS /users/api/api_login HTTP/1.1" 200 0
+2021-12-02 11:14:41,309:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 11:14:41,309:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 11:14:47,930:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 11:14:47,930:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 11:14:50,184:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 11:14:50,184:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 11:14:51,070:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 11:14:51,070:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 11:14:51,374:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 11:14:51,374:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 11:15:57,484:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 173
+2021-12-02 11:16:00,500:django.server: INFO->"OPTIONS /appointment/api/patientt HTTP/1.1" 200 0
+2021-12-02 11:16:00,522:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 11:16:25,355:django.server: INFO->"GET / HTTP/1.1" 200 3043
+2021-12-02 11:16:29,874:django.server: INFO->"GET /users/ HTTP/1.1" 200 2456
+2021-12-02 11:16:46,790:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-12-02 11:16:46,899:django.server: INFO->"GET /appointment/patient HTTP/1.1" 200 4345
+2021-12-02 11:17:05,089:django.server: INFO->"GET /users/show_user_profile HTTP/1.1" 200 3275
+2021-12-02 11:24:44,869:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 171
+2021-12-02 11:25:07,915:django.server: INFO->"GET /appointment/patient HTTP/1.1" 302 0
+2021-12-02 11:25:07,919:django.server: INFO->"GET /users?next=/appointment/patient HTTP/1.1" 301 0
+2021-12-02 11:25:07,931:django.server: INFO->"GET /users/?next=/appointment/patient HTTP/1.1" 200 2456
+2021-12-02 11:25:17,484:django.server: INFO->"POST /users/authenticate_user HTTP/1.1" 302 0
+2021-12-02 11:25:17,506:django.server: INFO->"GET /appointment/doctor HTTP/1.1" 200 5191
+2021-12-02 11:32:14,362:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 173
+2021-12-02 11:32:18,595:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 11:51:13,895:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 173
+2021-12-02 11:51:17,699:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 11:51:36,051:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 171
+2021-12-02 11:51:38,880:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 2
+2021-12-02 16:26:50,928:django.server: INFO->"OPTIONS /users/api/api_login HTTP/1.1" 200 0
+2021-12-02 16:26:51,580:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 173
+2021-12-02 16:26:51,712:django.server: INFO->"OPTIONS /appointment/api/patientt HTTP/1.1" 200 0
+2021-12-02 16:26:51,760:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:27:18,407:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 173
+2021-12-02 16:27:23,053:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:28:21,243:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:28:27,266:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:32:18,265:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:32:18,482:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:32:18,698:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:32:25,844:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 969
+2021-12-02 16:32:49,776:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 16:32:49,780:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 16:32:52,534:django.request: WARNING->Forbidden: /users/api/api_login
+2021-12-02 16:32:52,534:django.server: WARNING->"POST /users/api/api_login HTTP/1.1" 403 34
+2021-12-02 16:32:59,618:django.server: INFO->"POST /users/api/api_login HTTP/1.1" 200 171
+2021-12-02 16:33:03,762:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 2
+2021-12-02 16:33:20,071:django.server: INFO->"GET /appointment/api/patientt HTTP/1.1" 200 2
+2021-12-02 16:37:13,795:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-12-02 16:37:21,498:django.utils.autoreload: INFO->Watching for file changes with StatReloader
+2021-12-02 16:39:23,011:django.utils.autoreload: INFO->D:\Hi\wwww\Aspire\GitHub\AspireSystems-PFB\Project\Code\Medicheckv2\appointment\views.py changed, reloading.
+2021-12-02 16:39:27,538:django.utils.autoreload: INFO->Watching for file changes with StatReloader

@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container,Table } from 'react-bootstrap'
-import Patientnavbar from '../../components/universe/patientNavbar'
+import Navbar from '../../components/universe/Navbar'
 import Fetch from './Fetch'
 import {TableWrapper} from '../../static/css/styledcompunent/StyleCompounent'
 
 export default function Patient() {
     return (
         <>
-            <Patientnavbar/>
+            <Navbar  name="Apply New" link="/patients/creation"/>
             <h1>Welcome to Patient Page</h1>
             <Container>
             <TableWrapper color="whitesmoke">
