@@ -51,12 +51,12 @@ export default function Login() {
             setRedirect(true);
         }).catch(er=>{
             console.log(er)});    
-    }
-
-    if(redirect){
-        navigate(`/${user.group}`);
-    }
-
+    
+        }
+        if(redirect){
+            navigate(`/${user.group}`);
+        }
+        
     return (
         <>
             <h1>Welcome to Login Page!!!</h1>

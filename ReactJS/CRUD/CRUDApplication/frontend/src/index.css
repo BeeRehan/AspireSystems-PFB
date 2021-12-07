@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./static/images/bg.png');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  height: auto;
+  text-align: center;
+}
+
+table,td,th{
+  border-collapse: collapse;
+  background-color: #fff;
+}
