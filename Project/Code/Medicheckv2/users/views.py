@@ -23,6 +23,33 @@ def api_show_user_profile(request):
     serializer = UserProfileSerializer(deatils)
     return Response(serializer.data)
 
+@api_view(["GET"])
+def api_get_user_profile(request):
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+    user = User.objects.get(id=payload['id'])
+    deatils = UserProfile.objects.get(user_id=payload['id'])
+    # serializer = UserProfileSerializer(deatils)
+
+    userDdetails = {
+        'user_id' : user.id,
+        'name':user.username,
+        'age' : deatils.age,
+        'gender':deatils.gender,
+        'key':deatils.secret_key
+    }
+
+    return Response(data=userDdetails)
+
 @api_view(["POST"])
 def api_register(request):
     username = request.data['username']

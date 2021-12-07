@@ -25,9 +25,9 @@ export default function Login() {
     };
 
     function submit(e){
+        e.preventDefault();
         const username = state.Username;
         const password = state.Password;
-        e.preventDefault();
         // console.log("Check",process.env.REACT_APP_API_LOGIN)
         fetch("http://127.0.0.1:8000/users/api/api_login",{
             method : "POST",
@@ -52,6 +52,7 @@ export default function Login() {
         }).catch(er=>{
             console.log(er)});    
     }
+
     if(redirect){
         navigate(`/${user.group}`);
     }
@@ -68,7 +69,7 @@ export default function Login() {
                         );
                     })
                 }
-                <Wrapper><Buton type="submit" variant="primary" name="Login"/></Wrapper>
+                <Wrapper><Buton type="submit"  variant="primary" name="Login"/></Wrapper>
             </form>
         </>
     )

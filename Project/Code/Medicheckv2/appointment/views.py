@@ -42,27 +42,37 @@ def api_get_patientt(request):
     return Response(serializer.data)
 
 
-def api_doc_homepage(request):
-    title = "Doctor page"
-    user = request.user
-    appoinments = AppoinmentDetails.objects.filter(doctor=user)
-    appoinments_list = []
-    for appoinment in appoinments:
-        name = User.objects.get(id=appoinment.user_id).username
-        appoinments_list.append(
-            dict(
-                id=appoinment.id,
-                date=appoinment.date,
-                status=appoinment.status,
-                name=name,
-            )
-        )
-    # print(appoinments_list)
-    return render(
-        request,
-        "doc_homepage.html",
-        {"title": title, "appoinments": appoinments_list, "user": user},
-    )
+# # def api_doc_homepage(request):
+# #     #print(dir(request))
+# #     token = request.headers.get('Authorization')
+# #     #print(token)
+
+# #     if not token:
+# #         raise AuthenticationFailed('Unauthenticated!')
+
+# #     try:
+# #         payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+# #     except jwt.ExpiredSignatureError:
+# #         raise AuthenticationFailed('Unauthenticated!')
+
+# #     user = User.objects.filter(user_id=payload['id'])
+# #     appoinments = AppoinmentDetails.objects.filter(doctor=user)
+# #     appoinments_list = []   
+# #     for appoinment in appoinments:
+# #         name = User.objects.get(id=appoinment.user_id).username
+# #         appoinments_list.append(
+# #             dict(
+# #                 id=appoinment.id,
+# #                 date=appoinment.date,
+# #                 status=appoinment.status,
+# #                 name=name,
+# #             )
+# #         )
+#     # print(appoinments_list)
+#     appoinments = AppoinmentDetails.objects.filter(user_id=payload['id'])
+#     serializer = AppoimentSerializer(appoinments, many=True)
+#     return Response(serializer.data)
 
 @api_view(["POST"])
 def api_patient_post_checklist(request):

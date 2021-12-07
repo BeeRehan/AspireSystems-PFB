@@ -5,7 +5,7 @@ export default function Input(props) {
     return (
         <div>
             <FloatingLabel controlId={props.label} className="mb-2" label={props.label}>
-                <Form.Control type={props.type} name={props.label} value={props.value} placeholder={props.placeholder} onChange={props.onChange} required/>
+                <Form.Control type={props.type} name={props.label} value={props.value} placeholder={props.placeholder} onChange={props.onChange} value={props.value} disabled={props.disabled} required/>
             </FloatingLabel>
         </div>
     )

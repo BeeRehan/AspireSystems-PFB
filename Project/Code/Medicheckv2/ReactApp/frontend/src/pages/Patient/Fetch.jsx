@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import Cookies from 'universal-cookie';
 
 export default function Fetch() {
@@ -15,13 +15,13 @@ export default function Fetch() {
             }
             throw res
         }).then((data)=>{
-            console.log("Hello",data)
+            // console.log("Hello",data)
             setState(data)
         }).catch(err=>{
             console.log(err);
         })
         
-    },[])
+    },[]);
     
     return (
             state.map((ste)=>

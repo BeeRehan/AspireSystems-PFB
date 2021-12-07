@@ -3,11 +3,13 @@ export const inputs = [
         "type":"text",
         "label":"Name",
         "placeholder":"Raju",
+        "predfined":"yes"
     },
     {
         "type":"number",
         "label":"Age",
         "placeholder":"20",
+        "predfined":"yes"
     },
     {
         "type":"date",
@@ -50,5 +52,18 @@ export const selectVaccinated = [
     {
         "label" : "No",
         "value" : "no"  
+    },
+]
+
+export const selectGender = [
+    {
+        "label" : "Male",
+        "value" : "male",
+        "predfined":"yes" 
+    },
+    {
+        "label" : "Female",
+        "value" : "female", 
+        "predfined":"yes"
     },
 ]
