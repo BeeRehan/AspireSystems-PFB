@@ -60,5 +60,4 @@ def delete_data(request,pk):
     users = UserProfile.objects.get(id=pk)
     users.delete()
     message = "Upadeted Successfull"
-
     return Response(message)    

@@ -23,6 +23,7 @@ export default function Patient() {
                         <th>Date</th>
                         <th>Reason</th>
                         <th>Status</th>
+                        <th>Check Report</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -5,6 +5,17 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Routes,Route,useNavigate, Link,useParams} from 'react-router-dom'
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+    name: yup.string().required(),
+    age: yup.string().required().min(8).max(24),
+    occupation: yup.number().required().positive().integer(),
+
+}).required();
+
 
 ReactDOM.render(
   <StrictMode>
@@ -25,6 +36,11 @@ function Home() {
 
   const [details,setDetails] = useState({});
   const navigate = useNavigate();
+
+  
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(schema),
+  });
 
   function handler(e){
     setDetails((prev)=>{
@@ -56,15 +72,19 @@ function Home() {
   }
   return (
     <div>
-      <form className="form" onSubmit={submit}>
+      <form className="form" onSubmit={handleSubmit(submit)}>
+        {console.log("ErrorsObj:",errors,"Register",register)}
         <FloatingLabel controlId="floatingInputName"  label="Name" className="mb-3">
-          <Form.Control type="text" placeholder="name" name="name" value={details.name} onChange={handler} required/>
+          <Form.Control type="text" placeholder="name" {...register('name', { required: true })} name="name" value={details.name} onChange={handler} required/>
+          <span>{errors.name?.message}</span>
         </FloatingLabel>
         <FloatingLabel controlId="floatingInputAge" label="Age" className="mb-3">
-          <Form.Control type="number" placeholder="age" name="age" value={details.age} onChange={handler} required/>
+          <Form.Control type="number" placeholder="age" {...register('age', { required: true })} name="age" value={details.age} onChange={handler} required/>
+          <span>{errors.age?.message}</span>
         </FloatingLabel>
         <FloatingLabel controlId="floatingInputOccupation" label="Occupation" className="mb-3">
-          <Form.Control type="text" placeholder="occupation" name="occupation" value={details.ooccupation} onChange={handler} required/>
+          <Form.Control type="text" placeholder="occupation" {...register('occupation', { required: true })} name="occupation" value={details.ooccupation} onChange={handler} required/>
+          <span>{errors.occupation?.message}</span>
         </FloatingLabel>
         <Button type="submit">Submit</Button>
       </form>
@@ -77,7 +97,7 @@ function List() {
   const [users, setUsers] = useState([]);
   const navigate = useNavigate()
   
-  useEffect(() => {
+  function fetchData(){
     fetch('http://localhost:8000/api/rest-list/')
     .then(res=>{
       if(res.ok){
@@ -94,7 +114,10 @@ function List() {
     .catch(er=>{
       console.log("Error in List",er);
     })
+  }
 
+  useEffect(() => {
+    fetchData()
   },users)
 
   function toDelete(id){
@@ -103,8 +126,8 @@ function List() {
     })
     .then(res=>{
       if(res.ok){
-        navigate("/list")
-        window.location.reload()
+        fetchData()
+        // window.location.reload()
       }
       throw res
     })
@@ -135,7 +158,7 @@ function List() {
                 <td>{user.age}</td>
                 <td>{user.occupation}</td>
                 <td><Link to={`/edit/${user.id}`}>Edit</Link></td>
-                <td><Button onClick={(id)=>{toDelete(user.id)}}>Delete</Button></td>
+                <td><Button onClick={toDelete(user.id)}>Delete</Button></td>
                 </tr>
               );
             })

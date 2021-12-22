@@ -3,8 +3,13 @@ import { Container,Table } from 'react-bootstrap'
 import Fetch from './Fetch'
 import Navbar from '../../components/universe/Navbar'
 import {TableWrapper} from '../../static/css/styledcompunent/StyleCompounent'
+import Cookies from 'universal-cookie'
 
+
+const cookies = new Cookies()
 export default function Doctor() {
+
+
     return (
         <div>
             <Navbar  name="Check List" link="/doctors/checklist"/>
@@ -15,14 +20,16 @@ export default function Doctor() {
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Doctor</th>
                         <th>Date</th>
-                        <th>Reason</th>
+                        <th>Patient Name</th>
                         <th>Status</th>
+                        <th>To Aprove</th>
+                        <th>To Reject</th>
+
                     </tr>
                     </thead>
                     <tbody>
-                    <Fetch/>
+                    <Fetch name={"DocHome"}/>
                     </tbody>
                 </Table>
             </TableWrapper>

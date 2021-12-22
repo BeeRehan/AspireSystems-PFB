@@ -5,11 +5,13 @@ import Login from './pages/Login/Login.jsx';
 import Patient from './pages/Patient/Patient.jsx';
 import CreationForm from './pages/Patient/CreationForm';
 import Checklist from "./pages/Doctor/Checklist"
+import Prescription from "./pages/Doctor/Prescription"
 import UserDetails from "./pages/Doctor/UserDetails"
 import CheckupDetails from "./pages/Doctor/CheckupDetails"
 import PreviousCheckup from "./pages/Doctor/PreviousCheckup"
 import Doctor from './pages/Doctor/Doctor'
 import Admin from './pages/Admin/Admin'
+import Addusers from './pages/Admin/Addusers'
 import Myprofile from './pages/Myprofile/Myprofile';
 import Logout from './pages/Logout/Logout';
 import Unauthorized from './components/universe/Unauthorized.jsx'
@@ -24,11 +26,14 @@ const cookies = new Cookies();
 
 
 export const ProfileContext = createContext()
+
 export default function Index() {
   const jwt = cookies.get('jwt')
   const [profileData,setProfileData] = useState({});
-  
+
+  // debugger
   useEffect(() => {
+    // debugger
     if(jwt){
       fetch("http://127.0.0.1:8000/users/api/api_get_user_profile?Authorization",{
         headers:{
@@ -40,7 +45,7 @@ export default function Index() {
           }
           throw res
       }).then((data)=>{
-          console.log("Hello",data)
+          // console.log("Hello",data)
           setProfileData(data)
       }).catch(err=>{
           console.log(err);
@@ -63,16 +68,14 @@ export default function Index() {
             <>
               <Route index path="/patients" element={<Patient/>}/>       
               <Route path="/patients/creation" element={<CreationForm/>}/>   
-              <Route path="/doctors" element={<Doctor/>}>
-                <Route path="checklist" element={<Checklist/>}/>
-                <Route path="userdetails" element={<UserDetails/>}>
-                  <Route path="previousdetails" element={<PreviousCheckup/>}>
-                  <Route path="checkupupdetails" element={<CheckupDetails/>}/>
-                </Route>
-                </Route> 
-              </Route>
-              <Route path="/admin" element={<Admin/>}>          
-              </Route>
+              <Route path="/doctors" element={<Doctor/>}/>
+              <Route path="/doctors/checklist" element={<Checklist/>}/>
+              <Route path="/doctors/checklist/prescription/:aid" element={<Prescription/>}/>
+              <Route path="/doctors/checklist/userdetails/:pid/:aid" element={<UserDetails/>}/>
+              <Route path="/doctors/checklist/userdetails/previousdetails/:pid" element={<PreviousCheckup/>}/>
+              <Route path="/doctors/checklist/userdetails/checkupupdetails/:pid" element={<CheckupDetails/>}/>
+              <Route path="/admins" element={<Admin/>}/>
+              <Route path="/admins/add_users" element={<Addusers/>}/>          
               <Route path="/myprofile" element={<Myprofile/>}/>
             </>
           )

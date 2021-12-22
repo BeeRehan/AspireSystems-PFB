@@ -54,10 +54,10 @@ class PatientDetails(forms.Form):
     doctors_list = []
     for user in users:
         try:
-            if user.groups.all()[0].name == "doctor":
+            if user.groups.all()[0].name == "doctors":
                 doctors_list.append(user.username)
-        except Exception:
-            pass
+        except Exception as e:
+            print("Doctor List Form:",e)
     doctors = list()
     for doctor in doctors_list:
         doctors.append((doctor, doctor.capitalize()))
@@ -79,7 +79,7 @@ class PatientDetails(forms.Form):
     def save(self, request):
         date = self.cleaned_data["date"]
         time = self.cleaned_data["time"]
-        print(date, time, self.cleaned_data["age"], type(self.cleaned_data["age"]))
+        # print(date, time, self.cleaned_data["age"], type(self.cleaned_data["age"]))
         app = AppoinmentDetails(
             date=(str(date) + " " + str(time)),
             vaccinated=self.cleaned_data["vaccinated"],

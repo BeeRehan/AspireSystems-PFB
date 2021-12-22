@@ -60,20 +60,20 @@ return(<>
 </>);
 }
 
-function UseRef(){
-  const [state,setState] = useState("");
-  const prevState = useRef("");
+// function UseRef(){
+//   const [state,setState] = useState("");
+//   const prevState = useRef("");
 
-  useEffect(()=>{
-    prevState.current=state;
-  },[state]);
+//   useEffect(()=>{
+//     prevState.current=state;
+//   },[state]);
 
-  return(<>
-  <input type="text" ref={state} value={state} onChange={(e)=>setState(e.target.value)}/>
-  <h1>UseRef-current State={state} |Previous state-{prevState.current} </h1>
-  <hr/>
-  </>);
-}
+//   return(<>
+//   <input type="text" ref={state} value={state} onChange={(e)=>setState(e.target.value)}/>
+//   <h1>UseRef-current State={state} |Previous state-{prevState.current} </h1>
+//   <hr/>
+//   </>);
+// }
 
 const ACTION = {
   INCREAMENT : "Increament",
@@ -114,7 +114,7 @@ function App() {
       <UseState/>
       <UseEffect/>
       <UseMemo/>
-      <UseRef/>
+      {/* <UseRef/> */}
       <UseReducer/>
     </div>
   );

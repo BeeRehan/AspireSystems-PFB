@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User,Group
+from django.http import response
 from django.shortcuts import redirect, render
 from rest_framework import serializers
 from .form import CreateUsersForm, ForgotPasswordForm,PasswordResetForm
@@ -15,10 +16,125 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.exceptions import AuthenticationFailed
 import jwt,datetime
+#-------------------------------------------------------------------------
+'''
+Admin
+'''
 
+@api_view(['GET'])
+def list_data(request):
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+
+
+    users = User.objects.all()
+    usersL  = []
+    # print(type(list(users)),list(users),len(users))
+    
+    try:
+        for user in  users:
+            # print(user)    
+            status = ""        
+            if(user.is_active):
+                status = "Active"
+            else:
+                status = "Inactive"
+            usersL.append(dict(
+                id=user.id,
+                username=user.username,
+                status=status,
+                group=user.groups.all()[0].name,
+                ))
+    except Exception as e:
+        print("List Users Error:",e)
+        
+
+    # print("E",usersL,users)
+    # except Exception as e:
+    #     print("E",userList,users)
+    #     print(e)    
+    
+    return Response(usersL)
+
+
+@api_view(['POST'])
+def api_add_user(request):
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        print("Data",request.data)
+        user = User.objects.create_user(username=request.data['Username'],
+                    password=request.data['Password'])
+        user.save()
+
+        profile = UserProfile.objects.create(
+            user_id = user.id,
+            age = request.data['Age'],
+            gender = request.data['Gender'],
+            secret_key = request.data['Secret Key']
+        )
+
+        profile.save()
+        
+        groups = Group.objects.get(name=request.data["Group"])
+        groups.user_set.add(user)
+        groups.save()
+        
+        message = "Added Succesfully!!!"
+    except Exception as e :
+        message = f'Added unsuccesfully with {e}'
+
+
+    return Response(message)
+
+@api_view(['DELETE'])
+def api_delete_data(request,pk):
+    try:
+        user = User.objects.get(id=pk)
+        user.delete()
+        profile = UserProfile.objects.get(user_id=id)
+        profile.save()
+        message = "Upadeted Successfull"
+    except Exception as e:
+        message = f"Upadeted unsuccessfull{e}"
+    
+    return Response('message')
+
+#----------------------------------------------------------------------------------
 @api_view(["GET"])
 # @login_required(login_url='/users')
 def api_show_user_profile(request):
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+
     deatils = UserProfile.objects.get(user_id=request.user.id)
     serializer = UserProfileSerializer(deatils)
     return Response(serializer.data)
@@ -36,6 +152,7 @@ def api_get_user_profile(request):
     
     except jwt.ExpiredSignatureError:
         raise AuthenticationFailed('Unauthenticated!')
+        
     user = User.objects.get(id=payload['id'])
     deatils = UserProfile.objects.get(user_id=payload['id'])
     # serializer = UserProfileSerializer(deatils)
@@ -44,11 +161,41 @@ def api_get_user_profile(request):
         'user_id' : user.id,
         'name':user.username,
         'age' : deatils.age,
+        'group':user.groups.all()[0].name,
         'gender':deatils.gender,
         'key':deatils.secret_key
     }
 
     return Response(data=userDdetails)
+
+@api_view(["POST"])
+def api_post_user_profile(request):
+
+    # print("Post User Details")
+
+    token = request.headers.get('Authorization')
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+    try:
+        data = {
+            'age' : request.data['Age'],
+            'key' : request.data['Secret Key']
+        }
+        
+        user = UserProfile.objects.get(user_id=payload['id'])
+        user.age=data['age']
+        user.secret_key=data['key']
+        user.save()
+    except Exception as e:
+        print(e)
+    return Response("Updated successfully")
 
 @api_view(["POST"])
 def api_register(request):
@@ -108,17 +255,6 @@ def api_logout(request):
         'message': 'success'
     }
     return response
-
-
-@api_view(["POST"])
-def api_post_user_profile(request):
-    serializers = UserProfileSerializer(data=request.data)
-    if request.method == "POST":
-        if serializers.is_valid():
-            serializers.save()
-            return HttpResponse("Inserted Successfully!!!")
-    else:
-        return HttpResponse("Not a post request!!!")
 
 
 @api_view(["POST"])

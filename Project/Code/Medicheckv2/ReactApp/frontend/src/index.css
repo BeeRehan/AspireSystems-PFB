@@ -24,3 +24,9 @@ body  {
  margin-bottom: 20px;
  display: block;
 }
+
+span{
+  color: #f00;
+  font-size: 15px;
+  display: flex;
+}

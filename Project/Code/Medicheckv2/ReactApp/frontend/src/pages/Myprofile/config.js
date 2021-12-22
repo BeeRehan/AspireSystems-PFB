@@ -2,13 +2,15 @@ export const inputs = [
     {
         "type":"text",
         "label":"Username",
-        "placeholder":"Raju"
+        "placeholder":"Raju",
+        "predefined":"yes"
 
     },
     {
         "type":"text",
         "label":"Group",
-        "placeholder":"Patient"
+        "placeholder":"Patient",
+        "predefined":"yes"
 
     },
     {

@@ -22,14 +22,14 @@ urlpatterns = [
     path(
         "api/show_user_profile", views.api_show_user_profile, name="show_user_profile"
     ),
-    path(
-        "api/post_user_profile", views.api_post_user_profile, name="post_user_profile"
-    ),
     path("api/show_user", views.api_show_user, name="api_show_user"),
     path("api/post_user", views.api_post_user, name="api_post_user"),
     path("api/api_register", views.api_register, name="api_register"),
     path("api/api_get_user_profile", views.api_get_user_profile, name="api_get_user_profile"),
     path("api/api_login", views.api_login, name="api_login"),
     path("api/api_logout", views.api_logout, name="api_logout"),
-    
+    path("api/post_user_profile", views.api_post_user_profile, name="api_post_user_profile"),
+    path("api/list_users", views.list_data, name="list_data"),
+    path("api/add_user", views.api_add_user, name="api_add_user"),
+    path("api/delete_data/<str:pk>",views.api_delete_data, name="api_delete_data"),
 ]

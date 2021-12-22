@@ -32,4 +32,29 @@ urlpatterns = [
         views.api_patient_post_checklist,
         name="checklist.pat_post_checklis",
     ),
+    path(
+        "api/pat_post_checklist/",
+        views.api_patient_post_checklist,
+        name="checklist.pat_post_checklis",
+    ),
+    path(
+        "api/post_checklist/<str:pk>",
+        views.api_add_checklist,
+        name="api.pat_post_checklis",
+    ),
+    path(
+        "api/prev_checklist/<str:pk>",
+        views.api_doc_get_checklis,
+        name="api_doc_get_checklis",
+    ),
+    path(
+        "api/get_checklist/<str:pk>",
+        views.api_get_checklist,
+        name="api_get_checklist",
+    ),
+        path(
+        "api/create_checklist",
+        views.api_create_checklist,
+        name="api_create_checklist",
+    ),
 ]

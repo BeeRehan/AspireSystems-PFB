@@ -21,7 +21,7 @@ export const Inputs = [
     },
     { 
         "type":"text",
-        "label":"Advice",
+        "label":"Prescription",
         "placeholder":"Raju",
     },
     { 

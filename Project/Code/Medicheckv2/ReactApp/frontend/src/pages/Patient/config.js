@@ -35,6 +35,10 @@ export const inputs = [
 
 export const selectDoctor = [
     {
+        "label" : "Select",
+        "value" : "NULL"  
+    },
+    {
         "label" : "Mohamed",
         "value" : "mohamed"  
     },
@@ -45,6 +49,10 @@ export const selectDoctor = [
 ]
 
 export const selectVaccinated = [
+    {
+        "label" : "Select",
+        "value" : "NULL"  
+    },
     {
         "label" : "Yes",
         "value" : "yes"  

@@ -10,8 +10,9 @@ import jwt from 'jwt-decode';
 export default function Login() {
     const [state, setState] = useState({
         "Username":"",
-        "Password":""
+        "Password":"",
     });
+    const cookies = new Cookies();
 
     const [user,setUser] = useState({})
     const[redirect,setRedirect] = useState(false);
@@ -24,6 +25,12 @@ export default function Login() {
                 [e.target.name]:e.target.value}});
     };
 
+    function toRedirect(){
+        if(redirect){
+            navigate(`/${user.group}`);
+            window.location.reload(false)
+        }
+    }
     function submit(e){
         e.preventDefault();
         const username = state.Username;
@@ -44,19 +51,20 @@ export default function Login() {
             throw res
         }).then(res=>{
             // console.log(res);
-            const cookies = new Cookies();
             cookies.set('jwt', res, { path: '/' });
             setUser(jwt(cookies.get('jwt').jwt))
-            console.log(cookies.get('jwt'),);
+            console.log("JWT:",cookies.get('jwt'));
             setRedirect(true);
+            toRedirect()
         }).catch(er=>{
-            console.log(er)});    
-    
-        }
-        if(redirect){
-            navigate(`/${user.group}`);
-        }
+            console.log("Login Error:",er)});    
         
+        // console.log("Sync");
+
+        
+    }           
+    
+            
     return (
         <>
             <h1>Welcome to Login Page!!!</h1>
@@ -69,6 +77,7 @@ export default function Login() {
                         );
                     })
                 }
+                <div>{state.usernameError}</div>
                 <Wrapper><Buton type="submit"  variant="primary" name="Login"/></Wrapper>
             </form>
         </>

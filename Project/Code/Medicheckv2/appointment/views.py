@@ -13,6 +13,8 @@ from .serializers import AppoimentSerializer
 from rest_framework.exceptions import AuthenticationFailed
 import jwt,datetime
 
+from appointment import serializers
+
 
 @api_view(["GET"])
 # @login_required(login_url='/users')
@@ -41,39 +43,137 @@ def api_get_patientt(request):
     serializer = AppoimentSerializer(appoinments, many=True)
     return Response(serializer.data)
 
+@api_view(["POST"])
+def api_apply_appoinment(request):
+    token = request.headers.get('Authorization')
+    #print(token)
 
-# # def api_doc_homepage(request):
-# #     #print(dir(request))
-# #     token = request.headers.get('Authorization')
-# #     #print(token)
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
 
-# #     if not token:
-# #         raise AuthenticationFailed('Unauthenticated!')
-
-# #     try:
-# #         payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
     
-# #     except jwt.ExpiredSignatureError:
-# #         raise AuthenticationFailed('Unauthenticated!')
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
 
-# #     user = User.objects.filter(user_id=payload['id'])
-# #     appoinments = AppoinmentDetails.objects.filter(doctor=user)
-# #     appoinments_list = []   
-# #     for appoinment in appoinments:
-# #         name = User.objects.get(id=appoinment.user_id).username
-# #         appoinments_list.append(
-# #             dict(
-# #                 id=appoinment.id,
-# #                 date=appoinment.date,
-# #                 status=appoinment.status,
-# #                 name=name,
-# #             )
-# #         )
-#     # print(appoinments_list)
-#     appoinments = AppoinmentDetails.objects.filter(user_id=payload['id'])
-#     serializer = AppoimentSerializer(appoinments, many=True)
-#     return Response(serializer.data)
+    data = {
+        'date':(str(request.data['Date'])+" "+str(request.data['Time'])),
+        'doctor':request.data['Doctor'],
+        'status':"requested",
+        'reason':request.data['Reason'],
+        'vaccinated':request.data['Vaccinated'],
+        'user':payload['id'],
+        'file':request.data['Scan Report'],
+        }
 
+    print(request.data)
+
+    try:
+        app = AppoinmentDetails(         
+                date=data["date"],
+                vaccinated=data["vaccinated"],
+                file=data["file"],
+                doctor=data["doctor"],
+                reason=data["reason"],
+                status=data["status"],
+                user_id=payload['id'])
+        
+        print("App",app)
+        app.save()
+    except Exception as e:
+        print("Back Apllicaation form error:",e)
+
+    return Response("Insreted Successfully!!")
+
+@api_view(['POST'])
+def api_approve(request,pk):
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+    
+    message = ""
+    try:
+        appoinment = AppoinmentDetails.objects.get(id=pk)
+        appoinment.status = "approved"
+        appoinment.save()
+        message = "Approved sucessfully!"
+    except Exception as e:
+        message = e        
+
+    return Response(message)
+
+@api_view(['POST'])
+def api_reject(request,pk):
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+    
+    message = ""
+    try:
+        appoinment = AppoinmentDetails.objects.get(id=pk)
+        appoinment.status = "rejected"
+        appoinment.save()
+        message = "reject sucessfully!"
+    except Exception as e:
+        message = e        
+
+    return Response(message)
+
+
+@api_view(["GET"])
+def api_get_details(request, pk, ak):
+    
+    token = request.headers.get('Authorization')
+    #print(token)
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+    
+    message = ""
+
+    try:
+        detail = UserProfile.objects.get(user_id=pk)
+        appsdet = AppoinmentDetails.objects.get(id=ak)
+        user = User.objects.get(id=detail.user_id)
+
+        data = {
+            'name' : user.username,
+            'date' : appsdet.date,
+            'gender' : detail.gender,
+            'reason' : appsdet.reason,
+            'vaccinated' : appsdet.vaccinated,
+            'report' : appsdet.file.url,
+
+        }
+        message = "Successful"
+    except Exception as e:
+        message = f"unsuccesfull {e}"
+
+    print(data)
+
+    return Response(data=data)
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @api_view(["POST"])
 def api_patient_post_checklist(request):
     serializers = AppoimentSerializer(data=request.data)
@@ -222,6 +322,36 @@ def doc_homepage(request):
         {"title": title, "appoinments": appoinments_list, "user": user},
     )
 
+
+@api_view(['GET'])
+def api_doc_homepage(request):
+    
+    token = request.headers.get('Authorization')
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    user = User.objects.get(id=payload['id'])
+    appoinments = AppoinmentDetails.objects.filter(doctor=user.username)
+    appoinments_list = []   
+    for appoinment in appoinments:
+        name = User.objects.get(id=appoinment.user_id).username
+        appoinments_list.append(
+            dict(
+                id=appoinment.id,
+                date=appoinment.date,
+                status=appoinment.status,
+                user_id=appoinment.user_id,
+                name=name,
+            )
+        )
+    # print(appoinments_list)
+    return Response(data=appoinments_list)
 
 @login_required(login_url="/users")
 def checklist(request):
