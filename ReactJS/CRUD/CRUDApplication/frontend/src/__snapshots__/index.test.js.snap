@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Container
+  fluid={false}
+>
+  <ForwardRef
+    bordered={true}
+    hover={true}
+    striped={true}
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Age
+        </th>
+        <th>
+          Occupation
+        </th>
+        <th>
+          To Edit
+        </th>
+        <th>
+          To Delete
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="1"
+      >
+        <td>
+          <WithStyles(ForwardRef(Skeleton)) />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="false"
+          />
+        </td>
+      </tr>
+      <tr
+        key="2"
+      >
+        <td>
+          <WithStyles(ForwardRef(Skeleton)) />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="false"
+          />
+        </td>
+      </tr>
+      <tr
+        key="3"
+      >
+        <td>
+          <WithStyles(ForwardRef(Skeleton)) />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="wave"
+          />
+        </td>
+        <td>
+          <WithStyles(ForwardRef(Skeleton))
+            animation="false"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </ForwardRef>
+  <Button
+    active={false}
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    disabled={false}
+    to="/"
+    variant="primary"
+  >
+    Add new 
+  </Button>
+</Container>
+`;
