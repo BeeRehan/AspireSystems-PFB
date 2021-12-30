@@ -16,6 +16,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.exceptions import AuthenticationFailed
 import jwt,datetime
+import pyotp as po
 #-------------------------------------------------------------------------
 '''
 Admin
@@ -119,7 +120,29 @@ def api_delete_data(request,pk):
     
     return Response('message')
 
-#----------------------------------------------------------------------------------
+
+@api_view(['POST'])
+def api_imp_tfa(request):
+    
+    token = request.headers.get('Authorization')
+
+    if not token:
+        raise AuthenticationFailed('Unauthenticated!')
+
+    try:
+        payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+    
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('Unauthenticated!')
+    
+    # print(request.data)
+    otp = request.data['tfatoken']
+    otp = int(otp['OTP'])
+    secret_key = request.data['data']
+    secret_key = secret_key['SecretKey']
+    status = po.TOTP(secret_key).verify(otp)
+    return Response(status)
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @api_view(["GET"])
 # @login_required(login_url='/users')
 def api_show_user_profile(request):
@@ -232,7 +255,8 @@ def api_login(request):
         'id': user.id,
         'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
         'iat': datetime.datetime.utcnow(),
-        'group':user.groups.all()[0].name
+        'group':user.groups.all()[0].name,
+        'SecretKey': po.random_base32()
     }
 
     token = jwt.encode(payload, 'secret', algorithm='HS256')

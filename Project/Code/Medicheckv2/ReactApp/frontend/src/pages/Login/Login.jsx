@@ -27,7 +27,7 @@ export default function Login() {
 
     function toRedirect(){
         if(redirect){
-            navigate(`/${user.group}`);
+            navigate(`/2faverficaion`);
             window.location.reload(false)
         }
     }

@@ -20,6 +20,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import  {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Cookies from 'universal-cookie';
+import Twofactor from './components/molecules/Twofactor';
 
 
 const cookies = new Cookies();
@@ -81,6 +82,7 @@ export default function Index() {
           )
           }
           <Route path="/logout" element={<Logout/>}/>
+          <Route path='/2faverficaion'element={<Twofactor/>}/>
           <Route path="/:pageName" element={<Unauthorized/>}/>
         </Routes>
       </Router>

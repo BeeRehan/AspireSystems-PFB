@@ -32,4 +32,5 @@ urlpatterns = [
     path("api/list_users", views.list_data, name="list_data"),
     path("api/add_user", views.api_add_user, name="api_add_user"),
     path("api/delete_data/<str:pk>",views.api_delete_data, name="api_delete_data"),
+    path("api/verify",views.api_imp_tfa, name="api_imp_tfa"),
 ]
