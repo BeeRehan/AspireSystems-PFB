@@ -47,7 +47,8 @@ export default function Twofactor() {
         <Container>
             <h1>Welcome to 2 step verifivation</h1>
             <div className="form" >
-            <Input label={"Secret Key"} type={'text'} value={data.SecretKey} disabled={"disabled"}/>
+            {/* <Input label={"Secret Key"} type={'text'} value={data.SecretKey} disabled={"disabled"}/> */}
+            <img alt="Embedded Image" src={`data:image/png;base64,${data.img_str}`}/>
             </div>
             <form className="form" onSubmit={submit}>
                 <Input label={"OTP"} type={'number'} name={'otp'} placeholder={"OTP"} onChange={(e)=>handle(e)}/>

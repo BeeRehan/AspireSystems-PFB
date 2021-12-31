@@ -17,6 +17,9 @@ from rest_framework.decorators import api_view
 from rest_framework.exceptions import AuthenticationFailed
 import jwt,datetime
 import pyotp as po
+import qrcode
+from io import BytesIO
+import base64
 #-------------------------------------------------------------------------
 '''
 Admin
@@ -138,8 +141,8 @@ def api_imp_tfa(request):
     # print(request.data)
     otp = request.data['tfatoken']
     otp = int(otp['OTP'])
-    secret_key = request.data['data']
-    secret_key = secret_key['SecretKey']
+    # secret_key = request.data['data']
+    secret_key = 'MLVETFQHDTSXIIYKYUL7Z52TNIVZN6CL'
     status = po.TOTP(secret_key).verify(otp)
     return Response(status)
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -250,13 +253,20 @@ def api_login(request):
     if not user.check_password(password):
         raise AuthenticationFailed("Incorrect Password!!!")
 
-        
+
+    img_uri = po.totp.TOTP('MLVETFQHDTSXIIYKYUL7Z52TNIVZN6CL').provisioning_uri(name=username, issuer_name="MD") 
+    img = qrcode.make(img_uri)
+    buffered = BytesIO()
+    img.save(buffered, format="PNG")
+    img_str = base64.b64encode(buffered.getvalue()).decode()
+
+    print("usri,",img_str)
     payload = {
         'id': user.id,
         'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
         'iat': datetime.datetime.utcnow(),
         'group':user.groups.all()[0].name,
-        'SecretKey': po.random_base32()
+        'img_str': img_str
     }
 
     token = jwt.encode(payload, 'secret', algorithm='HS256')
