@@ -72,7 +72,7 @@ export default function Home() {
         console.log("Error:",er);
       })
     }
-
+    console.log("CHi")
     return false;
   }
 
