@@ -1,0 +1,10 @@
+@import url('bootstrap/dist/css/bootstrap.min.css');
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+td,th,table{
+  text-align: center;
+  border: none;
+}

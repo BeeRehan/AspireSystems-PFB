@@ -34,20 +34,21 @@ export default function Home() {
     })
   }
 
- async function validateCaptcha(token){
-    console.log("Entered");
-    const key = '6Lcg0cEdAAAAAFTNpNMC6C_z_J89wC7Ydav9DhUA'
-     fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${key}&response=${token}`,{
-      method:'POST',
-    }).then((res)=>{
-      if(res.ok){
-        return res.json()
-      }
-      return res
-    }).then(res=>{
-      return(res.success)
-    })
-    
+function validateCaptcha(){
+  fetch('http://localhost:8000/api/rest-create/',{
+    method:"POST",
+    headers:{
+      "Content-type":"application/json",
+    },
+    body:JSON.stringify(details)
+  }).then((res)=>{
+    if(res.ok){
+      console.log("Pushed");
+      navigate("/list")
+    }
+  }).catch(er=>{
+    console.log("Error:",er);
+  }) 
   }
 
   async function submit(e){
@@ -55,24 +56,22 @@ export default function Home() {
     const capToken = await refCaptcha.current.executeAsync();
     console.log("Token",capToken)
     refCaptcha.current.reset()
+    const key = '6Lcg0cEdAAAAAFTNpNMC6C_z_J89wC7Ydav9DhUA'
+    fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${key}&response=${capToken}`,{
+     method:'POST',
+   }).then((res)=>{
+     if(res.ok){
+       return res.json()
+     }
+     return res
+   }).then(res=>{
+      if(res.success){
+        validateCaptcha()
+      }
+   }).catch(err=>{
+     console.log(err);
+   })
 
-    if(validateCaptcha(capToken)){
-      fetch('http://localhost:8000/api/rest-create/',{
-        method:"POST",
-        headers:{
-          "Content-type":"application/json",
-        },
-        body:JSON.stringify(details)
-      }).then((res)=>{
-        if(res.ok){
-          console.log("Pushed");
-          navigate("/list")
-        }
-      }).catch(er=>{
-        console.log("Error:",er);
-      })
-    }
-    console.log("CHi")
     return false;
   }
 
